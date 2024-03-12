@@ -1,4 +1,4 @@
-Welcome to Texto's documentation!
+Welcome to Automated Text Extraction documentation !
 ====================================
 
 .. figure:: /Documentation/Images/Logo.png
