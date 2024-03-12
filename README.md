@@ -1,6 +1,6 @@
-# Chat2IA Documentation
+# Textra Documentation
 
-Welcome to the documentation repository for Text extraction automation tool. We combine OCR and LLM to extract text from images.
+Welcome to the documentation repository for Textra tool. We combine OCR and LLM to extract text from images.
 with height accuracy and speed.
 ## Getting Started with Documentation Development
 
@@ -34,4 +34,4 @@ Now you're ready to start working on the documentation!
 
 ## Accessing the Documentation Online
 
-The documentation is hosted on ReadTheDocs. You can access it online by following this [link](https://text-extraction-automation.readthedocs.io/en/latest/index.html).
+The documentation is hosted on ReadTheDocs. You can access it online by following this [link](https://text-extraction-automation.readthedocs.io/en/latest/).
