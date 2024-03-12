@@ -14,3 +14,4 @@ Welcome to Texto's documentation!
    :caption: Table of Content:
 
    Documentation/Scripts/1_Introduction
+   Documentation/Scripts/2_OCR
