@@ -1,7 +1,7 @@
 Welcome to Texto's documentation!
 ====================================
 
-.. figure:: /Documentation/Images/Logo.jpg
+.. figure:: /Documentation/Images/Logo.png
    :width: 80%
    :align: left
    :alt: Alternative text for the image
