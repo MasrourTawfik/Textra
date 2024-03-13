@@ -1,4 +1,4 @@
-Welcome to Automated Text Extraction documentation !
+Welcome to Automated n !
 ====================================
 
 .. figure:: /Documentation/Images/Logo.png
