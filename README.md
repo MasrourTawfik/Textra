@@ -15,13 +15,13 @@ Make sure you have Python installed on your system.
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/MasrourTawfik/Text_Extraction_Automation.git
+   git clone https://github.com/MasrourTawfik/Textra.git
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd Text_Extraction_Automation
+   cd Textra
    ```
 
 3. Install the required dependencies using pip:
