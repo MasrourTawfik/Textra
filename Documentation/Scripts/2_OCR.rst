@@ -6,7 +6,7 @@ OCR signifie Reconnaissance Optique de Caractères. C'est la technologie qui per
 et de le convertir en données modifiables et recherchables
 
 Comment ca fonctionne ?
----------------
+-----------------------
 .. figure:: \Documentation\Images\OCR.png
    :width: 100%
    :align: center
@@ -20,7 +20,7 @@ Reconnaissance des caractères: Les caractères individuels dans les régions d'
 Post-traitement: Une fois les caractères reconnus, des techniques de traitement du langage naturel peuvent être utilisées pour améliorer la précision de la reconnaissance en tenant compte du contexte et de la grammaire.
 
 OCR options:
-------------
+-------------------
 
  
 

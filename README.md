@@ -34,4 +34,4 @@ Now you're ready to start working on the documentation!
 
 ## Accessing the Documentation Online
 
-The documentation is hosted on ReadTheDocs. You can access it online by following this [link](https://text-extraction-automation.readthedocs.io/en/latest/).
+The documentation is hosted on ReadTheDocs. You can access it online by following this [link](https://textra.readthedocs.io/fr/latest/).

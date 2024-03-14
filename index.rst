@@ -1,4 +1,4 @@
-Welcome to Textra documentation!
+Welcome to Chat2IA's documentation!
 ====================================
 
 .. figure:: /Documentation/Images/textralogo.jpg
@@ -12,46 +12,9 @@ Welcome to Textra documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Table of Content:
-   Documentation/Scripts/2_OCR
+
    Documentation/Scripts/1_Project
-   Documentation/Scripts/3_team
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   Documentation/Scripts/2_OCR
+   
 
 
