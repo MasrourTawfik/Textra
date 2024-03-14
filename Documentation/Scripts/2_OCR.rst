@@ -19,9 +19,8 @@ Détection des régions d'intérêt: Les zones de l'image contenant du texte son
 Reconnaissance des caractères: Les caractères individuels dans les régions d'intérêt sont identifiés à l'aide de modèles de reconnaissance de forme ou de réseaux de neurones convolutifs (CNN) pour reconnaître les formes des lettres et des chiffres.
 Post-traitement: Une fois les caractères reconnus, des techniques de traitement du langage naturel peuvent être utilisées pour améliorer la précision de la reconnaissance en tenant compte du contexte et de la grammaire.
 
-
-
-
+OCR options:
+------------
 
  
 
