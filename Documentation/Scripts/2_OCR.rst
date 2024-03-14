@@ -25,10 +25,6 @@ OCR Bechmarking:
 
 
 
- 
-
-
-
 
 
 
