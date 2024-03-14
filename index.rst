@@ -1,7 +1,7 @@
 Welcome to Chat2IA's documentation!
 ====================================
 
-.. figure:: /Documentation/Images/TEXTRA.png
+.. figure:: /Documentation/Images/TEXTRALOGO.png
    :width: 80%
    :align: center
    :alt: Alternative text for the image
@@ -15,6 +15,7 @@ Welcome to Chat2IA's documentation!
 
    Documentation/Scripts/1_Project
    Documentation/Scripts/2_OCR
+   Documentation/Scripts/3_team
    
 
 
