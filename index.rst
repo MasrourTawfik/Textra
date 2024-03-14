@@ -1,7 +1,7 @@
 Welcome to Chat2IA's documentation!
 ====================================
 
-.. figure:: /Documentation/images/Logo.png
+.. figure:: /Documentation/Images/Logo.png
    :width: 80%
    :align: left
    :alt: Alternative text for the image
@@ -13,9 +13,8 @@ Welcome to Chat2IA's documentation!
    :maxdepth: 2
    :caption: Table of Content:
 
-   Documentation/scripts/1_Project
-   Documentation/scripts/2_OCR
+   Documentation/Scripts/1_Project
+   Documentation/Scripts/2_OCR
    
 
 
-   
