@@ -1,4 +1,4 @@
-Welcome to Automated n !
+Welcome to Textra documentation!
 ====================================
 
 .. figure:: /Documentation/Images/Logo.png
@@ -51,4 +51,4 @@ Welcome to Automated n !
 
 
 
-   
+
