@@ -7,7 +7,7 @@ et de le convertir en données modifiables et recherchables
 
 Comment ca fonctionne ?
 ---------------
-.. figure:: /Documentation/Images/OCR.png
+.. figure:: /Documentation/Images/textra logo.jpg
    :width: 100%
    :align: center
    :alt: Alternative text for the image
