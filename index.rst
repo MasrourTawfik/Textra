@@ -14,6 +14,7 @@ Welcome to Textra documentation!
    :caption: Table of Content:
    Documentation/Scripts/2_OCR
    Documentation/Scripts/1_Project
+   Documentation/Scripts/3_team
 
 
 
