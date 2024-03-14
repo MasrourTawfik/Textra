@@ -15,6 +15,7 @@ Welcome to Chat2IA's documentation!
 
    Documentation/Scripts/1_Project
    Documentation/Scripts/2_OCR
+   Documentation/Scripts/3_team
    
 
 
