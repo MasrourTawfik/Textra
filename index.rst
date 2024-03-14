@@ -1,7 +1,7 @@
 Welcome to Textra documentation!
 ====================================
 
-.. figure:: /Documentation/Images/Logo.png
+.. figure:: /Documentation/Images/textralogo.jpg
    :width: 80%
    :align: left
    :alt: Alternative text for the image
@@ -13,7 +13,7 @@ Welcome to Textra documentation!
    :maxdepth: 2
    :caption: Table of Content:
    Documentation/Scripts/2_OCR
-   
+
 
 
 
