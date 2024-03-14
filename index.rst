@@ -1,9 +1,9 @@
 Welcome to Chat2IA's documentation!
 ====================================
 
-.. figure:: /Documentation/Images/Logo.png
+.. figure:: /Documentation/Images/textralogo.jpg
    :width: 80%
-   :align: left
+   :align: center
    :alt: Alternative text for the image
    :name: logo
 
