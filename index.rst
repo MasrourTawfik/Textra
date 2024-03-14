@@ -13,6 +13,7 @@ Welcome to Textra documentation!
    :maxdepth: 2
    :caption: Table of Content:
    Documentation/Scripts/2_OCR
+   Documentation/Scripts/1_Project
 
 
 
