@@ -12,6 +12,43 @@ Welcome to Automated n !
 .. toctree::
    :maxdepth: 2
    :caption: Table of Content:
-
-   Documentation/Scripts/1_Introduction
    Documentation/Scripts/2_OCR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
