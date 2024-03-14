@@ -1,4 +1,4 @@
-The team
+Equipe
 ======================================
 
 The team consists of 2 individuals. They operated under the guidance of Tawfik Masrour and Badreddine Hannaoui.
