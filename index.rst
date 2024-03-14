@@ -1,9 +1,9 @@
-Welcome to Textra documentation!
+Welcome to Chat2IA's documentation!
 ====================================
 
-.. figure:: /Documentation/Images/textralogo.jpg
+.. figure:: /Documentation/images/Logo.png
    :width: 80%
-   :align: center
+   :align: left
    :alt: Alternative text for the image
    :name: logo
 
@@ -12,46 +12,10 @@ Welcome to Textra documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Table of Content:
-        Documentation\Scripts\1_Project
-        Documentation\Scripts\2_OCR
-        Documentation\Scripts\3_team
+
+   Documentation/scripts/1_Project
+   Documentation/scripts/2_OCR
+   
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   
