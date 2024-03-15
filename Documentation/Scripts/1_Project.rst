@@ -114,9 +114,7 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
          return temp['choices'][0]['message']['content']
 
 
-**hautement efficacité**
-asdcjhhavjscvjaisciasvdc
-adscvakscviaiscavsc
+
 
 
 
