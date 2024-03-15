@@ -40,7 +40,7 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
 
 .. code-block:: bash
 
-   pip install requests openai
+   !pip install requests openai
 
 .. code-block:: python
 
@@ -49,67 +49,24 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
    from openai import OpenAI
    # OpenAI API Key
    api_key = "Insert-Your-OpenAi-API-Key-Here"
+   client = OpenAI(api_key = api_key)
 
-   # Function to encode the image
+Pour commencer à utiliser GPT-V, vous devez d’abord créer un compte sur le site Web d’OpenAI_, puis générer des API_keys_. Il est important de noter que l’accès GPT-V nécessite au moins un paiement effectué sur votre compte. 
+Une fois ces conditions préalables remplies, OpenAI vous donnera accès à GPT-V.
+.. _OpenAI : https://openai.com
+.. _API_keys : https://platform.openai.com/account/api-keys
+
+Maintenant, écrivons une fonction d’aide.
+.. code-block:: python
+
    def encode_image(image_path):
-      with open(image_path, "rb") as image_file:
-         return base64.b64encode(image_file.read()).decode('utf-8')
+   with open(image_path, "rb") as image_file:
+      return base64.b64encode(image_file.read()).decode('utf-8')
+
    headers = {
          "Content-Type": "application/json",
          "Authorization": f"Bearer {api_key}"
    }
-   client = OpenAI(api_key = api_key)
-   def question_image(url,query,detail="low"):
-      if url.startswith("http://")or url.startswith("https://"):
-         response = client.chat.completions.create(
-               model="gpt-4-vision-preview",
-               messages=[
-               {
-               "role": "user",
-               "content": [
-                  {"type": "text", "text": f"{query}"},
-                     {
-                     "type": "image_url",
-                     "image_url": url,
-                     },
-                  ],
-               }
-         ],
-         max_tokens=1000,
-               
-         )
-         return response.choices[0].message.content
-      else:
-         
-         base64_image = encode_image(url)
-
-         payload = {
-               "model": "gpt-4-vision-preview",
-               "messages": [
-               {
-                  "role": "user",
-                  "content": [
-                     {
-                     "type": "text",
-                     "text": f"{query}?"
-                     },
-                     {
-                     "type": "image_url",
-                     "image_url": {
-                        "url": f"data:image/jpeg;base64,{base64_image}"
-                     },
-                     }
-                  ]
-               }
-               ],
-               "max_tokens": 1000
-         }
-
-         response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
-
-         temp=response.json()
-         return temp['choices'][0]['message']['content']
-
 
 .. note:: 
    - La configuration du paramètre **max_tokens** contrôle la longueur de la réponse générée par le modèle.Une grand valeur peut augmenter le temps de traitement et l'utilisation des ressources.
