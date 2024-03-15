@@ -51,11 +51,8 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
    api_key = "Insert-Your-OpenAi-API-Key-Here"
    client = OpenAI(api_key = api_key)
 
-Pour commencer à utiliser GPT-V, vous devez d’abord créer un compte sur le site Web d’OpenAI_, puis générer des API_keys_. Il est important de noter que l’accès GPT-V nécessite au moins un paiement effectué sur votre compte. 
+Pour commencer à utiliser GPT-V, vous devez d’abord créer un compte sur le site Web `OpenAI <https://openai.com>`_. Dans ce cas, vous devez d’abord vous connecter à lOpenAI, puis générer des `API keys <https://platform.openai.com/account/api-keys>`_ pour vos API_keys. Il est important de noter que l’accès GPT-V nécessite au moins un paiement effectué sur votre compte. 
 Une fois ces conditions préalables remplies, OpenAI vous donnera accès à GPT-V.
-
-.. _OpenAI : https://openai.com
-.. _API_keys : https://platform.openai.com/account/api-keys
 
 Maintenant, écrivons une fonction d’aide.
 
@@ -141,9 +138,7 @@ Faisons une explaication pour mieux comprendre :
      L'ajustement de la valeur max_tokens dépend de votre cas d'utilisation spécifique et de la longueur désirée des réponses que vous attendez du modèle. Vous pouvez expérimenter avec différentes valeurs pour trouver la longueur optimale pour votre application.
    - Il faut specifier votre **api_key** obtenue dans votre compte OpenAI.
    - **format_response** La modification de cette valeur dans l’appel API peut guider le modèle pour répondre strictement au format JSON bien structuré. 
-   Pour en savoir plus sur format_response et d’autres paramètres, cliquez ici_.
-
-.. _ici : https://platform.openai.com/docs/guides/text-generation/parameter-details
+   Pour en savoir plus sur format_response et d’autres paramètres, cliquez `ici <https://platform.openai.com/docs/guides/text-generation/parameter-details>`_.
 
 **Example:**
 
