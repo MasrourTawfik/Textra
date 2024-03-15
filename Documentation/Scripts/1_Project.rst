@@ -143,6 +143,15 @@ Faisons une explaication pour mieux comprendre :
    Pour en savoir plus sur format_response et d’autres paramètres, cliquez `ici <https://platform.openai.com/docs/guides/text-generation/parameter-details>`_.
 
 **Example:**
+Maintenant, tout ce qui est nécessaire est de passer une image avec une requête pour effectuer l’extraction de texte. On utilise une  carte d’embarquement de Singapore Airlines. 
+
+.. image:: Signaphore_Pass.png
+   :height: 100px
+   :width: 200 px
+   :scale: 50 %
+   :loading: embed
+   :alt: alternate text
+   :align: center
 
 
 
