@@ -127,6 +127,9 @@ Ensuite, nous écrivons le code qui nous aidera à envoyer la demande API.
 
 La fonction **question_image()** peut sembler complexe au départ, mais elle consiste principalement en un code standard. 
 Faisons une explaication pour mieux comprendre :
+**url :** Cela peut être une URL vers une image en ligne ou un chemin de fichier local.
+**query :** La question ou l’invite spécifique que vous souhaitez poser sur l’image.
+**Gestion des URL en ligne :** Si l’URL est une URL en ligne, la fonction exécute le code dans l’instruction 'if', et si il s'agit d'une image locale elle exécute le code de 'else' .
 
 
 
@@ -136,7 +139,7 @@ Faisons une explaication pour mieux comprendre :
    - Il faut specifier voutre **api_key** obtenue dans votre compte OpenAI.
    - **format_response** La modification de cette valeur dans l’appel API peut guider le modèle pour répondre strictement au format JSON bien structuré. 
    Pour en savoir plus sur format_response et d’autres paramètres, cliquez ici_.
-   
+
 .. _ici : https://platform.openai.com/docs/guides/text-generation/parameter-details
 
 **Example:**
