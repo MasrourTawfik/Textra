@@ -17,7 +17,7 @@ L’innovation de cette méthode réside dans son adaptabilité, capable de trai
 Dans cette partie on explore les déférentes possibilités pour extraction  et l'analyse de l'information.
 chaque solution avec ces avantages et inconvénients.
 
-2.1.Methodology 1: GPT-4 Vision (GPT-V) by OpenAI
+2.1.GPT-4 Vision (GPT-V) by OpenAI
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `GPT-V` se distingue par sa capacité à analyser des images et à fournir des informations détaillées basées sur les requêtes des utilisateurs. Ce modèle permet aux utilisateurs de télécharger une image et de poser des questions spécifiques sur son contenu, auxquelles GPT-V répond avec des informations précises et pertinentes.
