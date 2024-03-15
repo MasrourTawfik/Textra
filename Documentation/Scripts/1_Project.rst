@@ -1,7 +1,7 @@
 Introduction
 =============
 
-1.Définition
+# 1.Définition
 ----------
 Notre projet visait à développer une solution à la fois flexible et efficace pour extraire l’information à partir d’une variété de formats de documents. On est concentré sur l’utilisation de l’OCR (Optical Character Recognition) et des modèles à grand langage (LLMs) comme ChatGPT en utilisant les capacités contextuelles avancées des LLM.
 L’innovation de cette méthode réside dans son adaptabilité, capable de traiter de nombreux types de documents sans formation approfondie ni règles spécifiques pour chaque format. Notre objectif était de démontrer une stratégie efficace pour l’extraction de données qui pourrait être un point de référence pour les défis similaires rencontrés dans divers contextes d’affaires. 
@@ -12,7 +12,7 @@ L’innovation de cette méthode réside dans son adaptabilité, capable de trai
    :alt: Alternative text for the image
    :name: Projet
 
-2.Déférentes possibilités:
+# 2.Déférentes possibilités:
 ----------------------
 Dans cette partie on explore les déférentes possibilités pour extraction  et l'analyse de l'information.
 chaque solution avec ces avantages et inconvénients.
