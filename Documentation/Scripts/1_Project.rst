@@ -22,6 +22,7 @@ chaque solution avec ces avantages et inconvénients.
 `GPT-V` se distingue par sa capacité à analyser des images et à fournir des informations détaillées basées sur les requêtes des utilisateurs. Ce modèle permet aux utilisateurs de télécharger une image et de poser des questions spécifiques sur son contenu, auxquelles GPT-V répond avec des informations précises et pertinentes.
 Dans le cadre de l’extraction de données à partir d’images, GPT-V offre une solution hautement intuitive et efficace. Le processus est remarquablement simple : vous téléchargez une image sur le modèle, et GPT-V traite cette image pour renvoyer les informations requises dans un format JSON structuré. 
 Ces données peuvent ensuite être facilement stockées et récupérées pour une utilisation ultérieure.
+
 .. figure:: /Documentation/Images/GPT4.png
    :width: 100%
    :align: center
