@@ -26,17 +26,17 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
 
 **Avantages de l’utilisation de GPT-V :**
 
-- *Simplicité et efficacité* : Le processus de téléchargement d’une image et de réception de données au format JSON est simple, ce qui minimise la complexité généralement associée à l’extraction de données.
+- Simplicité et efficacité : Le processus de téléchargement d’une image et de réception de données au format JSON est simple, ce qui minimise la complexité généralement associée à l’extraction de données.
 
-- *Haute efficacité* : GPT-V utilise les capacités sophistiquées du modèle GPT-4, assurant une extraction de données précise et fiable à partir d’images.
+- Haute efficacité : GPT-V utilise les capacités sophistiquées du modèle GPT-4, assurant une extraction de données précise et fiable à partir d’images.
 
 **Inconvénients de l’utilisation de GPT-V :**
 
-- *Considérations de coût* : L’utilisation de GPT-V peut être coûteuse, en particulier lors du traitement d’images à haute résolution, ce qui peut être un facteur important pour les projets avec des contraintes budgétaires.
+- Considérations de coût : L’utilisation de GPT-V peut être coûteuse, en particulier lors du traitement d’images à haute résolution, ce qui peut être un facteur important pour les projets avec des contraintes budgétaires.
 
-- *Préoccupations relatives à l’autonomie des données* : Comme GPT-V est un service tiers, il existe des problèmes inhérents à la confidentialité et au contrôle des données. Cette dépendance envers un fournisseur externe peut poser des défis pour les projets où la sécurité et l’autonomie des données sont primordiales.
+- Préoccupations relatives à l’autonomie des données : Comme GPT-V est un service tiers, il existe des problèmes inhérents à la confidentialité et au contrôle des données. Cette dépendance envers un fournisseur externe peut poser des défis pour les projets où la sécurité et l’autonomie des données sont primordiales.
 
-- *Latence et limites de débit de l’API* : Il peut y avoir des retards importants dans la réception des informations de l’API, et des limites de débit peuvent être imposées au compte, affectant l’évolutivité et la réactivité du système.
+- Latence et limites de débit de l’API : Il peut y avoir des retards importants dans la réception des informations de l’API, et des limites de débit peuvent être imposées au compte, affectant l’évolutivité et la réactivité du système.
 
 **Installation:**
 
