@@ -46,7 +46,6 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
     pip install datasets
 
 .. code-block:: python
-
    import base64
    import requests
    from openai import OpenAI
