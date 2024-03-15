@@ -146,7 +146,7 @@ Faisons une explaication pour mieux comprendre :
 **Example:**
 Maintenant, tout ce qui est nécessaire est de passer une image avec une requête pour effectuer l’extraction de texte. On utilise une  carte d’embarquement de Singapore Airlines. 
 
-.. image:: Signaphore_Pass.png
+.. image:: /Documentation/Images/Signaphore_Pass.png
    :height: 100px
    :width: 200 px
    :scale: 50 %
