@@ -40,12 +40,10 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
 
 .. code-block:: bash
 
-    pip uninstall -y tensorflow --quiet
-    pip install ludwig --quiet
-    pip install ludwig[llm] --quiet
-    pip install datasets
+   pip install requests openai
 
 .. code-block:: python
+
    import base64
    import requests
    from openai import OpenAI
@@ -111,6 +109,12 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
 
          temp=response.json()
          return temp['choices'][0]['message']['content']
+
+
+.. note:: 
+   - La configuration du paramètre **max_tokens** contrôle la longueur de la réponse générée par le modèle.Une grand valeur peut augmenter le temps de traitement et l'utilisation des ressources.
+     L'ajustement de la valeur max_tokens dépend de votre cas d'utilisation spécifique et de la longueur désirée des réponses que vous attendez du modèle. Vous pouvez expérimenter avec différentes valeurs pour trouver la longueur optimale pour votre application.
+   - Il faut specifier voutre **api_key** obtenue dans votre compte OpenAI.
 
 
 
