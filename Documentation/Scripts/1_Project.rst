@@ -24,7 +24,8 @@ Dans le cadre de l’extraction de données à partir d’images, GPT-V offre un
 Ces données peuvent ensuite être facilement stockées et récupérées pour une utilisation ultérieure.
 
 .. figure:: /Documentation/Images/GPT4.jpg
-   :width: 50%
+   :width: 10%
+   :height: 10%
    :align: center
    :alt: Alternative text for the image
    :name: GPT4

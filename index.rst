@@ -1,4 +1,4 @@
-Welcome to Chat2IA's documentation!
+Welcome to Textra's documentation!
 ====================================
 
 .. figure:: /Documentation/Images/TEXTRALOGO.png
