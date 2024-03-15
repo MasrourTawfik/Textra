@@ -14,7 +14,9 @@ L’innovation de cette méthode réside dans son adaptabilité, capable de trai
 
 2.Déférentes possibilités:
 ----------------------
-
+Methodology 1: GPT-4 Vision (GPT-V) by OpenAI
+-------------------------------------------------
+-------------------------------------------------
 
 
 
