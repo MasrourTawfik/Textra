@@ -73,7 +73,7 @@ Il prend une image stockée localement et la convertit en sa version encodée ba
 
 Ensuite, nous écrivons le code qui nous aidera à envoyer la demande API.
 .. code-block:: python
-   
+
    def question_image(url,query):
       if url.startswith("http://")or url.startswith("https://"):
          response = client.chat.completions.create(
@@ -125,7 +125,7 @@ Ensuite, nous écrivons le code qui nous aidera à envoyer la demande API.
          temp=response.json()
          return temp['choices'][0]['message']['content']
 
-La fonction question_image() peut sembler complexe au départ, mais elle consiste principalement en un code standard. 
+La fonction **question_image()** peut sembler complexe au départ, mais elle consiste principalement en un code standard. 
 Faisons une explaication pour mieux comprendre :
 
 
@@ -134,7 +134,10 @@ Faisons une explaication pour mieux comprendre :
    - La configuration du paramètre **max_tokens** contrôle la longueur de la réponse générée par le modèle.Une grand valeur peut augmenter le temps de traitement et l'utilisation des ressources.
      L'ajustement de la valeur max_tokens dépend de votre cas d'utilisation spécifique et de la longueur désirée des réponses que vous attendez du modèle. Vous pouvez expérimenter avec différentes valeurs pour trouver la longueur optimale pour votre application.
    - Il faut specifier voutre **api_key** obtenue dans votre compte OpenAI.
-   
+   - **format_response** La modification de cette valeur dans l’appel API peut guider le modèle pour répondre strictement au format JSON bien structuré. 
+   Pour en savoir plus sur format_response et d’autres paramètres, cliquez ici_.
+.. _ici : https://platform.openai.com/docs/guides/text-generation/parameter-details
+ 
 **Example:**
 
 
