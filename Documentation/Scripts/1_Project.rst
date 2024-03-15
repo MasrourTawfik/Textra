@@ -68,16 +68,73 @@ Maintenant, écrivons une fonction d’aide.
          "Authorization": f"Bearer {api_key}"
    }
 
+Avant de faire une requête API, l’image locale doit être convertie dans un format compatible avec GPT-V. C’est là que la fonction **encode_image()** entre en jeu. 
+Il prend une image stockée localement et la convertit en sa version encodée base64, prête pour la requête API.
+
+Ensuite, nous écrivons le code qui nous aidera à envoyer la demande API.
+.. code-block:: python
+   
+   def question_image(url,query):
+      if url.startswith("http://")or url.startswith("https://"):
+         response = client.chat.completions.create(
+               model="gpt-4-vision-preview",
+               messages=[
+               {
+               "role": "user",
+               "content": [
+                  {"type": "text", "text": f"{query}"},
+                     {
+                     "type": "image_url",
+                     "image_url": url,
+                     },
+                  ],
+               }
+         ],
+         max_tokens=1000,
+               
+         )
+         return response.choices[0].message.content
+      else:
+         
+         base64_image = encode_image(url)
+
+         payload = {
+               "model": "gpt-4-vision-preview",
+               "messages": [
+               {
+                  "role": "user",
+                  "content": [
+                     {
+                     "type": "text",
+                     "text": f"{query}?"
+                     },
+                     {
+                     "type": "image_url",
+                     "image_url": {
+                        "url": f"data:image/jpeg;base64,{base64_image}"
+                     },
+                     }
+                  ]
+               }
+               ],
+               "max_tokens": 1000
+         }
+
+         response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+
+         temp=response.json()
+         return temp['choices'][0]['message']['content']
+
+La fonction question_image() peut sembler complexe au départ, mais elle consiste principalement en un code standard. 
+Faisons une explaication pour mieux comprendre :
+
+
+
 .. note:: 
    - La configuration du paramètre **max_tokens** contrôle la longueur de la réponse générée par le modèle.Une grand valeur peut augmenter le temps de traitement et l'utilisation des ressources.
      L'ajustement de la valeur max_tokens dépend de votre cas d'utilisation spécifique et de la longueur désirée des réponses que vous attendez du modèle. Vous pouvez expérimenter avec différentes valeurs pour trouver la longueur optimale pour votre application.
    - Il faut specifier voutre **api_key** obtenue dans votre compte OpenAI.
-.. code-block:: python
-
-   query="Voutre message"
-   image_path=r"singapore.jpg"
-   reponse=question_image(image_url,query)
-   print(reponse)
+   
 **Example:**
 
 
