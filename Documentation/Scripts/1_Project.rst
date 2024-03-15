@@ -23,7 +23,7 @@ chaque solution avec ces avantages et inconvénients.
 Dans le cadre de l’extraction de données à partir d’images, GPT-V offre une solution hautement intuitive et efficace. Le processus est remarquablement simple : vous téléchargez une image sur le modèle, et GPT-V traite cette image pour renvoyer les informations requises dans un format JSON structuré. 
 Ces données peuvent ensuite être facilement stockées et récupérées pour une utilisation ultérieure.
 
-.. figure:: /Documentation/Images/GPT4.png
+.. figure:: /Documentation/Images/GPT4.jpg
    :width: 100%
    :align: center
    :alt: Alternative text for the image
