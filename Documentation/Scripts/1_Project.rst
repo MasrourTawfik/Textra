@@ -14,9 +14,13 @@ L’innovation de cette méthode réside dans son adaptabilité, capable de trai
 
 2.Déférentes possibilités:
 ----------------------
+Dans cette partie on explore les déférentes possibilités pour extraction  et l'analyse de l'information.
+chaque solution avec ces avantages et inconvénients.
+
 Methodology 1: GPT-4 Vision (GPT-V) by OpenAI
 -------------------------------------------------
 -------------------------------------------------
+
 
 
 
