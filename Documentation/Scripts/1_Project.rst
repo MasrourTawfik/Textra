@@ -38,72 +38,31 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
 
 - *Latence et limites de débit de l’API* : Il peut y avoir des retards importants dans la réception des informations de l’API, et des limites de débit peuvent être imposées au compte, affectant l’évolutivité et la réactivité du système.
 
+.. code-block:: bash
+
+    pip uninstall -y tensorflow --quiet
+    pip install ludwig --quiet
+    pip install ludwig[llm] --quiet
+    pip install datasets
+
 .. code-block:: python
-   import base64
-   import requests
-   from openai import OpenAI
-   # OpenAI API Key
-   api_key = "Insert-Your-OpenAi-API-Key-Here"
 
-   # Function to encode the image
-   def encode_image(image_path):
-      with open(image_path, "rb") as image_file:
-         return base64.b64encode(image_file.read()).decode('utf-8')
-   headers = {
-         "Content-Type": "application/json",
-         "Authorization": f"Bearer {api_key}"
-   }
-   client = OpenAI(api_key = api_key)
-   def question_image(url,query,detail="low"):
-      if url.startswith("http://")or url.startswith("https://"):
-         response = client.chat.completions.create(
-               model="gpt-4-vision-preview",
-               messages=[
-               {
-               "role": "user",
-               "content": [
-                  {"type": "text", "text": f"{query}"},
-                     {
-                     "type": "image_url",
-                     "image_url": url,
-                     },
-                  ],
-               }
-         ],
-         max_tokens=1000,
-               
-         )
-         return response.choices[0].message.content
-      else:
-         
-         base64_image = encode_image(url)
+    from IPython.display import HTML, display
 
-         payload = {
-               "model": "gpt-4-vision-preview",
-               "messages": [
-               {
-                  "role": "user",
-                  "content": [
-                     {
-                     "type": "text",
-                     "text": f"{query}?"
-                     },
-                     {
-                     "type": "image_url",
-                     "image_url": {
-                        "url": f"data:image/jpeg;base64,{base64_image}"
-                     },
-                     }
-                  ]
-               }
-               ],
-               "max_tokens": 1000
-         }
+    def set_css():
+    display(HTML('''
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+    '''))
 
-         response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
+    get_ipython().events.register('pre_run_cell', set_css)
 
-         temp=response.json()
-         return temp['choices'][0]['message']['content']
+    def clear_cache():
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
 
 
 
