@@ -53,10 +53,12 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
 
 Pour commencer à utiliser GPT-V, vous devez d’abord créer un compte sur le site Web d’OpenAI_, puis générer des API_keys_. Il est important de noter que l’accès GPT-V nécessite au moins un paiement effectué sur votre compte. 
 Une fois ces conditions préalables remplies, OpenAI vous donnera accès à GPT-V.
+
 .. _OpenAI : https://openai.com
 .. _API_keys : https://platform.openai.com/account/api-keys
 
 Maintenant, écrivons une fonction d’aide.
+
 .. code-block:: python
 
    def encode_image(image_path):
@@ -72,6 +74,7 @@ Avant de faire une requête API, l’image locale doit être convertie dans un f
 Il prend une image stockée localement et la convertit en sa version encodée base64, prête pour la requête API.
 
 Ensuite, nous écrivons le code qui nous aidera à envoyer la demande API.
+
 .. code-block:: python
 
    def question_image(url,query):
