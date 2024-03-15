@@ -38,6 +38,8 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
 
 - *Latence et limites de débit de l’API* : Il peut y avoir des retards importants dans la réception des informations de l’API, et des limites de débit peuvent être imposées au compte, affectant l’évolutivité et la réactivité du système.
 
+**Installation:**
+
 .. code-block:: bash
 
    !pip install requests openai
