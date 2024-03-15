@@ -115,6 +115,13 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
    - La configuration du paramètre **max_tokens** contrôle la longueur de la réponse générée par le modèle.Une grand valeur peut augmenter le temps de traitement et l'utilisation des ressources.
      L'ajustement de la valeur max_tokens dépend de votre cas d'utilisation spécifique et de la longueur désirée des réponses que vous attendez du modèle. Vous pouvez expérimenter avec différentes valeurs pour trouver la longueur optimale pour votre application.
    - Il faut specifier voutre **api_key** obtenue dans votre compte OpenAI.
+.. code-block:: python
+
+   query="Voutre message"
+   image_path=r"singapore.jpg"
+   reponse=question_image(image_url,query)
+   print(reponse)
+**Example:**
 
 
 
