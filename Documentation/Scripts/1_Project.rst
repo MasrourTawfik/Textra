@@ -46,6 +46,7 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
     pip install datasets
 
 .. code-block:: python
+
    import base64
    import requests
    from openai import OpenAI
@@ -111,6 +112,11 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
 
          temp=response.json()
          return temp['choices'][0]['message']['content']
+
+
+**hautement efficacité**
+asdcjhhavjscvjaisciasvdc
+adscvakscviaiscavsc
 
 
 
