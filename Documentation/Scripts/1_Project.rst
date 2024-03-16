@@ -151,7 +151,25 @@ Maintenant, tout ce qui est nécessaire est de passer une image avec une requêt
    :align: center
    :alt: Alternative text for the image
 
+.. code-block:: python
+
+   query="Extract the airline_name,passenger_name,flight_num,departure_city,destination_city and date_of_departure from this boarding pass in a JSON format"
+   image_url="singapore.jpg"
+   boarding_pass_json=question_image(image_url,query)
+   print(boarding_pass_json)
    
+.. code-block:: bash
+
+   ```json
+   {
+   "airline_name": "Singapore Airlines",
+   "passenger_name": "Heng Kok Hong Mr",
+   "flight_num": "SQ 231",
+   "departure_city": "SIN (Singapore)",
+   "destination_city": "SYD (Sydney)",
+   "date_of_departure": "19JAN18"
+   }
+   ```
 
 
 
