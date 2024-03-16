@@ -151,6 +151,14 @@ Maintenant, tout ce qui est nécessaire est de passer une image avec une requêt
    :align: center
    :alt: Alternative text for the image
    :name: Signaphore_Pass
+   
+.. image:: Documentation/Images/Example.png
+   :height: 100px
+   :width: 200 px
+   :scale: 50 %
+   :loading: embed
+   :alt: alternate text
+   :align: right
 
 .. code-block:: python
 
