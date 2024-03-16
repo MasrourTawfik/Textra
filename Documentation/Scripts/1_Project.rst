@@ -146,10 +146,11 @@ Faisons une explaication pour mieux comprendre :
 **Example:**
 Maintenant, tout ce qui est nécessaire est de passer une image avec une requête pour effectuer l’extraction de texte. On utilise une  carte d’embarquement de Singapore Airlines. 
 
-.. figure:: \Documentation\Images\Signaphore_Pass.png
+.. figure:: /Documentation/Images/Signaphore_Pass.png
    :width: 100%
    :align: center
    :alt: Alternative text for the image
+   :name: Signaphore_Pass
 
 .. code-block:: python
 
@@ -157,7 +158,7 @@ Maintenant, tout ce qui est nécessaire est de passer une image avec une requêt
    image_url="singapore.jpg"
    boarding_pass_json=question_image(image_url,query)
    print(boarding_pass_json)
-   
+
 .. code-block:: bash
 
    ```json
