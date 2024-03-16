@@ -161,7 +161,7 @@ Maintenant, tout ce qui est nécessaire est de passer une image avec une requêt
 
 .. code-block:: bash
 
-   ```json
+   json
    {
    "airline_name": "Singapore Airlines",
    "passenger_name": "Heng Kok Hong Mr",
@@ -170,7 +170,7 @@ Maintenant, tout ce qui est nécessaire est de passer une image avec une requêt
    "destination_city": "SYD (Sydney)",
    "date_of_departure": "19JAN18"
    }
-   ```
+   
 
 
 
