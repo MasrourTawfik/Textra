@@ -147,11 +147,11 @@ Faisons une explaication pour mieux comprendre :
 Maintenant, tout ce qui est nécessaire est de passer une image avec une requête pour effectuer l’extraction de texte. On utilise une  carte d’embarquement de Singapore Airlines. 
 
 .. figure:: \Documentation\Images\Signaphore_Pass.png
-   :height: 100px
-   :width: 200 px
-   :scale: 100 %
-   :alt: alternate text
+   :width: 100%
    :align: center
+   :alt: Alternative text for the image
+
+   
 
 
 
