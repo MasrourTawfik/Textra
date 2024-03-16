@@ -148,6 +148,7 @@ Maintenant, tout ce qui est nécessaire est de passer une image avec une requêt
 
 .. figure:: /Documentation/Images/Signaphore_Pass.png
    :width: 100%
+   :scale: 50%
    :align: center
    :alt: Alternative text for the image
    :name: Signaphore_Pass
