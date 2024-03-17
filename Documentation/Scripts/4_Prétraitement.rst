@@ -22,19 +22,51 @@ Même si les transformations géométriques des images (comme la rotation, la mi
 4.3 les caractéristiques à corriger 
 -----------------------------------
 
-4.3.1 Contrast
-~~~~~~~~~~~~~~~~
+4.3.1 Le Contraste
+~~~~~~~~~~~~~~~~~~~~
 .. figure:: /Documentation/Images/contrast.jpg
    :width: 80%
    :align: center
    :alt: Alternative text for the image
    :name: Prétraitement
-4.3.2 Brightness
-~~~~~~~~~~~~~~~~
+
+Le contraste est une caractéristique d'image définissant la différence entre les parties claires et foncées.
+
+.. code-block:: python
+
+ import cv2
+ import matplotlib.pyplot as plt
+
+.. code-block:: python
+
+ def enhance_contrast(image, factor):
+    lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
+    l, a, b = cv2.split(lab)
+    clahe = cv2.createCLAHE(clipLimit=factor, tileGridSize=(8, 8))
+    l = clahe.apply(l)
+    lab = cv2.merge((l, a, b))
+    enhanced = cv2.cvtColor(lab, cv2.COLOR_LAB2RGB)
+    return enhanced
+
+4.3.2 La luminosité
+~~~~~~~~~~~~~~~~~~~~~~
 .. figure:: /Documentation/Images/brightness.jpg
    :width: 80%
    :align: center
    :alt: Alternative text for the image
    :name: Prétraitement
+
+.. code-block:: python
+
+ import cv2
+ import matplotlib.pyplot as plt
+
+.. code-block:: python
+
+ def enhance_brightness(image, factor):
+    enhanced = cv2.convertScaleAbs(image, alpha=factor, beta=0)
+    enhanced = cv2.cvtColor(enhanced, cv2.COLOR_BGR2RGB)
+    return enhanced
+
 4.3.3 Skew
 ~~~~~~~~~~~
