@@ -24,6 +24,11 @@ Même si les transformations géométriques des images (comme la rotation, la mi
 
 4.3.1 Contrast
 ~~~~~~~~~~~~~~~~
+.. figure:: /Documentation/Images/contrast.jpg
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Prétraitement
 4.3.2 Brithness
 ~~~~~~~~~~~~~~~~
 4.3.3 Skew
