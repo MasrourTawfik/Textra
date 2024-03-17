@@ -29,7 +29,12 @@ Même si les transformations géométriques des images (comme la rotation, la mi
    :align: center
    :alt: Alternative text for the image
    :name: Prétraitement
-4.3.2 Brithness
+4.3.2 Brightness
 ~~~~~~~~~~~~~~~~
+.. figure:: /Documentation/Images/brightness.jpg
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Prétraitement
 4.3.3 Skew
 ~~~~~~~~~~~
