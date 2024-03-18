@@ -12,7 +12,7 @@ L’innovation de cette méthode réside dans son adaptabilité, capable de trai
    :alt: Alternative text for the image
    :name: Projet
 
-2.Déférentes possibilités:
+2.Déférentes possibilités
 ----------------------
 Dans cette partie on explore les déférentes possibilités pour extraction  et l'analyse de l'information.
 chaque solution avec ces avantages et inconvénients.
@@ -24,7 +24,7 @@ Dans le cadre de l’extraction de données à partir d’images, GPT-V offre un
 Ces données peuvent ensuite être facilement stockées et récupérées pour une utilisation ultérieure.
 
 .. figure:: /Documentation/Images/GPT4.jpg
-   :width: 100%
+   :width: 50%
    :align: center
    :alt: Alternative text for the image
    :name: GPT4
