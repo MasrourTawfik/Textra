@@ -1,7 +1,7 @@
 Equipe
 ======================================
 
-The team consists of 2 individuals. They operated under the guidance of Tawfik Masrour and Badreddine Hannaoui.
+L'équipe se compose de 2 individus. Ils ont opéré sous l'encadrement de Mr Tawfik Masrour et Badreddine Hannaoui.
 
 - 
     - **Member 1**: Ait Ayach Mouad |linkedin_mouad|

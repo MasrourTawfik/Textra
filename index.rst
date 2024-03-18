@@ -1,4 +1,4 @@
-Welcome to Chat2IA's documentation!
+Welcome to Textra's documentation!
 ====================================
 
 .. figure:: /Documentation/Images/TEXTRALOGO.png
@@ -14,8 +14,9 @@ Welcome to Chat2IA's documentation!
    :caption: Table of Content:
 
    Documentation/Scripts/1_Project
-   Documentation/Scripts/2_OCR
-   Documentation/Scripts/3_Equipe
+   Documentation/Scripts/2_Equipe
+   Documentation/Scripts/3_OCR
+   Documentation/Scripts/4_Prétraitement
    
 
 
