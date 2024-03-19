@@ -179,6 +179,8 @@ Maintenant, tout ce qui est nécessaire est de passer une image avec une requêt
    "date_of_departure": "19JAN18"
    }
    
+2.2.Azure Cognitive Services and GPT 3.5 Turbo by OpenAI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
