@@ -179,7 +179,12 @@ Maintenant, tout ce qui est nécessaire est de passer une image avec une requêt
    "date_of_departure": "19JAN18"
    }
    
-
+2.2.Azure Cognitive Services and GPT 3.5 Turbo by OpenAI
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pour cette approche, vous pouvez utiliser Azure Cognitive Services (ACS) comme outil OCR et GPT 3.5 Turbo pour la structuration des données.
+ACS excelle dans l’extraction de tout le texte présent dans une image, en le convertissant d’un format visuel en un format textuel lisible par machine et non structuré. 
+Ensuite, la fonction de formatage JSON de GPT 3.5 Turbo est utilisée pour restructurer ce texte brut. L’intégration des puissantes capacités OCR d’ACS avec la capacité de structuration de données avancée de GPT 3.5 Turbo permet une extraction d’informations très précise. 
+Le résultat n’est pas seulement une simple transcription du texte de l’image, mais une représentation JSON bien organisée et structurée des informations contenues à l’origine dans l’image.
 
 
 
