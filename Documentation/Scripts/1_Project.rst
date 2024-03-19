@@ -27,15 +27,12 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
 **Avantages de l’utilisation de GPT-V :**
 
 - Simplicité et efficacité : Le processus de téléchargement d’une image et de réception de données au format JSON est simple, ce qui minimise la complexité généralement associée à l’extraction de données.
-
 - Haute efficacité : GPT-V utilise les capacités sophistiquées du modèle GPT-4, assurant une extraction de données précise et fiable à partir d’images.
 
 **Inconvénients de l’utilisation de GPT-V :**
 
 - Considérations de coût : L’utilisation de GPT-V peut être coûteuse, en particulier lors du traitement d’images à haute résolution, ce qui peut être un facteur important pour les projets avec des contraintes budgétaires.
-
 - Préoccupations relatives à l’autonomie des données : Comme GPT-V est un service tiers, il existe des problèmes inhérents à la confidentialité et au contrôle des données. Cette dépendance envers un fournisseur externe peut poser des défis pour les projets où la sécurité et l’autonomie des données sont primordiales.
-
 - Latence et limites de débit de l’API : Il peut y avoir des retards importants dans la réception des informations de l’API, et des limites de débit peuvent être imposées au compte, affectant l’évolutivité et la réactivité du système.
 
 **Installation:**
@@ -187,17 +184,14 @@ Ensuite, la fonction de formatage JSON de GPT 3.5 Turbo est utilisée pour restr
 Le résultat n’est pas seulement une simple transcription du texte de l’image, mais une représentation JSON bien organisée et structurée des informations contenues à l’origine dans l’image.
 **Avantages de l’utilisation de ACS et GPT 3.5 Turbo:**
 
+- OCR précis : ACS fournit une extraction de texte de haute qualité.
+- Structuration avancée des données : GPT 3.5 Turbo transforme efficacement le texte non structuré en JSON structuré.
 
 **Inconvénients de l’utilisation de ACS et GPT 3.5 Turbo:**
 
-
-
-
-
-
-
-
-
+- Coût  : Bien qu’elle ne soit pas aussi coûteuse que la GPT-V,cette approche implique toujours des dépenses pour les services externes et la dépendance envers un serveur externe.
+- Confidentialité des données : Problèmes potentiels avec l’autonomie des données en raison de la dépendance au traitement externe.
+- Latence et limites de débit de l’API : Similaire à GPT-V, cette méthode est confrontée à des problèmes de délais et de limites de débit potentielles sur l’utilisation de l’API, ce qui affecte les capacités de traitement en temps réel
 
 
 
