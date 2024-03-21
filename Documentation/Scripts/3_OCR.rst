@@ -70,7 +70,7 @@ et la reconnaissance de mise en page.
     reader = easyocr.Reader(['fr'],gpu = False)
 
 .. code-block:: python
-    
+
  start_time = time.time()
 
  results = reader.readtext(Image_path)
@@ -80,6 +80,32 @@ et la reconnaissance de mise en page.
  Time = end_time - start_time
  Plot_EsyOCR(Image_path,results,0.9,round(Time))
  #df = pd.DataFrame(results,columns=['bbox','text','conf'])
+
+3.3.2 Paddle_OCR
+~~~~~~~~~~~~~~~~~~
+ est un outil OCR (Reconnaissance Optique de Caractères) open-source développé par PaddlePaddle,
+un framework d'apprentissage profond développé par Baidu. PaddleOCR est conçu pour reconnaître
+du texte à partir d'images et de documents en utilisant des techniques d'apprentissage profond.
+Il prend en charge différentes langues et fournit des modèles pré-entraînés pour différentes tâches
+telles que la détection de texte de scène, la reconnaissance et le repérage de texte. PaddleOCR est
+reconnu pour sa précision, son efficacité et sa facilité d'utilisation, ce qui en fait un choix populaire
+pour les développeurs et les chercheurs travaillant sur des projets liés à l'OCR. Il offre à la fois
+des outils en ligne de commande et des APIs Python pour une intégration dans diverses applications.
+
+**Installation:**
+
+.. code-block:: bash
+
+   !pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
+
+
+
+
+
+
+
+
+
 
 
 
