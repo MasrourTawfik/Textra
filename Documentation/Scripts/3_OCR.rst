@@ -96,14 +96,19 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
 
    !pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
 
-**Les bibliothèques **
+**Les bibliothèques**
+
 .. code-block:: python
+
     import time
     import cv2
     import numpy as np
     import matplotlib.pyplot as plt
-**Fonction Plot Paddle **
+
+**Fonction Plot Paddle**
+
 .. code-block:: python
+
     def Plot_Paddle(results,Image_path,Time,Threshold):
         image = cv2.imread(Image_path)
 
@@ -130,7 +135,9 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
         plt.axis('off')
         plt.title(f"Paddle_OCR : {Time} seconds")
         plt.show()
+
 .. code-block:: python   
+
     def Run_Paddle(Image_path):
         ocr = PaddleOCR(use_angle_cls=True, lang='fr') # need to run only once to download and load model into memory
         start_time = time.time()
@@ -138,21 +145,20 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
         end_time = time.time()
         Time = end_time - start_time
         return results,Time
+
 .. code-block:: python   
+
     results,Time = Run_Paddle(Image_path)
     Plot_Paddle(results,Image_path,round(Time),0.9)
-    
+
 .. code-block:: python 
+
     from paddleocr import PaddleOCR
-
     ocr = PaddleOCR(use_angle_cls=True, lang='fr')
-
     # Replace 'path_to_your_image.jpg' with the path to your image file
     image_path = Image_path
-
     # Perform OCR on the image
     result = ocr.ocr(image_path, det=True, rec=True)
-
     # Process the result
     extracted_text = ''
     for line in result:
@@ -160,7 +166,6 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
             # Access the text part of the tuple
             extracted_text += word[1][0] + ' '  # Access the first element of the recognized text (the text itself)
         extracted_text += '\n'
-
     # Print the extracted text
     print(extracted_text)
 
