@@ -211,7 +211,20 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
     Text = result.render()
     print(Text)
 
-
+3.4 Comparaison entre les outils d'OCR :
+-----------------------------------------
+Nous avons traité deux images, une image simple (bien scanée et tout est clair) et l'autre image est un peu complexe (image pris par caméra de téléphone, défauts d'orientation ....).
+Vous trouvez ci-dessous les deux images qu'on a pris pour le test : 
+.. figure:: /Documentation/Images/easy.jpg
+   :width: 100%
+   :align: left
+   :alt: Alternative text for the image
+   :name: OCR
+.. figure:: /Documentation/Images/hard.jpeg
+   :width: 100%
+   :align: right
+   :alt: Alternative text for the image
+   :name: OCR
 
 
 
