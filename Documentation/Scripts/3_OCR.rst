@@ -244,7 +244,8 @@ Vous trouvez ci-dessous les deux images qu'on a pris pour le test :
 
 3.5 Choix de l'outil à utiliser
 ----------------------------------
-Après avoir tester plusieurs outils d'OCR ( easyOCR , PaddleOCR , Keras_OCR , Pytesseract , docTR)
+Après avoir tester plusieurs outils d'OCR ( easyOCR , PaddleOCR , Keras_OCR , Pytesseract , docTR).
+
 * Paddle_OCR est plus puissant au niveau de la précision, au niveau de la complexité de l’image et
 aussi au niveau du temps d’exécution.
 
