@@ -217,8 +217,8 @@ Nous avons traité deux images, une image simple (bien scanée et tout est clair
 Vous trouvez ci-dessous les deux images qu'on a pris pour le test : 
 
 .. figure:: /Documentation/Images/imgtest.png
-   :width: 60%
-   :align: left
+   :width: 80%
+   :align: center
    :alt: Alternative text for the image
    :name: OCR
 
