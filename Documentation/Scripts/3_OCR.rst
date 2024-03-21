@@ -19,7 +19,7 @@ La reconnaissance optique de caractères (OCR) implique plusieurs étapes pour c
 - **Reconnaissance des caractères:** Les caractères individuels dans les régions d'intérêt sont identifiés à l'aide de modèles de reconnaissance de forme ou de réseaux de neurones convolutifs (CNN) pour reconnaître les formes des lettres et des chiffres.
 - **Post-traitement:** Une fois les caractères reconnus, des techniques de traitement du langage naturel peuvent être utilisées pour améliorer la précision de la reconnaissance en tenant compte du contexte et de la grammaire.
 
-3.3 OCR Bechmarking:
+3.3 OCR Bechmarking
 ---------------------
 3.3.1 EasyOCR
 ~~~~~~~~~~~~~~~
@@ -211,7 +211,7 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
     Text = result.render()
     print(Text)
 
-3.4 Comparaison entre les outils d'OCR :
+3.4 Comparaison entre les outils d'OCR 
 -----------------------------------------
 Nous avons traité deux images, une image simple (bien scanée et tout est clair) et l'autre image est un peu complexe (image pris par caméra de téléphone, défauts d'orientation ....).
 Vous trouvez ci-dessous les deux images qu'on a pris pour le test : 
@@ -221,6 +221,7 @@ Vous trouvez ci-dessous les deux images qu'on a pris pour le test :
    :align: center
    :alt: Alternative text for the image
    :name: OCR
+
 
 
 **Pour EasyOCR** :
@@ -240,6 +241,18 @@ Vous trouvez ci-dessous les deux images qu'on a pris pour le test :
 * Le temps de traitement de l'image :  25 secondes 
 * La précision : détecte tous les champs des textes 
 * Autres remarques :   Incapable de lire les e accent (é è ) , A accent grave (à) , c cédille (ç) ....  
+
+3.5 Choix de l'outil à utiliser
+----------------------------------
+Après avoir tester plusieurs outils d'OCR ( easyOCR , PaddleOCR , Keras_OCR , Pytesseract , docTR).
+
+* Paddle_OCR est plus puissant au niveau de la précision, au niveau de la complexité de l’image et
+aussi au niveau du temps d’exécution.
+
+.. note:: 
+   - Vous pouvez essayer ces outils en cliquant `ici <https://drive.google.com/file/d/1DY685KBsRND5H11HSWydtxmNvUsR-rxU/view?usp=sharing>`_.
+
+
 
 
 
