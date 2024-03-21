@@ -191,7 +191,7 @@ Le résultat n’est pas seulement une simple transcription du texte de l’imag
 
 **Avantages de l’utilisation de ACS et GPT 3.5 Turbo:**
 
-- OCR précis : ACS fournit une extraction de texte de haute qualité.
+- OCR précision : ACS fournit une extraction de texte de haute qualité.
 - Structuration avancée des données : GPT 3.5 Turbo transforme efficacement le texte non structuré en JSON structuré.
 
 **Inconvénients de l’utilisation de ACS et GPT 3.5 Turbo:**
