@@ -68,5 +68,3 @@ Le contraste est une caractéristique d'image définissant la différence entre 
     enhanced = cv2.cvtColor(enhanced, cv2.COLOR_BGR2RGB)
     return enhanced
 
-4.3.3 Skew
-~~~~~~~~~~~
