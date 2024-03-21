@@ -39,6 +39,7 @@ et la reconnaissance de mise en page.
     from PIL import Image, ImageDraw, ImageFont
     import numpy as np
 
+Fonction Plot_easy 
 .. code-block:: python
 
  def Plot_EsyOCR(image_path, results, Threshold,Time,text_size=20):
