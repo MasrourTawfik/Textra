@@ -200,7 +200,8 @@ Le résultat n’est pas seulement une simple transcription du texte de l’imag
 - Confidentialité des données : Problèmes potentiels avec l’autonomie des données en raison de la dépendance au traitement externe.
 - Latence et limites de débit de l’API : Similaire à GPT-V, cette méthode est confrontée à des problèmes de délais et de limites de débit potentielles sur l’utilisation de l’API, ce qui affecte les capacités de traitement en temps réel
 
-
+2.3.Local OCR and LLM
+~~~~~~~~~~~~~~~~~~~~~~
 
 
 
