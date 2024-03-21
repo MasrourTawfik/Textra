@@ -81,6 +81,13 @@ et la reconnaissance de mise en page.
  Plot_EsyOCR(Image_path,results,0.9,round(Time))
  #df = pd.DataFrame(results,columns=['bbox','text','conf'])
 
+ .. figure:: /Documentation/Images/easyOCR.png
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+   :name: OCR
+
+
 3.3.2 Paddle_OCR
 ~~~~~~~~~~~~~~~~~~
 est un outil OCR (Reconnaissance Optique de Caractères) open-source développé par PaddlePaddle,un framework d'apprentissage profond développé par Baidu. PaddleOCR est conçu pour reconnaître
@@ -169,6 +176,12 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
     # Print the extracted text
     print(extracted_text)
 
+ .. figure:: /Documentation/Images/paddle.png
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+   :name: OCR
+
 3.3.3 docTR
 ~~~~~~~~~~~~~~~~~~
 
@@ -211,10 +224,16 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
     Text = result.render()
     print(Text)
 
+.. figure:: /Documentation/Images/docTR.png
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+   :name: OCR
+
 3.4 Comparaison entre les outils d'OCR 
 -----------------------------------------
 Nous avons traité deux images, une image simple (bien scanée et tout est clair) et l'autre image est un peu complexe (image pris par caméra de téléphone, défauts d'orientation ....).
-Vous trouvez ci-dessous les deux images qu'on a pris pour le test : 
+Vous trouvez ci-dessous les deux i mages qu'on a pris pour le test : 
 
 .. figure:: /Documentation/Images/imgtest.png
    :width: 80%
@@ -245,7 +264,7 @@ Vous trouvez ci-dessous les deux images qu'on a pris pour le test :
 3.5 Choix de l'outil à utiliser
 ----------------------------------
 Après avoir tester plusieurs outils d'OCR ( easyOCR , PaddleOCR , Keras_OCR , Pytesseract , docTR).
-
+  
 * Paddle_OCR est plus puissant au niveau de la précision, au niveau de la complexité de l’image et
 aussi au niveau du temps d’exécution.
 
