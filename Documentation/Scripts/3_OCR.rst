@@ -223,8 +223,23 @@ Vous trouvez ci-dessous les deux images qu'on a pris pour le test :
    :name: OCR
 
 
+**Pour EasyOCR** :
 
+Le temps de traitement de l'image :  72 secondes 
+La précision : ne détecte pas tous les champs des textes 
+Autres remarques :   Incapable de lire les virgules (,) , les e accent (é è ) , A accent grave (à) , c cédille (ç) ....  
 
+**Pour PaddleOCR** :
+
+Le temps de traitement de l'image :  3 secondes 
+La précision :  détecte tous les champs des textes 
+Autres remarques :   Incapable de lire les  e accent (é è ), A accent grave (à) et les c cédille (ç) .
+
+**Pour docTR** :
+
+Le temps de traitement de l'image :  25 secondes 
+La précision : détecte tous les champs des textes 
+Autres remarques :   Incapable de lire les e accent (é è ) , A accent grave (à) , c cédille (ç) ....  
 
 
 
