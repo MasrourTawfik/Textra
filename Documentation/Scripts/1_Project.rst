@@ -200,8 +200,22 @@ Le résultat n’est pas seulement une simple transcription du texte de l’imag
 - Confidentialité des données : Problèmes potentiels avec l’autonomie des données en raison de la dépendance au traitement externe.
 - Latence et limites de débit de l’API : Similaire à GPT-V, cette méthode est confrontée à des problèmes de délais et de limites de débit potentielles sur l’utilisation de l’API, ce qui affecte les capacités de traitement en temps réel
 
+
 2.3.Local OCR and LLM
 ~~~~~~~~~~~~~~~~~~~~~~
+Pour cette approuch on va utiliser un outil OCR local comme PaddleOCR,EasyOCR... pour extraction du texte suivie avec un LLL de Token Classification
+pour la structuration des données et extraction des informations pertinentes.
+
+**Avantages de l’utilisation local OCR and LLM:**
+
+- Économique : Aucun coût supplémentaire pour les services externes.
+- Sécurité des données : La confidentialité des données est renforcée car le traitement est effectué au sein de votre écosystème.
+- Indépendance vis-à-vis des API : Le manque de dépendance vis-à-vis des API externes élimine les préoccupations concernant les limites de débit et la latence,la vitesse ne dépendant que du matériel de l’utilisateur.
+
+**Inconvénients de l’utilisation de local OCR and LLM:**
+
+- Exigences d’infrastructure : Nécessite des ressources de calcul importantes pour la mise à l’échelle.
+- Vitesse d’inférence : La vitesse de traitement dépend du matériel disponible, ce qui pourrait être une limitation pour les utilisateurs de systèmes moins puissants.
 
 
 
