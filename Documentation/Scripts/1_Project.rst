@@ -182,6 +182,13 @@ Pour cette approche, vous pouvez utiliser Azure Cognitive Services (ACS) comme o
 ACS excelle dans l’extraction de tout le texte présent dans une image, en le convertissant d’un format visuel en un format textuel lisible par machine et non structuré. 
 Ensuite, la fonction de formatage JSON de GPT 3.5 Turbo est utilisée pour restructurer ce texte brut. L’intégration des puissantes capacités OCR d’ACS avec la capacité de structuration de données avancée de GPT 3.5 Turbo permet une extraction d’informations très précise. 
 Le résultat n’est pas seulement une simple transcription du texte de l’image, mais une représentation JSON bien organisée et structurée des informations contenues à l’origine dans l’image.
+
+.. figure:: /Documentation/Images/ACS.png
+   :width: 100%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Workflow
+
 **Avantages de l’utilisation de ACS et GPT 3.5 Turbo:**
 
 - OCR précis : ACS fournit une extraction de texte de haute qualité.
@@ -193,8 +200,6 @@ Le résultat n’est pas seulement une simple transcription du texte de l’imag
 - Confidentialité des données : Problèmes potentiels avec l’autonomie des données en raison de la dépendance au traitement externe.
 - Latence et limites de débit de l’API : Similaire à GPT-V, cette méthode est confrontée à des problèmes de délais et de limites de débit potentielles sur l’utilisation de l’API, ce qui affecte les capacités de traitement en temps réel
 
-2.2.Azure Cognitive Services and GPT 3.5 Turbo by OpenAI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
