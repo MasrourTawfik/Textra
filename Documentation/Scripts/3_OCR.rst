@@ -169,6 +169,49 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
     # Print the extracted text
     print(extracted_text)
 
+3.3.3 docTR
+~~~~~~~~~~~~~~~~~~
+
+À propos de docTR (Document Text Recognition) - une bibliothèque fluide, performante et accessible pour les tâches liées à l'OCR, alimentée par l'apprentissage profond.
+
+**Installation:**
+
+.. code-block:: bash
+
+   !pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
+
+
+.. code-block:: python
+
+    from doctr.io import DocumentFile
+    from doctr.models import ocr_predictor
+    import time
+    model = ocr_predictor(det_arch = 'db_resnet50', reco_arch = 'crnn_vgg16_bn',pretrained = True)
+    # Modify the binarization threshold and the box threshold
+    model.det_predictor.model.postprocessor.bin_thresh = 0.5
+    model.det_predictor.model.postprocessor.box_thresh = 0.2
+
+.. code-block:: python
+
+    img = DocumentFile.from_images('easy.jpg')
+    start_time = time.time()
+    result = model(img)
+    end_time = time.time()
+    Time = end_time - start_time
+    output = result.export()
+    print(Time)
+
+.. code-block:: python
+
+    result.show()
+    for obj1 in output['pages'][0]["blocks"]:
+        for obj2 in obj1["lines"]:
+            for obj3 in obj2["words"]:
+                print("{}: {}".format(obj3["geometry"],obj3["value"]))
+    Text = result.render()
+    print(Text)
+
+
 
 
 
