@@ -203,10 +203,9 @@ Le résultat n’est pas seulement une simple transcription du texte de l’imag
 
 2.3.Local OCR and LLM
 ~~~~~~~~~~~~~~~~~~~~~~
-Pour cette approuche on va utiliser un outil OCR_. local comme PaddleOCR,EasyOCR... pour l'extraction du texte suivie avec un LLM pour Token Classification
+Pour cette approuche on va utiliser un outil OCR local comme PaddleOCR,EasyOCR... pour l'extraction du texte suivie avec un LLM pour Token Classification
 afi d'extraire les informations pertinentes.
 
-.. _OCR: Documentation/Scripts/3_OCR
 
 **Avantages de l’utilisation local OCR and LLM:**
 
