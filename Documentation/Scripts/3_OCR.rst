@@ -1,12 +1,12 @@
-    OCR
+    3 OCR
 =================
 3.1 C'est quoi OCR ?
----------------
+--------------------
 OCR signifie Reconnaissance Optique de Caractères. C'est la technologie qui permet aux logiciels de reconnaître du texte dans des images ou des documents numérisés, 
 et de le convertir en données modifiables et recherchables
 
 3.2 Comment ca fonctionne ?
------------------------
+---------------------------
 .. figure:: /Documentation/Images/OCR.jpg
    :width: 100%
    :align: center
@@ -20,7 +20,7 @@ La reconnaissance optique de caractères (OCR) implique plusieurs étapes pour c
 - **Post-traitement:** Une fois les caractères reconnus, des techniques de traitement du langage naturel peuvent être utilisées pour améliorer la précision de la reconnaissance en tenant compte du contexte et de la grammaire.
 
 3.3 OCR Bechmarking:
--------------------
+---------------------
 3.3.1 EasyOCR
 ~~~~~~~~~~~~~~~
 est un logiciel de reconnaissance optique de caractères (OCR) open-source développé
@@ -33,11 +33,11 @@ fonctionnalités avancées telles que la détection de langage automatique, la s
 et la reconnaissance de mise en page.
 .. code-block:: python
 
- import pandas as pd
- import matplotlib.pyplot as plt
- import cv2
- from PIL import Image, ImageDraw, ImageFont
- import numpy as np
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    import cv2
+    from PIL import Image, ImageDraw, ImageFont
+    import numpy as np
 
 .. code-block:: python
 
