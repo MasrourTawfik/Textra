@@ -83,20 +83,91 @@ et la reconnaissance de mise en page.
 
 3.3.2 Paddle_OCR
 ~~~~~~~~~~~~~~~~~~
- est un outil OCR (Reconnaissance Optique de Caractères) open-source développé par PaddlePaddle,
-un framework d'apprentissage profond développé par Baidu. PaddleOCR est conçu pour reconnaître
+est un outil OCR (Reconnaissance Optique de Caractères) open-source développé par PaddlePaddle,un framework d'apprentissage profond développé par Baidu. PaddleOCR est conçu pour reconnaître
 du texte à partir d'images et de documents en utilisant des techniques d'apprentissage profond.
-Il prend en charge différentes langues et fournit des modèles pré-entraînés pour différentes tâches
-telles que la détection de texte de scène, la reconnaissance et le repérage de texte. PaddleOCR est
+Il prend en charge différentes langues et fournit des modèles pré-entraînés pour différentes tâchestelles que la détection de texte de scène, la reconnaissance et le repérage de texte. PaddleOCR est
 reconnu pour sa précision, son efficacité et sa facilité d'utilisation, ce qui en fait un choix populaire
-pour les développeurs et les chercheurs travaillant sur des projets liés à l'OCR. Il offre à la fois
-des outils en ligne de commande et des APIs Python pour une intégration dans diverses applications.
+pour les développeurs et les chercheurs travaillant sur des projets liés à l'OCR.
+Il offre à la foisdes outils en ligne de commande et des APIs Python pour une intégration dans diverses applications.
 
 **Installation:**
 
 .. code-block:: bash
 
    !pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
+
+**Les bibliothèques **
+.. code-block:: python
+    import time
+    import cv2
+    import numpy as np
+    import matplotlib.pyplot as plt
+**Fonction Plot Paddle **
+.. code-block:: python
+    def Plot_Paddle(results,Image_path,Time,Threshold):
+        image = cv2.imread(Image_path)
+
+        # Annotate the image with recognized text and confidence
+        for result in results:
+            for box, text_info in result:
+                # Extract text and confidence
+                text, confidence = text_info
+                if confidence >= Threshold:
+                    # Convert coordinates to numpy array of integers
+                    box = np.array(box, dtype=np.int32)
+                    box = box.reshape((-1, 1, 2))
+                    # Draw bounding box
+                    cv2.polylines(image, [box], isClosed=True, color=(0, 255, 0), thickness=2)
+                    # Add text with confidence
+                    cv2.putText(image, f"{text} ", (box[0][0][0], box[0][0][1] - 5),cv2.FONT_HERSHEY_SIMPLEX,0.5, (0, 0,  255), 1)
+                    cv2.putText(image, f"{confidence:.2f} ", (box[0][0][0], box[0][0][1] - 20),cv2.FONT_HERSHEY_SIMPLEX,0.5, (255, 0,  0), 1)
+        # Convert BGR to RGB
+        image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+        # Plot the annotated image using Matplotlib
+        plt.figure(figsize=(16, 16))
+        plt.imshow(image_rgb)
+        plt.axis('off')
+        plt.title(f"Paddle_OCR : {Time} seconds")
+        plt.show()
+.. code-block:: python   
+    def Run_Paddle(Image_path):
+        ocr = PaddleOCR(use_angle_cls=True, lang='fr') # need to run only once to download and load model into memory
+        start_time = time.time()
+        results = ocr.ocr(Image_path, cls=True)
+        end_time = time.time()
+        Time = end_time - start_time
+        return results,Time
+.. code-block:: python   
+    results,Time = Run_Paddle(Image_path)
+    Plot_Paddle(results,Image_path,round(Time),0.9)
+    
+.. code-block:: python 
+    from paddleocr import PaddleOCR
+
+    ocr = PaddleOCR(use_angle_cls=True, lang='fr')
+
+    # Replace 'path_to_your_image.jpg' with the path to your image file
+    image_path = Image_path
+
+    # Perform OCR on the image
+    result = ocr.ocr(image_path, det=True, rec=True)
+
+    # Process the result
+    extracted_text = ''
+    for line in result:
+        for word in line:
+            # Access the text part of the tuple
+            extracted_text += word[1][0] + ' '  # Access the first element of the recognized text (the text itself)
+        extracted_text += '\n'
+
+    # Print the extracted text
+    print(extracted_text)
+
+
+
+
+
 
 
 
