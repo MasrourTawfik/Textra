@@ -1,4 +1,4 @@
-3 OCR
+OCR
 =================
 3.1 C'est quoi OCR ?
 --------------------
@@ -69,15 +69,15 @@ et la reconnaissance de mise en page.
     from PIL import Image, ImageDraw, ImageFont
     reader = easyocr.Reader(['fr'],gpu = False)
 .. code-block:: python
-    start_time = time.time()
+ start_time = time.time()
 
-results = reader.readtext(Image_path)
+ results = reader.readtext(Image_path)
 
-end_time = time.time()
+ end_time = time.time()
 
-Time = end_time - start_time
-Plot_EsyOCR(Image_path,results,0.9,round(Time))
-#df = pd.DataFrame(results,columns=['bbox','text','conf'])
+ Time = end_time - start_time
+ Plot_EsyOCR(Image_path,results,0.9,round(Time))
+ #df = pd.DataFrame(results,columns=['bbox','text','conf'])
 
 
 
