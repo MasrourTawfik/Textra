@@ -31,15 +31,15 @@ chinois, le japonais et le coréen. Il prend en charge plusieurs plates-formes, 
 macOS et Linux, et peut être intégré dans des applications grâce à une interface simple et des
 fonctionnalités avancées telles que la détection de langage automatique, la segmentation de texte
 et la reconnaissance de mise en page.
+
 .. code-block:: python
 
-    import pandas as pd
-    import matplotlib.pyplot as plt
-    import cv2
-    from PIL import Image, ImageDraw, ImageFont
-    import numpy as np
+ import pandas as pd
+ import matplotlib.pyplot as plt
+ import cv2
+ from PIL import Image, ImageDraw, ImageFont
+ import numpy as np
 
-Fonction Plot_easy 
 .. code-block:: python
 
  def Plot_EsyOCR(image_path, results, Threshold,Time,text_size=20):
