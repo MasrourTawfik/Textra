@@ -217,13 +217,13 @@ Nous avons traité deux images, une image simple (bien scanée et tout est clair
 Vous trouvez ci-dessous les deux images qu'on a pris pour le test : 
 
 .. figure:: /Documentation/Images/easy.jpg
-   :width: 50%
+   :width: 20%
    :align: left
    :alt: Alternative text for the image
    :name: OCR
 
 .. figure:: /Documentation/Images/hard.jpeg
-   :width: 50%
+   :width: 20%
    :align: right
    :alt: Alternative text for the image
    :name: OCR
