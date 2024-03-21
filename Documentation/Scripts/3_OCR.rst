@@ -68,8 +68,9 @@ et la reconnaissance de mise en page.
     import time
     from PIL import Image, ImageDraw, ImageFont
     reader = easyocr.Reader(['fr'],gpu = False)
-    
+
 .. code-block:: python
+    
  start_time = time.time()
 
  results = reader.readtext(Image_path)
