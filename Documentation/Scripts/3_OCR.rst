@@ -81,8 +81,8 @@ et la reconnaissance de mise en page.
  Plot_EsyOCR(Image_path,results,0.9,round(Time))
  #df = pd.DataFrame(results,columns=['bbox','text','conf'])
 
- .. figure:: /Documentation/Images/easyOCR.png
-   :width: 80%
+.. figure:: /Documentation/Images/easyOCR.png
+   :width: 60%
    :align: center
    :alt: Alternative text for the image
    :name: OCR
@@ -176,8 +176,8 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
     # Print the extracted text
     print(extracted_text)
 
- .. figure:: /Documentation/Images/paddle.png
-   :width: 80%
+.. figure:: /Documentation/Images/paddle.png
+   :width: 60%
    :align: center
    :alt: Alternative text for the image
    :name: OCR
@@ -225,7 +225,7 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
     print(Text)
 
 .. figure:: /Documentation/Images/docTR.png
-   :width: 80%
+   :width: 60%
    :align: center
    :alt: Alternative text for the image
    :name: OCR
