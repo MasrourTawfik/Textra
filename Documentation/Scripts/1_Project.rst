@@ -202,7 +202,7 @@ Le résultat n’est pas seulement une simple transcription du texte de l’imag
 
 
 2.3.Local OCR and LLM
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 Pour cette approuche on va utiliser un outil OCR local comme PaddleOCR,EasyOCR... pour l'extraction du texte suivie avec un LLM pour Token Classification
 afi d'extraire les informations pertinentes.
 
