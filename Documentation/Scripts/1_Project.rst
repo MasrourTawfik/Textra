@@ -27,15 +27,12 @@ Ces données peuvent ensuite être facilement stockées et récupérées pour un
 **Avantages de l’utilisation de GPT-V :**
 
 - Simplicité et efficacité : Le processus de téléchargement d’une image et de réception de données au format JSON est simple, ce qui minimise la complexité généralement associée à l’extraction de données.
-
 - Haute efficacité : GPT-V utilise les capacités sophistiquées du modèle GPT-4, assurant une extraction de données précise et fiable à partir d’images.
 
 **Inconvénients de l’utilisation de GPT-V :**
 
 - Considérations de coût : L’utilisation de GPT-V peut être coûteuse, en particulier lors du traitement d’images à haute résolution, ce qui peut être un facteur important pour les projets avec des contraintes budgétaires.
-
 - Préoccupations relatives à l’autonomie des données : Comme GPT-V est un service tiers, il existe des problèmes inhérents à la confidentialité et au contrôle des données. Cette dépendance envers un fournisseur externe peut poser des défis pour les projets où la sécurité et l’autonomie des données sont primordiales.
-
 - Latence et limites de débit de l’API : Il peut y avoir des retards importants dans la réception des informations de l’API, et des limites de débit peuvent être imposées au compte, affectant l’évolutivité et la réactivité du système.
 
 **Installation:**
@@ -180,22 +177,46 @@ Maintenant, tout ce qui est nécessaire est de passer une image avec une requêt
    }
    
 2.2.Azure Cognitive Services and GPT 3.5 Turbo by OpenAI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pour cette approche, vous pouvez utiliser Azure Cognitive Services (ACS) comme outil OCR et GPT 3.5 Turbo pour la structuration des données.
+ACS excelle dans l’extraction de tout le texte présent dans une image, en le convertissant d’un format visuel en un format textuel lisible par machine et non structuré. 
+Ensuite, la fonction de formatage JSON de GPT 3.5 Turbo est utilisée pour restructurer ce texte brut. L’intégration des puissantes capacités OCR d’ACS avec la capacité de structuration de données avancée de GPT 3.5 Turbo permet une extraction d’informations très précise. 
+Le résultat n’est pas seulement une simple transcription du texte de l’image, mais une représentation JSON bien organisée et structurée des informations contenues à l’origine dans l’image.
+
+.. figure:: /Documentation/Images/ACS.png
+   :width: 100%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Workflow
+
+**Avantages de l’utilisation de ACS et GPT 3.5 Turbo:**
+
+- OCR précision : ACS fournit une extraction de texte de haute qualité.
+- Structuration avancée des données : GPT 3.5 Turbo transforme efficacement le texte non structuré en JSON structuré.
+
+**Inconvénients de l’utilisation de ACS et GPT 3.5 Turbo:**
+
+- Coût  : Bien qu’elle ne soit pas aussi coûteuse que la GPT-V,cette approche implique toujours des dépenses pour les services externes et la dépendance envers un serveur externe.
+- Confidentialité des données : Problèmes potentiels avec l’autonomie des données en raison de la dépendance au traitement externe.
+- Latence et limites de débit de l’API : Similaire à GPT-V, cette méthode est confrontée à des problèmes de délais et de limites de débit potentielles sur l’utilisation de l’API, ce qui affecte les capacités de traitement en temps réel
 
 
+2.3.Local OCR and LLM
+~~~~~~~~~~~~~~~~~~~~~~
+Pour cette approuche on va utiliser un outil OCR local comme PaddleOCR,EasyOCR... pour l'extraction du texte suivie avec un LLM pour Token Classification
+afi d'extraire les informations pertinentes.
 
 
+**Avantages de l’utilisation local OCR and LLM:**
 
+- Économique : Aucun coût supplémentaire pour les services externes.
+- Sécurité des données : La confidentialité des données est renforcée car le traitement est effectué au sein de votre écosystème.
+- Indépendance vis-à-vis des API : Le manque de dépendance vis-à-vis des API externes élimine les préoccupations concernant les limites de débit et la latence,la vitesse ne dépendant que du matériel de l’utilisateur.
 
+**Inconvénients de l’utilisation de local OCR and LLM:**
 
-
-
-
-
-
-
-
-
+- Exigences d’infrastructure : Nécessite des ressources de calcul importantes pour la mise à l’échelle.
+- Vitesse d’inférence : La vitesse de traitement dépend du matériel disponible, ce qui pourrait être une limitation pour les utilisateurs de systèmes moins puissants.
 
 
 
