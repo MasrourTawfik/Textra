@@ -109,7 +109,7 @@ Le contraste est une caractéristique d'image définissant la différence entre 
  cv2.imwrite("temp/bw_image.jpg", im_bw)
  display("temp/bw_image.jpg")
 
- 4.3.5 Suppression du bruit
+4.3.5 Suppression du bruit
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. figure:: /Documentation/Images/supp.png
    :width: 80%
