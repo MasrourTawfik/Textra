@@ -17,6 +17,7 @@ Welcome to Textra's documentation!
    Documentation/Scripts/2_Equipe
    Documentation/Scripts/3_OCR
    Documentation/Scripts/4_Prétraitement
+   Documentation/Scripts/5_Modèle LLM
    
 
 
