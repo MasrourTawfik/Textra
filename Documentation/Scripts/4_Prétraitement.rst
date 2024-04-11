@@ -83,3 +83,28 @@ cv2.imwrite("temp/inverted.jpg", inverted_image)
 .. code-block:: python
 
 display("temp/inverted.jpg")
+
+4.3.3 Binarisation
+~~~~~~~~~~~~~~~~~~~~~~
+.. figure:: /Documentation/Images/outputb.png
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Prétraitement
+
+.. code-block:: python
+
+def grayscale(image):
+   return cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+gray_image = grayscale(img)
+cv2.imwrite("temp/gray.jpg", gray_image)
+display("temp/gray.jpg")
+
+
+
+.. code-block:: python
+
+thresh, im_bw = cv2.threshold(gray_image, 210, 230, cv2.THRESH_BINARY)
+cv2.imwrite("temp/bw_image.jpg", im_bw)
+display("temp/bw_image.jpg")
