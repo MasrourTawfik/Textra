@@ -108,3 +108,31 @@ Le contraste est une caractéristique d'image définissant la différence entre 
  thresh, im_bw = cv2.threshold(gray_image, 210, 230, cv2.THRESH_BINARY)
  cv2.imwrite("temp/bw_image.jpg", im_bw)
  display("temp/bw_image.jpg")
+
+ 4.3.5 Suppression du bruit
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. figure:: /Documentation/Images/supp.png
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Prétraitement
+
+.. code-block:: python
+
+ def noise_removal(image):
+    import numpy as np
+    kernel = np.ones((1, 1), np.uint8)
+    image = cv2.dilate(image, kernel, iterations=1)
+    kernel = np.ones((1, 1), np.uint8)
+    image = cv2.erode(image, kernel, iterations=1)
+    image = cv2.morphologyEx(image, cv2.MORPH_CLOSE, kernel)
+    image = cv2.medianBlur(image, 3)
+    return (image)
+
+
+
+.. code-block:: python
+
+ no_noise = noise_removal(im_bw)
+ cv2.imwrite("temp/no_noise.jpg", no_noise)
+ display("temp/no_noise.jpg")
