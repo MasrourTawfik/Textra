@@ -67,4 +67,19 @@ Le contraste est une caractéristique d'image définissant la différence entre 
     enhanced = cv2.convertScaleAbs(image, alpha=factor, beta=0)
     enhanced = cv2.cvtColor(enhanced, cv2.COLOR_BGR2RGB)
     return enhanced
+4.3.3 Image inversée
+~~~~~~~~~~~~~~~~~~~~~~
+.. figure:: /Documentation/Images/inversée.png
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Prétraitement
 
+.. code-block:: python
+
+inverted_image = cv2.bitwise_not(img)
+cv2.imwrite("temp/inverted.jpg", inverted_image)
+
+.. code-block:: python
+
+display("temp/inverted.jpg")
