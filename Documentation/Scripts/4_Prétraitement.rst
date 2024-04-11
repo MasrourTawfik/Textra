@@ -84,7 +84,7 @@ Le contraste est une caractéristique d'image définissant la différence entre 
 
  display("temp/inverted.jpg")
 
-4.3.3 Binarisation
+4.3.4 Binarisation
 ~~~~~~~~~~~~~~~~~~~~~~
 .. figure:: /Documentation/Images/outputb.png
    :width: 80%
@@ -105,6 +105,6 @@ Le contraste est une caractéristique d'image définissant la différence entre 
 
 .. code-block:: python
 
-thresh, im_bw = cv2.threshold(gray_image, 210, 230, cv2.THRESH_BINARY)
-cv2.imwrite("temp/bw_image.jpg", im_bw)
-display("temp/bw_image.jpg")
+ thresh, im_bw = cv2.threshold(gray_image, 210, 230, cv2.THRESH_BINARY)
+ cv2.imwrite("temp/bw_image.jpg", im_bw)
+ display("temp/bw_image.jpg")
