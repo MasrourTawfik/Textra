@@ -18,7 +18,7 @@ Dans cette partie on explore les déférentes possibilités pour extraction  et 
 chaque solution avec ces avantages et inconvénients.
 
 2.1.GPT-4 Vision (GPT-V) by OpenAI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 `GPT-V` se distingue par sa capacité à analyser des images et à fournir des informations détaillées basées sur les requêtes des utilisateurs. Ce modèle permet aux utilisateurs de télécharger une image et de poser des questions spécifiques sur son contenu, auxquelles GPT-V répond avec des informations précises et pertinentes.
 Dans le cadre de l’extraction de données à partir d’images, GPT-V offre une solution hautement intuitive et efficace. Le processus est remarquablement simple : vous téléchargez une image sur le modèle, et GPT-V traite cette image pour renvoyer les informations requises dans un format JSON structuré. 
@@ -202,7 +202,7 @@ Le résultat n’est pas seulement une simple transcription du texte de l’imag
 
 
 2.3.Local OCR and LLM
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
 Pour cette approuche on va utiliser un outil OCR local comme PaddleOCR,EasyOCR... pour l'extraction du texte suivie avec un LLM pour Token Classification
 afi d'extraire les informations pertinentes.
 
