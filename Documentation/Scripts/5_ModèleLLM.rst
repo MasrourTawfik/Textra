@@ -49,43 +49,44 @@ Soyons réalistes, un modèle d'apprentissage en profondeur ne peut rien conclur
 Réseaux neuronaux
 ~~~~~~~~~~~~~~~~~~~~
 Afin de permettre ce type d'apprentissage en profondeur, les LLM sont construits sur des réseaux neuronaux.
- À l'instar du cerveau humain constitué de neurones qui se connectent et s'envoient des signaux, un réseau 
- neuronal artificiel (généralement abrégé en « réseau neuronal ») est constitué de nœuds de réseau qui se 
- connectent les uns aux autres. Ils sont composés de plusieurs « couches » : une couche d'entrée, une couche
-  de sortie et une ou plusieurs couches intermédiaires. Les couches ne se transmettent des informations que si
-   leurs propres résultats dépassent un certain seuil.
+À l'instar du cerveau humain constitué de neurones qui se connectent et s'envoient des signaux, un réseau 
+neuronal artificiel (généralement abrégé en « réseau neuronal ») est constitué de nœuds de réseau qui se 
+connectent les uns aux autres. Ils sont composés de plusieurs « couches » : une couche d'entrée, une couche
+de sortie et une ou plusieurs couches intermédiaires. Les couches ne se transmettent des informations que si
+leurs propres résultats dépassent un certain seuil.
 Modèles transformeurs
 ~~~~~~~~~~~~~~~~~~~~~~~~
 Le type spécifique de réseau neuronal utilisé pour les LLM est appelé modèle transformeur. Les modèles transformeurs 
 sont capables d'apprendre le contexte, ce qui est particulièrement important pour le langage humain, fortement dépendant
- du contexte. Les modèles transformeurs utilisent une technique mathématique appelée auto-attention pour détecter la
-  manière subtile dont les éléments d'une séquence sont reliés entre eux. Ils sont donc plus à même de comprendre le
-   contexte que d'autres types d'apprentissage automatique. Ils comprennent, par exemple, comment la fin d'une phrase 
-   est reliée au début, et comment les phrases d'un paragraphe sont reliées entre elles.
+du contexte. Les modèles transformeurs utilisent une technique mathématique appelée auto-attention pour détecter la
+manière subtile dont les éléments d'une séquence sont reliés entre eux. Ils sont donc plus à même de comprendre le
+contexte que d'autres types d'apprentissage automatique. Ils comprennent, par exemple, comment la fin d'une phrase 
+est reliée au début, et comment les phrases d'un paragraphe sont reliées entre elles.
 
 Cela permet aux LLM d'interpréter le langage humain, même lorsque ce langage est vague ou mal défini, agencé dans des
- combinaisons qu'ils n'ont jamais rencontrées auparavant, ou contextualisé d'une nouvelle manière. Dans une certaine mesure,
-  ils « comprennent » la sémantique dans le sens où ils peuvent associer des mots et des concepts en fonction de leur signification,
-   après les avoir vus regroupés de cette manière des millions ou des milliards de fois.
+combinaisons qu'ils n'ont jamais rencontrées auparavant, ou contextualisé d'une nouvelle manière. Dans une certaine mesure,
+ils « comprennent » la sémantique dans le sens où ils peuvent associer des mots et des concepts en fonction de leur signification,
+après les avoir vus regroupés de cette manière des millions ou des milliards de fois.
 5.Comment les développeurs peuvent-ils rapidement commencer à concevoir leurs propres LLM ? ?
 ------------------------------------------------------------------------------------------------
 Pour concevoir une application LLM, les développeurs ont besoin d'un accès facile à plusieurs ensembles de
- données et d'endroits où faire résider ces derniers. Le stockage cloud et le stockage sur site développés 
- à ces fins peuvent tous deux impliquer des investissements d'infrastructure hors de portée du budget des 
- développeurs. En outre, les ensembles de données d'apprentissage sont généralement stockés à plusieurs 
- endroits, mais le transfert de ces données vers un emplacement central peut entraîner des frais de trafic 
- sortant considérables.
+données et d'endroits où faire résider ces derniers. Le stockage cloud et le stockage sur site développés 
+à ces fins peuvent tous deux impliquer des investissements d'infrastructure hors de portée du budget des 
+développeurs. En outre, les ensembles de données d'apprentissage sont généralement stockés à plusieurs 
+endroits, mais le transfert de ces données vers un emplacement central peut entraîner des frais de trafic 
+sortant considérables.
 
 Heureusement, Cloudflare propose plusieurs services permettant aux développeurs de commencer rapidement à
- concevoir des applications LLM et d'autres types d'IA. Vectorize est une base de données vectorielles distribuée à 
- l'échelle mondiale qui permet d'interroger des données stockées au sein de systèmes de stockage d'objets sans frais de 
- trafic sortant (R2) ou des documents stockés dans le référentiel clé-valeur Workers. En conjonction avec la plateforme de 
- développement Cloudflare Workers AI, les développeurs peuvent utiliser Cloudflare pour commencer rapidement leurs expériences 
- sur leurs propres LLM.
+concevoir des applications LLM et d'autres types d'IA. Vectorize est une base de données vectorielles distribuée à 
+l'échelle mondiale qui permet d'interroger des données stockées au sein de systèmes de stockage d'objets sans frais de 
+trafic sortant (R2) ou des documents stockés dans le référentiel clé-valeur Workers. En conjonction avec la plateforme de 
+développement Cloudflare Workers AI, les développeurs peuvent utiliser Cloudflare pour commencer rapidement leurs expériences 
+sur leurs propres LLM.
 
 LLM Models Benchmarking
 =========================
 Nous avons fait une comparaison entre différent grands modèles de langage. 
+
 .. note:: 
    - il faut préparer les données pour chaque modèle pour le Finetuning, ça prend beaucoup de temps et chaque modèle se caractérise par un type des données d'entrée.
    C'est pour cela nous avons utiliser la partie Spaces sur Hugging face.
