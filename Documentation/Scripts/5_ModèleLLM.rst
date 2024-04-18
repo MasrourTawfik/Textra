@@ -1,5 +1,9 @@
-Définition
+Modèle LLM
 =============
+
+1.Définition
+----------------------------
+
 Un grand modèle de langage (LLM) est un type de programme d'intelligence artificielle (IA ) capable, entre autres tâches, de reconnaître et de générer du texte.Les LLM sont entraînés sur des ensembles de données massifs - d'où l'emploi de terme « large » (qui signifie grand) dans la dénomination anglaise « large language model ».Les LLM reposent sur l'apprentissage automatique: en particulier, un type de réseau neuronal appelé modèle de transformateur.
 
 Plus simplement, un LLM est un programme informatique qui a reçu suffisamment d'exemples pour être capable de reconnaître et d'interpréter le langage humain ou d'autres types de données complexes. De nombreux LLM sont formés sur des données collectées sur Internet ; des milliers ou des millions de gigaoctets de texte. Mais la qualité des échantillons a une incidence sur l'apprentissage du langage naturel par les LLM, de sorte que les programmeurs d'un LLM peuvent utiliser un ensemble de données mieux structuré.
@@ -8,7 +12,7 @@ Les LLM utilisent un type d'apprentissage automatique appelé apprentissage en p
 
 Les LLM sont ensuite entraînés dans le cadre d'un réglage : ils sont réglés avec précision ou avec des invites en fonction de la tâche particulière que le programmeur souhaite leur confier, qu'il s'agisse d'interpréter des questions avant de générer des réponses ou de traduire un texte d'une langue à une autre.
 
-1.À quoi servent les LLM ?
+2.À quoi servent les LLM ?
 ----------------------------
 Les LLM peuvent être entraînés pour un certain nombre de tâches. L'une des utilisations les plus connues est leur application en IA générative : ils sont capables de produire un texte de réponse à une invite ou une question. Par exemple, le LLM ChatGPT, disponible pour le grand public, peut générer des essais, des poèmes et d'autres formes textuelles en réponse aux entrées de l'utilisateur.
 
@@ -21,7 +25,7 @@ Chatbots
 Recherche en ligne
 Parmi les exemples de LLM réels, citons ChatGPT (OpenAI), Bard (Google), Llama (Meta) et Bing Chat (Microsoft). Le Copilot de GitHub est un autre exemple, mais pour il s'applique au codage et non au langage humain naturel.
 
-2.Quels sont les avantages et les limites des LLM ? ?
+3.Quels sont les avantages et les limites des LLM ? ?
 ----------------------------------------------------------------
 L'une des principales caractéristiques des LLM est leur capacité à répondre à des requêtes imprévisibles. Un programme informatique traditionnel reçoit des commandes dans sa syntaxe acceptée, ou à partir d'un certain ensemble d'entrées de l'utilisateur. Un jeu vidéo dispose d'un ensemble fini de boutons, une application dispose d'un ensemble fini d'éléments sur lequel l'utilisateur peut cliquer ou qu'il peut saisir, et un langage de programmation est composé d'énoncés précis de type « si » et « alors ».
 
