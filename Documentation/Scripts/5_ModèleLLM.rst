@@ -168,6 +168,14 @@ Nous avons fait une comparaison entre différents grands modèles de langage, no
    - Vous pouvez essayer ce modèle en cliquant `ici <https://huggingface.co/spaces/Theivaprakasham/layoutlmv3_invoice>`_.
 
 
+Nous avons réalisé une analyse comparative approfondie de plusieurs modèles de langage de grande envergure (LLM) pour l'extraction de texte à partir de documents. Notre évaluation s'est principalement concentrée sur deux critères essentiels : le temps d'inférence requis par chaque modèle et le poids, ou la taille, de ces modèles. En examinant attentivement ces aspects, nous avons pu classer ces modèles en fonction de leur performance et de leur efficacité dans le contexte de l'extraction de texte. Cette classification nous a fourni des insights précieux sur les forces et les faiblesses de chaque modèle, nous permettant ainsi de prendre des décisions éclairées quant à leur utilisation dans divers scénarios d'application.
+
+- 
+    - **Voici une video qui vous aidera à trouver et essayer les modèles**:  |linkedin_mouad|
+.. |linkedin_mouad| image:: ../Images/mp4.jpeg
+    :width: 16
+    :height: 16
+    :target: C:\Users\hp\Desktop\Textra\Documentation\Videos\hugging face.mp4
 
 
 
