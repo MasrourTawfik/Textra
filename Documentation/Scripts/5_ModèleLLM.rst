@@ -82,3 +82,14 @@ Heureusement, Cloudflare propose plusieurs services permettant aux développeurs
  trafic sortant (R2) ou des documents stockés dans le référentiel clé-valeur Workers. En conjonction avec la plateforme de 
  développement Cloudflare Workers AI, les développeurs peuvent utiliser Cloudflare pour commencer rapidement leurs expériences 
  sur leurs propres LLM.
+
+LLM Models Benchmarking
+=========================
+Nous avons fait une comparaison entre différent grands modèles de langage. 
+.. note:: 
+   - il faut préparer les données pour chaque modèle pour le Finetuning, ça prend beaucoup de temps et chaque modèle se caractérise par un type des données d'entrée.
+   C'est pour cela nous avons utiliser la partie Spaces sur Hugging face.
+
+
+
+
