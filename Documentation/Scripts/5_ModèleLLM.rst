@@ -156,6 +156,18 @@ Nous avons fait une comparaison entre différents grands modèles de langage, no
 .. note:: 
    - Vous pouvez essayer ce modèle en cliquant `ici <https://huggingface.co/spaces/niladridutta/genai_based_invoice_reader>`_.
 
+7.Invoice Information Extraction using LayoutLMv3 model
+----------------------------------------------------------
+.. figure:: /Documentation/Images/layoutlmv3.png
+   :width: 80%
+   :align: center
+   :alt: Alternative text for the image
+   :name: LLM MODEL 
+
+.. note:: 
+   - Vous pouvez essayer ce modèle en cliquant `ici <https://huggingface.co/spaces/Theivaprakasham/layoutlmv3_invoice>`_.
+
+
 
 
 
