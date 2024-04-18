@@ -34,3 +34,51 @@ De son côté, un LLM peut répondre à un langage humain naturel et utiliser l'
 Cependant, concerne les informations qu'ils fournissent, les LLM ne seront fiables que si les données qu'ils ingèrent le sont. S'ils reçoivent des informations erronées, les réponses qu'ils donneront aux demandes de l'utilisateur le seront également. Il arrive que les LLM « hallucinent » un peu : ils créent de fausses informations lorsqu'ils ne sont pas en mesure de fournir une réponse précise. Par exemple, en 2022, le magazine Fast Company a interrogé ChatGPT sur le dernier trimestre financier de l'entreprise Tesla ; ChatGPT a certes produit un article cohérent en réponse, cependant une grande partie des informations contenues dans l'article ont été inventées.
 
 En matière de sécurité, les applications destinées aux utilisateurs et basées sur les LLM sont aussi sujettes aux bogues que n'importe quelle autre application. Les LLM peuvent également être manipulés par des intrants malveillants afin de fournir certains types de réponses plutôt que d'autres, y compris des réponses dangereuses ou contraires à l'éthique. Enfin, les LLM posent un certain nombre de problèmes de sécurité liés notamment au fait que les utilisateurs peuvent y importer des données sécurisées et confidentielles afin d'accroître leur propre productivité. Toutefois, pour entraîner leurs modèles, les LLM utilisent les données qu'ils reçoivent, et ils ne sont pas conçus pour être des coffres-forts sécurisés ; il peut arriver qu'ils exposent des données confidentielles en réponse à des requêtes provenant d'autres utilisateurs.
+
+4.Comment fonctionnent les LLM ?
+---------------------------------
+Apprentissage automatique et apprentissage en profondeur
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Au départ, les LLM reposent sur l'apprentissage automatique. L'apprentissage automatique est une composante de l'intelligence artificielle, qui consiste à alimenter un programme avec de grandes quantités de données afin de l'entraîner à identifier les caractéristiques de ces données sans intervention humaine.
+
+Les LLM utilisent un type d'apprentissage automatique appelé l'apprentissage en profondeur (Deep learning). Les modèles d'apprentissage en profondeur peuvent concrètement s'entraîner à distinguer les différences, sans intervention humaine, même si un minimum de mise au point humaine est généralement nécessaire.
+
+L'apprentissage en profondeur utilise les probabilités pour « apprendre. » Par exemple, dans la phrase « Le renard brun et rapide a sauté par-dessus le chien paresseux, » les lettres « a » et « e » sont les plus courantes, apparaissant six et dix fois respectivement. Partant de là, un modèle d'apprentissage en profondeur peut conclure (à raison) que ces caractères sont parmi les plus susceptibles d'apparaître dans un texte en anglais.
+Soyons réalistes, un modèle d'apprentissage en profondeur ne peut rien conclure à partir d'une seule phrase. Mais après avoir analysé des milliers de phrases, il peut en apprendre suffisamment pour savoir comment terminer de façon logique une phrase incomplète, voire générer ses propres phrases.
+
+Réseaux neuronaux
+~~~~~~~~~~~~~~~~~~~~
+Afin de permettre ce type d'apprentissage en profondeur, les LLM sont construits sur des réseaux neuronaux.
+ À l'instar du cerveau humain constitué de neurones qui se connectent et s'envoient des signaux, un réseau 
+ neuronal artificiel (généralement abrégé en « réseau neuronal ») est constitué de nœuds de réseau qui se 
+ connectent les uns aux autres. Ils sont composés de plusieurs « couches » : une couche d'entrée, une couche
+  de sortie et une ou plusieurs couches intermédiaires. Les couches ne se transmettent des informations que si
+   leurs propres résultats dépassent un certain seuil.
+Modèles transformeurs
+~~~~~~~~~~~~~~~~~~~~~~~~
+Le type spécifique de réseau neuronal utilisé pour les LLM est appelé modèle transformeur. Les modèles transformeurs 
+sont capables d'apprendre le contexte, ce qui est particulièrement important pour le langage humain, fortement dépendant
+ du contexte. Les modèles transformeurs utilisent une technique mathématique appelée auto-attention pour détecter la
+  manière subtile dont les éléments d'une séquence sont reliés entre eux. Ils sont donc plus à même de comprendre le
+   contexte que d'autres types d'apprentissage automatique. Ils comprennent, par exemple, comment la fin d'une phrase 
+   est reliée au début, et comment les phrases d'un paragraphe sont reliées entre elles.
+
+Cela permet aux LLM d'interpréter le langage humain, même lorsque ce langage est vague ou mal défini, agencé dans des
+ combinaisons qu'ils n'ont jamais rencontrées auparavant, ou contextualisé d'une nouvelle manière. Dans une certaine mesure,
+  ils « comprennent » la sémantique dans le sens où ils peuvent associer des mots et des concepts en fonction de leur signification,
+   après les avoir vus regroupés de cette manière des millions ou des milliards de fois.
+5.Comment les développeurs peuvent-ils rapidement commencer à concevoir leurs propres LLM ? ?
+------------------------------------------------------------------------------------------------
+Pour concevoir une application LLM, les développeurs ont besoin d'un accès facile à plusieurs ensembles de
+ données et d'endroits où faire résider ces derniers. Le stockage cloud et le stockage sur site développés 
+ à ces fins peuvent tous deux impliquer des investissements d'infrastructure hors de portée du budget des 
+ développeurs. En outre, les ensembles de données d'apprentissage sont généralement stockés à plusieurs 
+ endroits, mais le transfert de ces données vers un emplacement central peut entraîner des frais de trafic 
+ sortant considérables.
+
+Heureusement, Cloudflare propose plusieurs services permettant aux développeurs de commencer rapidement à
+ concevoir des applications LLM et d'autres types d'IA. Vectorize est une base de données vectorielles distribuée à 
+ l'échelle mondiale qui permet d'interroger des données stockées au sein de systèmes de stockage d'objets sans frais de 
+ trafic sortant (R2) ou des documents stockés dans le référentiel clé-valeur Workers. En conjonction avec la plateforme de 
+ développement Cloudflare Workers AI, les développeurs peuvent utiliser Cloudflare pour commencer rapidement leurs expériences 
+ sur leurs propres LLM.
