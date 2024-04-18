@@ -147,7 +147,7 @@ Nous avons fait une comparaison entre différents grands modèles de langage, no
 
 6.Generative AI / invoice reader
 --------------------------------------
-.. figure:: /Documentation/Images/generative AI.png
+.. figure:: /Documentation/Images/generativeAI.png
    :width: 80%
    :align: center
    :alt: Alternative text for the image
