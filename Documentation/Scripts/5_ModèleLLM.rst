@@ -172,10 +172,10 @@ Nous avons réalisé une analyse comparative approfondie de plusieurs modèles d
 
 - 
     - **Voici une video qui vous aidera à trouver et essayer les modèles**:  |linkedin_mouad|
-.. |linkedin_mouad| image:: ../Images/mp4.jpeg
+.. |linkedin_mouad| image:: ../Images/mp4.png
     :width: 16
     :height: 16
-    :target: C:\Users\hp\Desktop\Textra\Documentation\Videos\hugging face.mp4
+    :target: https://github.com/MasrourTawfik/Textra/tree/main/Documentation/Videos
 
 
 
