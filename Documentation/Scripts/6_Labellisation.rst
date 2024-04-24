@@ -54,9 +54,12 @@ pour transformer les images en OCR json file, nous avons utiliser le code suivan
 
  images_folder_path  = r"C:\Users\hp\Desktop\Textra_Code\preprocess\DataTraining\Noureddine" 
 
+.. code-block:: python
 
  def create_image_url(filename):
     return f'http://localhost:8080/{filename}'
+
+.. code-block:: python    
 
  def convert_bounding_box(bounding_box):
     x1, y1, x2, y2 = bounding_box
@@ -67,10 +70,12 @@ pour transformer les images en OCR json file, nous avons utiliser le code suivan
 
     return [x, y, width, height]
 
+.. code-block:: python
+
  def create_image_url(filename):
     return f'http://localhost:8080/{filename}'
 
-
+.. code-block:: python
 
  def extracted_tables_to_label_studio_json_file_with_paddleOCR(images_folder_path):
     label_studio_task_list = []
