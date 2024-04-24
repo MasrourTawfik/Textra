@@ -29,6 +29,9 @@ Pour notre cas, nous avons 7 classes
    - l'entrée de label-studio est json-file
    - c'est pour cela il faut convertir les images ou bien les données d'apprentissage en OCR fichier json pour avoir la possibilité de labeliser  
 
+3.Images to OCR json file : 
+----------------------------
+
 pour transformer les images en OCR json file, nous avons utiliser le code suivant : 
 
 .. code-block:: python
@@ -144,3 +147,7 @@ l'interface affichée après lancement de label-studio est la suivante :
    :alt: Alternative text for the image
    :name: Prétraitement
 
+
+.. note:: 
+   - Vous trouvez ci-joint une video qui montre la procédure de labélisation et de téléchargement de fichier json
+   -   
