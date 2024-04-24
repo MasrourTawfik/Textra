@@ -3,9 +3,25 @@ Equipe
 
 L'équipe se compose de 2 individus. Ils ont opéré sous l'encadrement de Mr Tawfik Masrour et Badreddine Hannaoui.
 
-- 
-    - **Member 1**: Ait Ayach Mouad |linkedin_mouad|
-    - **Member 2**: Saidi Noureddine |linkedin_saidi|
+Les encadrants : 
+----------------
+    - **Encadrant 1**: Masrour Tawfik |linkedin_mouad|
+    - **Encadrant 2**: Hannaoui Badreddine |linkedin_saidi|
+.. |linkedin_mouad| image:: ../Images/LinkedIn_Logo.jpeg
+    :width: 16
+    :height: 16
+    :target: https://www.linkedin.com/in/tawfik-masrour-43163b85/
+
+.. |linkedin_saidi| image:: ../Images/LinkedIn_Logo.jpeg
+    :width: 16
+    :height: 16
+    :target: https://www.linkedin.com/in/badreddine-hannaoui/
+
+Les membres :
+--------------
+
+    - **Membre 1**: Ait Ayach Mouad |linkedin_mouad|
+    - **Membre 2**: Saidi Noureddine |linkedin_saidi|
 .. |linkedin_mouad| image:: ../Images/LinkedIn_Logo.jpeg
     :width: 16
     :height: 16
