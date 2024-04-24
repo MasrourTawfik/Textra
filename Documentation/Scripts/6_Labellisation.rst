@@ -149,5 +149,5 @@ l'interface affichée après lancement de label-studio est la suivante :
 
 
 .. note:: 
-   - Vous trouvez ci-joint une video qui montre la procédure de labélisation et de téléchargement de fichier json
-   -   
+   - Vous trouvez ci-joint une video qui montre la procédure de labélisation et de téléchargement de fichier json `ici <https://github.com/MasrourTawfik/Textra>`_
+   
