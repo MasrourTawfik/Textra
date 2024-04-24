@@ -27,9 +27,9 @@ Pour notre cas, nous avons 7 classes
 
 .. note:: 
    - l'entrée de label-studio est json-file
-   - c'est pour cela il faut convertir les images ou bien les données d'apprentissage en fichier json pour avoir la possibilité de labeliser  
+   - c'est pour cela il faut convertir les images ou bien les données d'apprentissage en OCR fichier json pour avoir la possibilité de labeliser  
 
-pour transformer les images en json file, nous avons utiliser le code suivant : 
+pour transformer les images en OCR json file, nous avons utiliser le code suivant : 
 
 .. code-block:: python
 
