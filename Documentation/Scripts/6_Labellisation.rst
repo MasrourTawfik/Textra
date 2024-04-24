@@ -12,3 +12,8 @@ les données pour pour le test
    :align: center
    :alt: Alternative text for the image
    :name: Prétraitement
+1.L'installation de label-studio en utilisant pip
+---------------------------------------------------
+.. code-block:: python
+  pip install label-studio
+
