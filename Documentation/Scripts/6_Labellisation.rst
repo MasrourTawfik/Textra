@@ -18,3 +18,11 @@ les données pour pour le test
 
    !pip install label-studio
 
+2.Les classes de labellisation 
+----------------------------------
+Pour notre cas, nous avons 7 classes 
+.. figure:: /Documentation/Images/classes.jpg
+   :width: 70%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Prétraitement
