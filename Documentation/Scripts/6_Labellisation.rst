@@ -1,4 +1,4 @@
-labellisation 
+Labellisation 
 ================
 Avant de commencer la labelisation, nous avons classé nos données en 2 catégories : 
 - les données d'apprentissage 
