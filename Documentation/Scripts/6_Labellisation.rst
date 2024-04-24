@@ -21,6 +21,7 @@ les données pour pour le test
 2.Les classes de labellisation 
 ----------------------------------
 Pour notre cas, nous avons 7 classes 
+
 .. figure:: /Documentation/Images/classes.jpg
    :width: 70%
    :align: center
