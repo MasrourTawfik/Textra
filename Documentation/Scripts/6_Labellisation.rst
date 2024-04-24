@@ -1,11 +1,8 @@
 labellisation 
 ================
 Avant de commencer la labelisation, nous avons classé nos données en 2 catégories : 
-
-les données pour apprentissage
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-les données pour pour le test
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+- les données d'apprentissage 
+- les données pour le test 
  Après il faut installer label-studio pour démarrer la labellisation 
 .. figure:: /Documentation/Images/labelstudio.png
    :width: 60%
@@ -27,6 +24,10 @@ Pour notre cas, nous avons 7 classes
    :align: center
    :alt: Alternative text for the image
    :name: Prétraitement
+
+.. note:: 
+   - l'entrée de label-studio est json-file
+   - c'est pour cela il faut convertir les images ou bien les données d'apprentissage en fichier json pour avoir la possibilité de labeliser  
 
 l'interface affichée après lancement de label-studio est la suivante : 
 
