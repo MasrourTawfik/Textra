@@ -31,7 +31,7 @@ Pour notre cas, nous avons 7 classes
 l'interface affichée après lancement de label-studio est la suivante : 
 
 .. figure:: /Documentation/Images/Capturelabelstudio.PNG
-   :width: 70%
+   :width: 100%
    :align: center
    :alt: Alternative text for the image
    :name: Prétraitement
