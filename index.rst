@@ -18,6 +18,8 @@ Welcome to Textra's documentation!
    Documentation/Scripts/3_OCR
    Documentation/Scripts/4_Prétraitement
    Documentation/Scripts/5_ModèleLLM
+   Documentation/Scripts/6_Labellisation
+   
    
 
 
