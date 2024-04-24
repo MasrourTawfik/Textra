@@ -5,14 +5,14 @@ L'équipe se compose de 2 individus. Ils ont opéré sous l'encadrement de Mr Ta
 
 Les encadrants : 
 ----------------
-    - **Encadrant 1**: Masrour Tawfik |linkedin_mouad|
-    - **Encadrant 2**: Hannaoui Badreddine |linkedin_saidi|
-.. |linkedin_mouad| image:: ../Images/LinkedIn_Logo.jpeg
+    - **Encadrant 1**: Masrour Tawfik |linkedin_Masrour|
+    - **Encadrant 2**: Hannaoui Badreddine |linkedin_Badr|
+.. |linkedin_Masrour| image:: ../Images/LinkedIn_Logo.jpeg
     :width: 16
     :height: 16
     :target: https://www.linkedin.com/in/tawfik-masrour-43163b85/
 
-.. |linkedin_saidi| image:: ../Images/LinkedIn_Logo.jpeg
+.. |linkedin_Badr| image:: ../Images/LinkedIn_Logo.jpeg
     :width: 16
     :height: 16
     :target: https://www.linkedin.com/in/badreddine-hannaoui/
