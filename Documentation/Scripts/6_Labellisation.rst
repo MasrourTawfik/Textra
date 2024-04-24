@@ -14,6 +14,7 @@ les données pour pour le test
    :name: Prétraitement
 1.L'installation de label-studio en utilisant pip
 ---------------------------------------------------
-.. code-block:: python
-  pip install label-studio
+.. code-block:: bash
+
+   !pip install label-studio
 
