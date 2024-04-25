@@ -20,7 +20,7 @@ Tout ensemble de données complexes et de grande taille peut être utilisé pour
 
 Analyse des sentiments
 Recherche sur l'ADN
-Service à la clientèle
+Service à la clientèle 
 Chatbots
 Recherche en ligne
 Parmi les exemples de LLM réels, citons ChatGPT (OpenAI), Bard (Google), Llama (Meta) et Bing Chat (Microsoft). Le Copilot de GitHub est un autre exemple, mais pour il s'applique au codage et non au langage humain naturel.
