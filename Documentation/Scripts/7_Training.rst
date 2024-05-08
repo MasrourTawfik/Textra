@@ -104,3 +104,16 @@ il corrige aussi le probleme de la bbox qui n'est pas normalisée entre **`[100,
    print("Number of Images : ",len(dataSet))
 
 Cette cellule renvoie un dictionnaire **dataSet** contient l'ensemble des informations de chaque image.
+
+7.1.1 Compte HuggingFace
++++++++++++++++++++++++++
+
+Si vous ne connaissez pas HuggingFace, qui est une grande plateforme d'IA avec une large communauté, contient les modèles préétablis, des datasets, des espaces..., on vous laisse la main pour découvrir `plus <https://huggingface.co/>`_.
+On besoin d'abord de créer un compte sur HuggingFace, si vous l'avez encore.
+
+.. figure:: /Documentation/Images/Hugging_Face_Account.png
+   :width: 100%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Compte HuggingFace
+   :caption : Compte HuggingFace
