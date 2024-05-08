@@ -24,9 +24,9 @@ Aprés labelisation de vos images et obtenir le fichier json,de cette `forme <ht
 Le fichier obtenu jusqu'à maintenant n'est pas encore compatible avec la forme qui accepte la famille des modèles LayoutLM
 parmi ses non compatibilités :
 
-- bbox (les coordonnées des rectangles de chaque labelisation **`[xmin,ymin,xmax,ymax]`** ) ne sont pas normalisés entre **`[100,1000]`**.
+- bbox (les coordonnées des rectangles de chaque labelisation **[xmin,ymin,xmax,ymax]** ) ne sont pas normalisés entre **[100,1000]**.
 
-- Dans la nouvelle forme, on a une liste contient les informations des images, chacune est représentée par un  dictionnaire dont les clés sont **`['id', 'image', 'bboxes', 'ner_tags', 'tokens']`**
+- Dans la nouvelle forme, on a une liste contient les informations des images, chacune est représentée par un  dictionnaire dont les clés sont **['id', 'image', 'bboxes', 'ner_tags', 'tokens']**
 
 .. code-block:: python
 
@@ -73,7 +73,7 @@ Cette fonction renvoie une image ce format Pillow, prenant en paramètre le nom 
     return bboxes,tokens,ner_tags
 
 **Get_Annoutaions** renvoie 3 listes : **bboxes**, **tokens** et **ner_tags**, chacune contenant les informations des annotations de l'image.
-il corrige aussi le probleme de la bbox qui n'est pas normalisée entre **`[100,1000]`** en multipiant par 10.
+il corrige aussi le probleme de la bbox qui n'est pas normalisée entre **[100,1000]** en multipiant par 10.
 
 .. code-block:: python
 
@@ -100,7 +100,7 @@ il corrige aussi le probleme de la bbox qui n'est pas normalisée entre **`[100,
           dataSet.append(document_dict)
     return dataSet
 
-**Prepare_Data** renvoie une liste de dictionnaires dont les clés sont **`['id', 'image', 'bboxes', 'ner_tags', 'tokens']`**,prenant en paramètre le chemin de fichier json **Json_path**.
+**Prepare_Data** renvoie une liste de dictionnaires dont les clés sont **['id', 'image', 'bboxes', 'ner_tags', 'tokens']**,prenant en paramètre le chemin de fichier json **Json_path**.
 
 .. code-block:: python
 
@@ -133,7 +133,7 @@ Il faut installer ces bibliothèques pour pouvoir utiliser HuggingFace
 Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key**. Cela se trouve dans votre compte HuggingFace.Commnet?....
 
 .. code-block:: python
-   
+
    from huggingface_hub import notebook_login
    # hf_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX , this the token to put , Get Yours
    notebook_login()
