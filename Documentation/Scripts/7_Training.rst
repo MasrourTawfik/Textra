@@ -96,4 +96,11 @@ il corrige aussi le probleme de la bbox qui n'est pas normalisée entre **`[100,
           dataSet.append(document_dict)
     return dataSet
 
-**Prepare_Data** renvoie une liste de dictionnaires dont les clés sont **`['id', 'image', 'bboxes', 'ner_tags', 'tokens']`**,prenant en paramètre le chemin de fichier json **Json_path**
+**Prepare_Data** renvoie une liste de dictionnaires dont les clés sont **`['id', 'image', 'bboxes', 'ner_tags', 'tokens']`**,prenant en paramètre le chemin de fichier json **Json_path**.
+
+.. code-block:: python
+   Json_path = "PATH_YOUR_TRAINING_JSON_FILE"
+   dataSet = Prepare_Data(Json_path)
+   print("Number of Images : ",len(dataSet))
+
+Cette cellule renvoie un dictionnaire **dataSet** contient l'ensemble des informations de chaque image.
