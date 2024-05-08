@@ -146,7 +146,7 @@ Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key
    notebook_login()
 
 .. figure:: /Documentation/Images/Login_token.png
-   :width: 100%
+   :width: 80%
    :align: center
    :alt: Alternative text for the image
    :name: LogIn
@@ -197,6 +197,7 @@ Les colonnes de dataset sont définies ici : id, images, box,ner_tags,tokens ave
 Ici on split le dataset en 2 parties : 93% pour l'entrainement et 7% pour le test, vous pouvez choisir un autre pourcentage.
 
 .. code-block:: python
+   
    ds.push_to_hub("ID_YOUR_DATASET_NAME")
 
 On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** est par exemple  *Textra/Textra_Data*
