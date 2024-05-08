@@ -117,7 +117,8 @@ Cette cellule renvoie un dictionnaire **dataSet** contient l'ensemble des inform
 +++++++++++++++++++++++++
 
 Si vous ne connaissez pas HuggingFace, qui est une grande plateforme d'IA avec une large communauté, contient les modèles préétablis, des datasets, des espaces..., on vous laisse la main pour découvrir `plus <https://huggingface.co/>`_.
-On besoin d'abord de créer un compte sur HuggingFace, si vous l'avez encore.
+
+On besoin d'abord de créer un compte sur HuggingFace, si vous l'avez pas encore.
 
 .. figure:: /Documentation/Images/Hugging_Face_Account.png
    :width: 100%
