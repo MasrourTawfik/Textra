@@ -137,8 +137,12 @@ Il faut installer ces bibliothèques pour pouvoir utiliser HuggingFace
 
 Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key**. Cela se trouve dans votre compte HuggingFace. Comment?
 
-.. video:: https://www.youtube.com/watch?v=MT0Ta_Qldrs&list=PPSV&ab_channel=crysknife007
-
+.. video:: path/to/video.mp4
+   :width: 500
+   :height: 300
+   :autoplay:
+   :nocontrols:
+   
 .. code-block:: python
 
    from huggingface_hub import notebook_login
