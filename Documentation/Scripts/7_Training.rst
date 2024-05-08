@@ -1,7 +1,7 @@
 Training
 ====================================
 
-7.1 Creation de dataSet sur HuggingFace
+7.1 Création de dataSet sur HuggingFace
 ----------------------------------------------
 
 pour la suite on va  prendre comme exemple les deux images suivantes:
@@ -131,6 +131,7 @@ Il faut installer ces bibliothèques pour pouvoir utiliser HuggingFace
    !pip install -q datasets seqeval
 
 Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key**. Cela se trouve dans votre compte HuggingFace.Comment?
+
 .. video:: https://www.youtube.com/watch?v=MT0Ta_Qldrs&list=PPSV&ab_channel=crysknife007
 
 .. code-block:: python
@@ -138,3 +139,28 @@ Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key
    from huggingface_hub import notebook_login
    # hf_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX , this the token to put , Get Yours
    notebook_login()
+
+7.1.1 Création de le DataSet
+++++++++++++++++++++++++++++++
+
+.. code-block:: python
+
+   from sklearn.model_selection import train_test_split
+   from datasets import Dataset, Features, Sequence, ClassLabel, Value, Image
+
+.. code-block:: python
+
+   dataset_features = Features({
+    'id': Value('string'),
+    'image': Image(decode=True),
+    'bboxes': Sequence(Sequence(Value('int64'))),
+    'ner_tags': Sequence(ClassLabel(names=['InvNum','InvDate', 'Fourni' ,'TTC','TVA','TT' ,'Autre'])),
+    'tokens': Sequence(Value('string')),
+    })
+
+Les colonnes de dataset sont définies ici : id, images, box,ner_tags,tokens avec le type de données de chacune.
+
+.. note:: 
+   - Pour **names** de *ner_tags* colonne , il faut remplacer avec vos propres classes en respectant l'ordre.
+   c-à-d l'ordre avec le quelle on encoder les classes, par exemple si on désigne 0 pour InvNum , il faut le mettre le premier dans names.
+   - Le type Sequence comme une liste en python.
