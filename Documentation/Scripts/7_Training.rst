@@ -125,7 +125,6 @@ On besoin d'abord de créer un compte sur HuggingFace, si vous l'avez pas encore
    :align: center
    :alt: Alternative text for the image
    :name: Compte HuggingFace
-   :caption : Compte HuggingFace
 
 Il faut installer ces bibliothèques pour pouvoir utiliser HuggingFace
 
@@ -191,14 +190,15 @@ Ici on split le dataset en 2 parties : 93% pour l'entrainement et 7% pour le tes
 .. code-block:: python
    ds.push_to_hub("ID_YOUR_DATASET_NAME")
 
-On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** est comme l'exemple ci-dessous.
+On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** est dans l'exemple ci-dessous c'est *Textra/Textra_Data*
 
-.. figure:: /Documentation/Images/Hugging_Face_Account.png
+.. figure:: /Documentation/Images/ID_Data.png
    :width: 100%
    :align: center
    :alt: Alternative text for the image
    :name: Compte HuggingFace
-   :caption : Compte HuggingFace
 
+.. hint::
+   - le DataSet sur HuggingFace pour Exemple des deux images `ici <https://huggingface.co/datasets/Textra/Textra_Data?row=0>`_.
 
 
