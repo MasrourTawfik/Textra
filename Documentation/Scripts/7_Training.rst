@@ -207,6 +207,7 @@ On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** e
    :alt: Alternative text for the image
    :name: Compte HuggingFace
 
+
 .. hint::
    - le DataSet sur HuggingFace pour Exemple des deux images `ici <https://huggingface.co/datasets/Textra/Textra_Data?row=0>`_.
 
