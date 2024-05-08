@@ -1,4 +1,4 @@
-Welcome to Textra's documentation!
+Bienvenue à Textra's documentation!
 ====================================
 
 .. figure:: /Documentation/Images/TEXTRALOGO.png
@@ -11,7 +11,7 @@ Welcome to Textra's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: Table of Content:
+   :caption: Table des matières:
 
    Documentation/Scripts/1_Project
 
@@ -24,7 +24,7 @@ Welcome to Textra's documentation!
    Documentation/Scripts/5_ModèleLLM
 
    Documentation/Scripts/6_Labellisation
-   
+
    Documentation/Scripts/7_Training
    
 
