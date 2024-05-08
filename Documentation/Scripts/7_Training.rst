@@ -135,7 +135,7 @@ Il faut installer ces bibliothèques pour pouvoir utiliser HuggingFace
    !pip install huggingface_hub
    !pip install -q datasets seqeval
 
-Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key**. Cela se trouve dans votre compte HuggingFace.Comment?
+Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key**. Cela se trouve dans votre compte HuggingFace. Comment?
 
 .. video:: https://www.youtube.com/watch?v=MT0Ta_Qldrs&list=PPSV&ab_channel=crysknife007
 
@@ -173,7 +173,7 @@ Les colonnes de dataset sont définies ici : id, images, box,ner_tags,tokens ave
 
 .. note:: 
    - Pour **names** de *ner_tags* colonne , il faut remplacer avec vos propres classes en respectant l'ordre.
-   c-à-d l'ordre avec le quelle on encoder les classes, par exemple si on désigne 0 pour InvNum , il faut le mettre le premier dans names.
+   c-à-d l'ordre avec le quelle on a encodé les classes, par exemple si on désigne 0 pour InvNum , il faut le mettre le premier dans names.
    - Le type Sequence comme une liste en python.
 
 .. code-block:: python
