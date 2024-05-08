@@ -164,3 +164,22 @@ Les colonnes de dataset sont définies ici : id, images, box,ner_tags,tokens ave
    - Pour **names** de *ner_tags* colonne , il faut remplacer avec vos propres classes en respectant l'ordre.
    c-à-d l'ordre avec le quelle on encoder les classes, par exemple si on désigne 0 pour InvNum , il faut le mettre le premier dans names.
    - Le type Sequence comme une liste en python.
+
+.. code-block:: python
+
+   # Convert the final_dataset into a dictionary of lists
+   data_dict = {
+      'id': [item['id'] for item in dataSet],
+      'image': [item['image'] for item in dataSet],
+      'bboxes': [item['bboxes'] for item in dataSet],
+      'ner_tags': [item['ner_tags'] for item in dataSet],
+      'tokens': [item['tokens'] for item in dataSet],
+   }
+
+.. code-block:: python
+
+   # Convert the dictionary of lists into a HuggingFace Dataset
+   hf_dataset = Dataset.from_dict(data_dict, features=dataset_features)
+   ds = hf_dataset.train_test_split(test_size=0.07,shuffle=True,seed =10) 
+
+Ici on split le dataset en 2 parties : 93% pour l'entrainement et 7% pour le test, vous pouvez choisir un autre pourcentage.
