@@ -2,7 +2,8 @@ Training
 ====================================
 
 7.1 Creation de dataSet sur HuggingFace
------------------------------------- 
+----------------------------------------------
+
 pour la suite on va  prendre comme exemple les deux images suivantes:
 
 .. figure:: /Documentation/Images/Exemple_Images.png
@@ -18,7 +19,7 @@ Aprés labelisation de vos images et obtenir le fichier json,de cette `forme <ht
    - La suite de code est elaboré sur Google Colab.
    
 7.1.1 Preparation de fichier json
-??????????????????????????????????
++++++++++++++++++++++++++++++++++++
 
 Le fichuer obtenue jusqu'à maintenent n'est pas encore compatible avec la forme qui accepte la famille des models LayoutLM
 parmi ces non compatibilités :
