@@ -9,5 +9,8 @@ pour la suite on va  prendre comme exemple les deux images suivantes:
    :name: Exemple_Images
 
 Aprés labelisation de vos images et obtenir le fichier json,de cette `forme <https://github.com/MasrourTawfik/Textra/blob/main/Codes/Exemple/Exemple_Training.json#L2>`_.
-
+.. hint::
+   Le json est de forme d'une liste contenait deux dictionnaires, chacun pour une image
+   on a pris que deux images à titre d'exemple, mais vous allez utiliser plusieurs.
+   
 il est temps de lancer le training.
