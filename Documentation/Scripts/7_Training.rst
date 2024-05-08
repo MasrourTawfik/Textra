@@ -29,6 +29,7 @@ parmi ses non compatibilités :
 - Dans la nouvelle forme, on a une liste contient les informations des images, chacune est représentée par un  dictionnaire dont les clés sont **`['id', 'image', 'bboxes', 'ner_tags', 'tokens']`**
 
 .. code-block:: python
+
    # Import some Libraries
    import json # v2.0.9
    import os
@@ -39,6 +40,7 @@ parmi ses non compatibilités :
    - Prends garde aux versions des bibliothèques mentionnées dans les commentaires ci-dessus.
 
 .. code-block:: python
+
    def Get_Image(Image_name):
     filename = Image_name
     image_path = os.path.join("PATH_YOUR_TRAINING_IMAGES",filename)
@@ -51,6 +53,7 @@ parmi ses non compatibilités :
 Cette fonction renvoie une image ce format Pillow, prenant en paramètre le nom de l'image **Image_name**.
 
 .. code-block:: python
+
    def Get_Annoutaions(Annoutaion):
     bboxes = []
     ner_tags = []
@@ -73,6 +76,7 @@ Cette fonction renvoie une image ce format Pillow, prenant en paramètre le nom 
 il corrige aussi le probleme de la bbox qui n'est pas normalisée entre **`[100,1000]`** en multipiant par 10.
 
 .. code-block:: python
+
    def Prepare_Data(Json_path):
     dataSet = []
     # Read the JSON file
@@ -99,6 +103,7 @@ il corrige aussi le probleme de la bbox qui n'est pas normalisée entre **`[100,
 **Prepare_Data** renvoie une liste de dictionnaires dont les clés sont **`['id', 'image', 'bboxes', 'ner_tags', 'tokens']`**,prenant en paramètre le chemin de fichier json **Json_path**.
 
 .. code-block:: python
+
    Json_path = "PATH_YOUR_TRAINING_JSON_FILE"
    dataSet = Prepare_Data(Json_path)
    print("Number of Images : ",len(dataSet))
@@ -121,12 +126,14 @@ On besoin d'abord de créer un compte sur HuggingFace, si vous l'avez encore.
 Il faut installer ces bibliothèques pour pouvoir utiliser HuggingFace
 
 .. code-block:: bash
+
    !pip install huggingface_hub
    !pip install -q datasets seqeval
 
 Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key**. Cela se trouve dans votre compte HuggingFace.Commnet?....
 
 .. code-block:: python
+   
    from huggingface_hub import notebook_login
    # hf_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX , this the token to put , Get Yours
    notebook_login()
