@@ -19,7 +19,7 @@ Welcome to Textra's documentation!
    Documentation/Scripts/4_Prétraitement
    Documentation/Scripts/5_ModèleLLM
    Documentation/Scripts/6_Labellisation
-   Documentation/Scripts/7_training
+   Documentation/Scripts/7_Training
    
 
 
