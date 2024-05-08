@@ -51,6 +51,7 @@ parmi ses non compatibilités :
     return image
 
 Cette fonction renvoie une image ce format Pillow, prenant en paramètre le nom de l'image **Image_name**.
+
 **PATH_YOUR_TRAINING_IMAGES** est le chemin de votre dossier contenant les images de Training les même que vous allez labelliser sur Labet-Studio.
 par exemple **/content/drive/MyDrive/Exemple/Data**.
 
