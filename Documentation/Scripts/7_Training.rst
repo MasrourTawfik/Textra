@@ -138,7 +138,7 @@ Il faut installer ces bibliothèques pour pouvoir utiliser HuggingFace
 Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key**. Cela se trouve dans votre compte HuggingFace. `Comment <https://github.com/MasrourTawfik/Textra/tree/main/Documentation/Videos>`_.
 
 
-.. video:: _static/recording.webm
+.. video:: _build/html/_static/recording.webm
 
 
 .. code-block:: python
