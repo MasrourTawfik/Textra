@@ -143,6 +143,12 @@ Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key
    # hf_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX , this the token to put , Get Yours
    notebook_login()
 
+.. figure:: /Documentation/Images/Login_token.png
+   :width: 100%
+   :align: center
+   :alt: Alternative text for the image
+   :name: LogIn
+
 7.1.1 Création de le DataSet
 ++++++++++++++++++++++++++++++
 
