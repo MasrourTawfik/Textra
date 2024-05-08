@@ -117,3 +117,16 @@ On besoin d'abord de créer un compte sur HuggingFace, si vous l'avez encore.
    :alt: Alternative text for the image
    :name: Compte HuggingFace
    :caption : Compte HuggingFace
+
+Il faut installer ces bibliothèques pour pouvoir utiliser HuggingFace
+
+.. code-block:: bash
+   !pip install huggingface_hub
+   !pip install -q datasets seqeval
+
+Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key**. Cela se trouve dans votre compte HuggingFace.Commnet?....
+
+.. code-block:: python
+   from huggingface_hub import notebook_login
+   # hf_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX , this the token to put , Get Yours
+   notebook_login()
