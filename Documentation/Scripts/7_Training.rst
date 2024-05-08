@@ -51,6 +51,8 @@ parmi ses non compatibilités :
     return image
 
 Cette fonction renvoie une image ce format Pillow, prenant en paramètre le nom de l'image **Image_name**.
+**PATH_YOUR_TRAINING_IMAGES** est le chemin de votre dossier contenant les images de Training les même que vous allez labelliser sur Labet-Studio.
+par exemple **/content/drive/MyDrive/Exemple/Data**.
 
 .. code-block:: python
 
@@ -109,6 +111,7 @@ il corrige aussi le probleme de la bbox qui n'est pas normalisée entre **[100,1
    print("Number of Images : ",len(dataSet))
 
 Cette cellule renvoie un dictionnaire **dataSet** contient l'ensemble des informations de chaque image.
+**PATH_YOUR_TRAINING_JSON_FILE** est le chemin de votre fichier json, par exemple **/content/drive/MyDrive/Exemple/Exemple_Training.json**.
 
 7.1.1 Compte HuggingFace
 +++++++++++++++++++++++++
@@ -183,3 +186,18 @@ Les colonnes de dataset sont définies ici : id, images, box,ner_tags,tokens ave
    ds = hf_dataset.train_test_split(test_size=0.07,shuffle=True,seed =10) 
 
 Ici on split le dataset en 2 parties : 93% pour l'entrainement et 7% pour le test, vous pouvez choisir un autre pourcentage.
+
+.. code-block:: python
+   ds.push_to_hub("ID_YOUR_DATASET_NAME")
+
+On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** est comme l'exemple ci-dessous.
+
+.. figure:: /Documentation/Images/Hugging_Face_Account.png
+   :width: 100%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Compte HuggingFace
+   :caption : Compte HuggingFace
+
+
+
