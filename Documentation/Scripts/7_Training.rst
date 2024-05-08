@@ -111,6 +111,7 @@ il corrige aussi le probleme de la bbox qui n'est pas normalisée entre **[100,1
    print("Number of Images : ",len(dataSet))
 
 Cette cellule renvoie un dictionnaire **dataSet** contient l'ensemble des informations de chaque image.
+
 **PATH_YOUR_TRAINING_JSON_FILE** est le chemin de votre fichier json, par exemple **/content/drive/MyDrive/Exemple/Exemple_Training.json**.
 
 7.1.1 Compte HuggingFace
