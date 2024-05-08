@@ -140,7 +140,7 @@ Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key
 .. video:: /Documentation/Videos/Create_Token.mp4
    :width: 500
    :height: 300
-   :autoplay: True
+   :autoplay: 
    :nocontrols:
 
 .. code-block:: python
