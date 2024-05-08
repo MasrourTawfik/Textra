@@ -174,6 +174,7 @@ Les colonnes de dataset sont définies ici : id, images, box,ner_tags,tokens ave
 .. note:: 
    - Pour **names** de *ner_tags* colonne , il faut remplacer avec vos propres classes en respectant l'ordre.
    c-à-d l'ordre avec le quelle on a encodé les classes, par exemple si on désigne 0 pour InvNum , il faut le mettre le premier dans names.
+
    - Le type Sequence comme une liste en python.
 
 .. code-block:: python
@@ -198,7 +199,7 @@ Ici on split le dataset en 2 parties : 93% pour l'entrainement et 7% pour le tes
 .. code-block:: python
    ds.push_to_hub("ID_YOUR_DATASET_NAME")
 
-On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** est dans l'exemple ci-dessous c'est *Textra/Textra_Data*
+On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** est par exemple  *Textra/Textra_Data*
 
 .. figure:: /Documentation/Images/ID_Data.png
    :width: 100%
