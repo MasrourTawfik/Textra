@@ -139,6 +139,12 @@ Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key
 
 
 .. video:: _build/html/_static/recording.webm
+   :width: 100%
+   :height: 100%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Video
+   
 
 
 .. code-block:: python
