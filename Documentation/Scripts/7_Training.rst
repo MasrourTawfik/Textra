@@ -392,11 +392,20 @@ Un répertoire pour le modèle va être créé automatiquement dans votre espace
    - Une étape importante dans ce processus est la définition des hyperparamétres de votre modèle, et ça dépend de votre data et architecture de modèle utilisé.
    - Une description complète sur ces hyperparamètres `ici <https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments>`_ ,on vous recommande de la consulter.
 
-- Remarque : pour le  **Learning rate**, modifiez la valeur de celui-ci à chaque fois et voyez les résultats , on a trouvé les meilleurs résultats pour **( 1e-5 , 5e-5 , 6e-6 , 7e-6 )**, la **batch size** affectera considérablement le training c'est comme une régularisation pour éviter Overfiting.
+- Remarque : pour le  **Learning rate**, modifiez la valeur de celui-ci à chaque fois et voir les résultats , on a trouvé les meilleurs valeurs  **( 1e-5 , 5e-5 , 6e-6 , 7e-6 )**, la **batch size** affectera considérablement le training c'est comme une régularisation pour éviter Overfiting.
 - Si vous avez un problème avec la  **Validation loss **, qui augmante par exemple peut être que le **lerning rate** est grand essayer de le réduire un petit peu.
 - Si vous voulez augmenter la batch size , en général, vous devez avoir un **(Pour le LayoutlmV3-Large)**
 - GPU >= 20 Go vers train_batch_size = 3
 - GPU >= 24 Go à train_batch_size = 4.
+
+.. hint::
+   - Pour vous aider, on vous recommande aussi de tester différentes valeurs de ces paramètres :
+   - **gradient_accumulation_steps** = 4,5,...
+   - **weight_decay** = 0.09 (entre  0 and 0.1 c'est aussi pour la régularisation)
+   - **lr_scheduler_type** = "linear","cosine","constant"...
+   - **warmup_steps** = 100,200... (ne dépasser pas **max_steps**)
+   - **per_device_train_batch_size** : c'est la taille de chaque batch dans le training.
+
 
 .. code-block:: python
 
