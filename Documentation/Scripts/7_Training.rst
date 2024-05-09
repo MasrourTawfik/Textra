@@ -412,6 +412,14 @@ Un répertoire pour le modèle va être créé automatiquement dans votre espace
 
 On crée l'objet **trainer**, et on vide les donnés cachés dans le GPU, aprés lancé l'entrainement.
 
+.. code-block:: python
+
+   # Save processor and create model card
+   processor.save_pretrained(hf_repository_id)
+   trainer.create_model_card()
+   trainer.push_to_hub()
+
+Sauvgarder le modèle et le model_card avec **push_to_hub**.
 
 
 
