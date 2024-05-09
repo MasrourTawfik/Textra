@@ -36,7 +36,7 @@ parmi ses non compatibilités :
    from PIL import Image # v9.4.0
    import io
 
-.. note:: 
+.. attention:: 
    - Prends garde aux versions des bibliothèques mentionnées dans les commentaires ci-dessus.
 
 .. code-block:: python
