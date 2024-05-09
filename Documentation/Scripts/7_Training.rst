@@ -234,7 +234,7 @@ si elle satisfait des conditions de capacité dont on parle ultérieurement.
    - Il faut savoir qu'une fois vous fermez l'onglet de colab, la prochaine fois il faut réinstaller toutes les bibliothèques utilisé, car vous connectez à une nouvelle machine.
    - Il faut utiliser la machine T4 de colab, car on besoin d'un GPU pour accélérer l'entraînement.
 
-.. code-block:: python
+.. code-block:: bash
 
    !pip install -qqq transformers[torch] accelerate==0.20.1
    !pip install -q datasets seqeval
