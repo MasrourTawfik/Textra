@@ -342,12 +342,55 @@ pour cette partie on crée deux listes **id2label** et **label2id** qu'on aura b
       features=features,
    )
 
-On va mapper **ds['train']** et **ds['test']** avec la fonction **prepare_examples** afin de une format propice pour **LayoutLMv3**.
+On va mapper **ds['train']** et **ds['test']** avec la fonction **prepare_examples** afin d'avoir une format propice pour **LayoutLMv3**.
 
-7.2.2 Charger le modéle
+7.2.2 Charger le modèle
 ++++++++++++++++++++++++
 
+.. code-block:: python
 
+   from transformers import LayoutLMv3ForTokenClassification
+   import torch
+
+   device = 'cuda' if torch.cuda.is_available() else 'cpu'
+   model = LayoutLMv3ForTokenClassification.from_pretrained("microsoft/layoutlmv3-base",
+                                                            id2label=id2label,
+                                                            label2id=label2id).to(device)
+
+Vous pouvez rencontrer un Warning lors d'execusion de cette cellule, ne pas prendre en compte.
+
+.. code-block:: python
+
+   from transformers import TrainingArguments, Trainer
+   from huggingface_hub import HfFolder
+
+   hf_repository_id = "ID_YOUR_MODEL" # The ID of the Model Repo I created in Hugging to Host the model files and parametres
+
+   training_args = TrainingArguments(output_dir=hf_repository_id,
+                                    max_steps=1000,
+                                    per_device_train_batch_size=6,
+                                    per_device_eval_batch_size=5,
+
+                                    learning_rate=1e-6,
+                                    lr_scheduler_type = "cosine",
+                                    evaluation_strategy="steps",
+                                    eval_steps=100,
+                                    load_best_model_at_end=True,
+                                    metric_for_best_model="f1",
+                                    # This parameters are optional if we want to push results to huggingface
+
+                                    push_to_hub=True,
+                                    hub_strategy="every_save",
+                                    hub_model_id=hf_repository_id,
+                                    hub_token=HfFolder.get_token()
+                                    )
+
+**ID_YOUR_MODEL** un nom que vous allez donner à votre modèle, par exemple **Textra_Model**.
+Un répertoire pour le modèle va être créé automatiquement dans votre espace sur HuggingFace.
+
+.. attention:: 
+   - Une étape importante dans ce processus est la définition des hyperparamétres de votre modèle, et ça dépend de votre data et architecture de modèle utilisé.
+   - Une description complète sur ces hyperparamètres `ici <https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments>`_ ,on vous recommande de la consulter.
 
 
 
