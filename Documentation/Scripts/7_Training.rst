@@ -258,7 +258,16 @@ que vous avez déjà obtenu sur HuggingFace.
 
 .. code-block:: python
 
-   
+   from datasets import load_dataset
+   ds = load_dataset("ID_YOUR_DATASET_NAME")
+
+obtenir votre dataset pour l'entrainement. dans le notebook en bas de trainning vous trouvez quelques linges
+afin de découvrir la variable **ds**.
+
+
+
+
+
 
 
 
