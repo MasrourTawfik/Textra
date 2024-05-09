@@ -317,8 +317,35 @@ pour cette partie on crée deux listes **id2label** et **label2id** qu'on aura b
 
       return encoding
 
-Cette 
+.. code-block:: python
+   
+   from datasets import Features, Sequence,Value, Array2D, Array3D
 
+   features = Features({
+      'pixel_values': Array3D(dtype="float32", shape=(3, 224, 224)),
+      'input_ids': Sequence(feature=Value(dtype='int64')),
+      'attention_mask': Sequence(Value(dtype='int64')),
+      'bbox': Array2D(dtype="int64", shape=(512, 4)),
+      'labels': Sequence(feature=Value(dtype='int64')),
+   })
+
+   train_dataset = ds['train'].map(
+      prepare_examples,
+      batched=True,
+      remove_columns=column_names,
+      features=features,
+   )
+   eval_dataset = ds['test'].map(
+      prepare_examples,
+      batched=True,
+      remove_columns=column_names,
+      features=features,
+   )
+
+On va mapper **ds['train']** et **ds['test']** avec la fonction **prepare_examples** afin de une format propice pour **LayoutLMv3**.
+
+7.2.2 Charger le modéle
+++++++++++++++++++++++++
 
 
 
