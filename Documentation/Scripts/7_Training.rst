@@ -264,11 +264,43 @@ Vous pouvez consulter la documentation du modèle **LayoutLM** sur `HuggingFace 
 On va utiliser le modèle de base de **LayoutLMv3** *(Il y a base,Large..)*.
 
 .. code-block:: python
-   
+
    from transformers import AutoProcessor ,  LayoutLMv3Processor
    processor =  LayoutLMv3Processor.from_pretrained("microsoft/layoutlmv3-base", apply_ocr=False)
    # We will use our own OCR (PAddle) not tyesseract
 
+On crée l'objet **processor** pour le prétraitement des données.**microsoft/layoutlmv3-base** et ID de répertoire où se trouve le processeur pré-entraîné de Microsoft.
+aussi puisqu'on utilisait **Paddle-OCR** on fait **apply_ocr** to False, car **LayoutLMv3Processor** utilise par défaut **tyesseract_OCR**.
+
+.. code-block:: python
+
+   from datasets.features import ClassLabel
+   features = ds['train'].features
+   column_names =ds["train"].column_names
+   image_column_name = "image"
+   text_column_name = "tokens"
+   boxes_column_name = "bboxes"
+   label_column_name = "ner_tags"
+
+   # In the event the labels are not a `Sequence[ClassLabel]`, we will need to go through the dataset to get the
+   # unique labels.
+   def get_label_list(labels):
+      unique_labels = set()
+      for label in labels:
+         unique_labels = unique_labels | set(label)
+      label_list = list(unique_labels)
+      label_list.sort()
+      return label_list
+
+   if isinstance(features[label_column_name].feature, ClassLabel):
+      label_list = features[label_column_name].feature.names
+      # No need to convert the labels since they are already ints.
+      id2label = {k: v for k,v in enumerate(label_list)}
+      label2id = {v: k for k,v in enumerate(label_list)}
+   else:
+      label_list = get_label_list(dataset["train"][label_column_name])
+      id2label = {k: v for k,v in enumerate(label_list)}
+      label2id = {v: k for k,v in enumerate(label_list)}
 
 
 
