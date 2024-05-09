@@ -302,8 +302,22 @@ aussi puisqu'on utilisait **Paddle-OCR** on fait **apply_ocr** to False, car **L
       id2label = {k: v for k,v in enumerate(label_list)}
       label2id = {v: k for k,v in enumerate(label_list)}
 
+pour cette partie on crée deux listes **id2label** et **label2id** qu'on aura besoin aprés.
 
+.. code-block:: python
 
+   def prepare_examples(examples):
+      images = examples[image_column_name]
+      words = examples[text_column_name]
+      boxes = examples[boxes_column_name]
+      word_labels = examples[label_column_name]
+
+      encoding = processor(images, words, boxes=boxes, word_labels=word_labels,
+                           truncation=True, padding="max_length",max_length= 512)
+
+      return encoding
+
+Cette 
 
 
 
