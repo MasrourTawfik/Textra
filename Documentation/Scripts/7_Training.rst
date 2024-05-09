@@ -115,7 +115,7 @@ Cette cellule renvoie un dictionnaire **dataSet** contient l'ensemble des inform
 
 **PATH_YOUR_TRAINING_JSON_FILE** est le chemin de votre fichier json, par exemple **/content/drive/MyDrive/Exemple/Exemple_Training.json**.
 
-7.1.1 Compte HuggingFace
+7.1.2 Compte HuggingFace
 +++++++++++++++++++++++++
 
 Vous connaissez pas HuggingFace ?,c'est qui est une grande plateforme d'IA avec une large communauté, contient les modèles préétablis, des datasets, des espaces..., on vous laisse la main pour découvrir `plus <https://huggingface.co/>`_.
@@ -156,7 +156,7 @@ Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key
    :alt: Alternative text for the image
    :name: LogIn
 
-7.1.1 Création de le DataSet
+7.1.3 Création de le DataSet
 ++++++++++++++++++++++++++++++
 
 .. code-block:: python
@@ -264,8 +264,8 @@ que vous avez déjà obtenu sur HuggingFace.
 obtenir votre dataset pour l'entrainement. dans le notebook en bas de trainning vous trouvez quelques linges
 afin de découvrir la variable **ds**.
 
-
-
+7.2.1 Prétraitement des données
+++++++++++++++++++++++++++++++
 
 
 
