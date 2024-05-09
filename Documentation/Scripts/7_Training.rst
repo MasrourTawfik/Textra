@@ -426,6 +426,9 @@ On crée l'objet **trainer**, et on vide les donnés cachés dans le GPU, aprés
 
 Sauvgarder le modèle et le model_card avec **push_to_hub**.
 
+.. raw:: html
+
+   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/Train.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 
