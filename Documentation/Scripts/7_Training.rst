@@ -212,6 +212,6 @@ On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** e
    - le DataSet sur HuggingFace pour Exemple des deux images `ici <https://huggingface.co/datasets/Textra/Textra_Data?row=0>`_.
 
 
+.. video:: _static/video.webm _static/Create_Token.mp4
 
 
-.. video:: _static/Create_Token.mp4
