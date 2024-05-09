@@ -226,6 +226,39 @@ On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** e
 7.2 Entrainement
 ----------------
 
+Vous pouvez entrainer sur Colab,Kaggle ou un notre service Cloud, ou sur votre propre machine
+si elle satisfait des conditions de capacité dont on parle ultérieurement.
+
+.. hint::
+   - pour notre cas on entrainera sur Google Colab.
+   - Il faut savoir qu'une fois vous fermez l'onglet de colab, la prochaine fois il faut réinstaller toutes les bibliothèques 
+   utilisé, car vous connectez à une nouvelle machine.
+   - Il faut utiliser la machine T4 de colab,car on besoin d'un GPU pour accélirere l'entrainement.
+
+.. figure:: /Documentation/Images/T4_machine.png
+   :width: 60%
+   :align: center
+   :alt: Alternative text for the image
+   :name: LogIn
+
+.. code-block:: python
+
+   !pip install -qqq transformers[torch] accelerate==0.20.1
+   !pip install -q datasets seqeval
+   !pip install huggingface_hub
+
+.. code-block:: python
+
+   from huggingface_hub import notebook_login
+   # hf_XXXXXXXXXXXXXXXXXXXXXXXXXXX , this the token to put , Get Yours
+   notebook_login()
+
+Ici, on installe quelques bibliothèques qu'on a besoin pour l'entraînement. Ainsi, on fait un LogIn avec le même token
+que vous avez déjà obtenu sur HuggingFace.
+
+.. code-block:: python
+
+   
 
 
 
