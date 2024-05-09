@@ -393,6 +393,25 @@ Un répertoire pour le modèle va être créé automatiquement dans votre espace
    - Une description complète sur ces hyperparamètres `ici <https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments>`_ ,on vous recommande de la consulter.
 
 
+.. code-block:: python
+
+   from transformers.data.data_collator import default_data_collator
+
+   # Initialize our Trainer
+   trainer = Trainer(
+      model=model,
+      args=training_args,
+      train_dataset=train_dataset,
+      eval_dataset=eval_dataset,
+      tokenizer=processor,
+      data_collator=default_data_collator,
+      compute_metrics=compute_metrics,
+   )
+   torch.cuda.empty_cache()
+   trainer.train()
+
+On crée l'objet **trainer**, et on vide les donnés cachés dans le GPU, aprés lancé l'entrainement.
+
 
 
 
