@@ -270,7 +270,7 @@ On va utiliser le modèle de base de **LayoutLMv3** *(Il y a base,Large..)*.
    # We will use our own OCR (PAddle) not tyesseract
 
 On crée l'objet **processor** pour le prétraitement des données. **microsoft/layoutlmv3-base** et ID de répertoire où se trouve le processeur pré-entraîné de Microsoft.
-aussi puisqu'on utilisait **Paddle-OCR** on fait **apply_ocr** to False, car **LayoutLMv3Processor** utilise par défaut **tyesseract_OCR**.
+aussi puisqu'on a utilisait **Paddle-OCR** on fait **apply_ocr** to False, car **LayoutLMv3Processor** utilise par défaut **tyesseract_OCR**.
 
 .. code-block:: python
 
