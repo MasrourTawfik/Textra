@@ -231,15 +231,8 @@ si elle satisfait des conditions de capacité dont on parle ultérieurement.
 
 .. hint::
    - pour notre cas on entrainera sur Google Colab.
-   - Il faut savoir qu'une fois vous fermez l'onglet de colab, la prochaine fois il faut réinstaller toutes les bibliothèques 
-   utilisé, car vous connectez à une nouvelle machine.
-   - Il faut utiliser la machine T4 de colab,car on besoin d'un GPU pour accélirere l'entrainement.
-
-.. figure:: /Documentation/Images/T4_machine.png
-   :width: 60%
-   :align: center
-   :alt: Alternative text for the image
-   :name: LogIn
+   - Il faut savoir qu'une fois vous fermez l'onglet de colab, la prochaine fois il faut réinstaller toutes les bibliothèques utilisé, car vous connectez à une nouvelle machine.
+   - Il faut utiliser la machine T4 de colab, car on besoin d'un GPU pour accélérer l'entraînement.
 
 .. code-block:: python
 
