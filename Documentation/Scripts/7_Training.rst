@@ -215,10 +215,8 @@ On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** e
 
 .. hint::
    - le DataSet sur HuggingFace pour Exemple des deux images `ici <https://huggingface.co/datasets/Textra/Textra_Data?row=0>`_.
-
-
-
+   - Vous trouvez tout le code en colab.
 
 .. raw:: html
 
-   <a href="https://colab.research.google.com/github/MasrourTawfik/Textra/blob/tree/main/Codes/Create_DataSet.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/Create_DataSet.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
