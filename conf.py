@@ -7,14 +7,16 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Text Extraction Automation'
-copyright = '2023, GIIA'
+copyright = '2024, GIIA'
 author = 'GIIA'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 extensions = [
-  'sphinxcontrib.video']
+    #[...]
+    "sphinxcontrib.video",
+]
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
