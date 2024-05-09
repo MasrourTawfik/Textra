@@ -260,6 +260,15 @@ afin de découvrir la variable **ds**.
 7.2.1 Prétraitement des données
 ++++++++++++++++++++++++++++++
 
+Vous pouvez consulter la documentation du modèle **LayoutLM** sur `HuggingFace <https://huggingface.co/docs/transformers/model_doc/layoutlmv3#resources>`_ .
+On va utiliser le modèle de base de **LayoutLMv3** *(Il y a base,Large..)*.
+
+.. code-block:: python
+   
+   from transformers import AutoProcessor ,  LayoutLMv3Processor
+   processor =  LayoutLMv3Processor.from_pretrained("microsoft/layoutlmv3-base", apply_ocr=False)
+   # We will use our own OCR (PAddle) not tyesseract
+
 
 
 
