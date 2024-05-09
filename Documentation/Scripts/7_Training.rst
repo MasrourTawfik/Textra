@@ -143,6 +143,7 @@ Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key
         <iframe src="https://www.youtube.com/embed/AOacTU3y4ag" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
+
 .. code-block:: python
 
    from huggingface_hub import notebook_login
@@ -220,3 +221,29 @@ On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** e
 .. raw:: html
 
    <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/Create_DataSet.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+
+7.2 Entrainement
+----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
