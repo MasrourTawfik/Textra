@@ -424,7 +424,7 @@ Un répertoire pour le modèle va être créé automatiquement dans votre espace
    torch.cuda.empty_cache()
    trainer.train()
 
-On crée l'objet **trainer**, et on vide les donnés cachés dans le GPU, aprés lancé l'entrainement.
+On crée l'objet **trainer**, et on vide les donnés cachés dans le GPU, aprés on lance l'entrainement.
 
 .. code-block:: python
 
@@ -433,7 +433,7 @@ On crée l'objet **trainer**, et on vide les donnés cachés dans le GPU, aprés
    trainer.create_model_card()
    trainer.push_to_hub()
 
-Sauvgarder le modèle et le model_card avec **push_to_hub**.
+Sauvgarder model_card,les fichiers du modèle ansi historique de training avec **push_to_hub**.
 
 .. raw:: html
 
