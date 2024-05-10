@@ -25,8 +25,27 @@ Attention au-dessus pour la deuxième installation, il y a deux cas selon la mac
 
 La même remarque ici.
 
+.. code-block:: bash
+
+     !pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
+    
+.. code-block:: python
+
+    from paddleocr import PaddleOCR
+    from PIL import Image, ImageDraw, ImageFont
+
+    ocr = PaddleOCR(use_angle_cls=False,
+                lang='fr',
+                  rec=False,
+                ) # need to run only once to download and load model into memory
 
 
+ici on Initialise notre OCR, on choisisins la langue francaise avec le parametre **lang**,on vous recommende de découvrir d'autres parametres 
+dans la documentation.
+
+.. raw:: html
+
+   <a href="https://pypi.org/project/paddleocr/" target="_parent"><img src="https://miro.medium.com/v2/resize:fit:1200/1*qklqV9yl7bw8tzkyhCALNw.png" alt="PaddleOCR"/></a>
 
 
 
