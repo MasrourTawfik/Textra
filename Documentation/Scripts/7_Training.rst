@@ -221,7 +221,7 @@ On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** e
 
 .. raw:: html
 
-   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/Create_DataSet.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/Create_DataSet.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 7.2 Entrainement
@@ -438,7 +438,7 @@ Sauvgarder model_card,les fichiers du modèle ansi historique de training avec *
 
 .. raw:: html
 
-   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/Train.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/Train.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 
