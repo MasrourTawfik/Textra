@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Text Extraction Automation'
+project = 'Textra'
 copyright = '2024, GIIA'
 author = 'GIIA'
 
