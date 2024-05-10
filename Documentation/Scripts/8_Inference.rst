@@ -4,3 +4,44 @@ C'est le temps maintenant de tester notre modèle en utilisant les images que no
 
 .. attention:: 
    - Pour l'inference, on travaille avec **Python 3.10.12**.
+
+.. code-block:: bash
+
+    !pip install -q transformers==4.39.2
+    # CUDA 11.8
+    !pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cu118
+    # CPU only
+    #pip install torch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 --index-url https://download.pytorch.org/whl/cpu
+
+Attention au-dessus pour la deuxième installation, il y a deux cas selon la machine utilisée **(GPU, CPU)**.
+
+
+.. code-block:: bash
+
+    ## CPU :
+    #!pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
+    ## GPU :
+    !pip install paddlepaddle-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+La même remarque ici.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
