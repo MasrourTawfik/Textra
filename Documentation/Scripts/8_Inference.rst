@@ -75,7 +75,30 @@ qu'on aura besoin ultérieurement.
             bbox[i] = int(bbox[i])
         return bbox
 
+La fonction **processbbox** fait un traitement sur les BBOX qui va retourner l'OCR, par normalisation et transformation en des entières.
 
+.. code-block:: python
+
+    def Preprocess(Image_path):
+        image = Image.open(Image_path)
+        image = image.convert("RGB")
+        width, height = image.size
+        results = ocr.ocr(Image_path, cls=True)
+        results = results[0]
+        test_dict = {'image': image ,'tokens':[], "bboxes":[]}
+        for item in results :
+        bbox = processbbox(item[0], width, height)
+        test_dict['tokens'].append(item[1][0])
+        test_dict['bboxes'].append(bbox)
+
+        print(test_dict['bboxes'])
+        print(test_dict['tokens'])
+        return test_dict
+
+    
+**Preprocess** Prends en paramètre le chemin de l'image, elle commence par lire cette image avec **Image** de la bibliothèque
+PIL, l'a transformé en RGB car paddle exige des images RGB, puis exécuté l'OCR sur cette image, extrait les mots détectés avec leurs BBOX ajustées à la taille réelle de l'image, 
+puis renvoie un dictionnaire avec les informations suivantes : image, boxes, tokens.
 
 
 
