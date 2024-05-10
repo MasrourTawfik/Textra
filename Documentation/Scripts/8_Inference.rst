@@ -45,9 +45,9 @@ dans la documentation.
 
 .. raw:: html
 
-   <a href="https://pypi.org/project/paddleocr/" target="_parent"><img src="https://miro.medium.com/v2/resize:fit:1200/1*qklqV9yl7bw8tzkyhCALNw.png" alt="PaddleOCR"/></a>
-
-
+    <a href="https://pypi.org/project/paddleocr/" target="_blank">
+        <img src="Documentation\Images\ACS.png" alt="PaddleOCR"/>
+    </a>
 
 
 
