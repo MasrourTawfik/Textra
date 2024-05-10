@@ -25,8 +25,9 @@ Le fichier obtenu jusqu'à maintenant n'est pas encore compatible avec la forme 
 parmi ses non compatibilités :
 
 - bbox (les coordonnées des rectangles de chaque labelisation **[xmin,ymin,xmax,ymax]** ) ne sont pas normalisés entre **[100,1000]**.
+- bbox sont des float , on doit avoir des entières.
 
-- Dans la nouvelle forme, on a une liste contient les informations des images, chacune est représentée par un  dictionnaire dont les clés sont **['id', 'image', 'bboxes', 'ner_tags', 'tokens']**
+Dans la nouvelle forme, on a une liste contient les informations des images, chacune est représentée par un  dictionnaire dont les clés sont **['id', 'image', 'bboxes', 'ner_tags', 'tokens']**
 
 .. code-block:: python
 

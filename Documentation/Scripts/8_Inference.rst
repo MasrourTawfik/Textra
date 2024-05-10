@@ -58,6 +58,23 @@ dans la documentation.
 Ici on définit la liste **label** contenant nos labels par exemple ['InvNum', 'InvDate', 'Fourni', 'TTC', 'TVA', 'TT', 'autres'], ainsi les deux dictionnaires **id2label** et **label2id**
 qu'on aura besoin ultérieurement.
 
+.. code-block:: python
+
+    def processbbox(BBOX, width, height):
+        bbox = []
+        bbox.append(BBOX[0][0])
+        bbox.append(BBOX[0][1])
+        bbox.append(BBOX[2][0])
+        bbox.append(BBOX[2][1])
+        #Scaling
+        bbox[0]= 1000*bbox[0]/width # X1
+        bbox[1]= 1000*bbox[1]/height # Y1
+        bbox[2]= 1000*bbox[2]/width # X2
+        bbox[3]= 1000*bbox[3]/height # Y2
+        for i in range(4):
+            bbox[i] = int(bbox[i])
+        return bbox
+
 
 
 
