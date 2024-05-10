@@ -49,9 +49,14 @@ dans la documentation.
     <img src="https://miro.medium.com/v2/resize:fit:1200/1*qklqV9yl7bw8tzkyhCALNw.png" alt="PaddleOCR" width="200" height="100"/>
     </a>
 
+.. code-block:: python
 
+    labels = ['labl1', 'labe2','...']
+    id2label = {v: k for v, k in enumerate(labels)}
+    label2id = {k: v for v, k in enumerate(labels)}
 
-
+Ici on définit la liste **label** contenant nos labels par exemple ['InvNum', 'InvDate', 'Fourni', 'TTC', 'TVA', 'TT', 'autres'], ainsi les deux dictionnaires **id2label** et **label2id**
+qu'on aura besoin ultérieurement.
 
 
 
