@@ -101,8 +101,14 @@ PIL, l'a transformé en RGB car paddle exige des images RGB, puis exécuté l'OC
 puis renvoie un dictionnaire avec les informations suivantes : image, boxes, tokens.
 
 
+.. code-block:: python
 
+    from transformers import AutoModelForTokenClassification
+    from transformers import AutoProcessor
+    model_Hugging_path = "MODEL_REPO_ID"
+    model = AutoModelForTokenClassification.from_pretrained(model_Hugging_path)
 
+Vous chargez votre modèle identifié par **MODEL_REPO_ID** par exemple **Textra/LayoutLM**. après en exécuter le modèle tout simplement, plus de détails et dans le notebook en bas.
 
 
 
