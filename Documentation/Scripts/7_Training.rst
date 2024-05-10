@@ -38,6 +38,7 @@ parmi ses non compatibilités :
 
 .. attention:: 
    - Prends garde aux versions des bibliothèques mentionnées dans les commentaires ci-dessus.
+   - Pour le training, on travaille avec **Python 3.10.12**.
 
 .. code-block:: python
 
