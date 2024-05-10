@@ -125,7 +125,9 @@ pour labeliser l'image avec les resultats obtenus , en doit dénormaliser les BB
 
 - `predictions = outputs.logits.argmax(-1).squeeze().tolist()`: Cette ligne extrait les prédictions du modèle. Elle applique la fonction `argmax()` pour obtenir l'indice de la classe prédite avec la probabilité la plus élevée, puis utilise `squeeze()` pour éliminer les dimensions inutiles, et enfin, `tolist()` pour convertir les résultats en une liste Python.
 
+.. raw:: html
 
+   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/Inference.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 
