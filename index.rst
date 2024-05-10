@@ -20,3 +20,5 @@ Bienvenue à Textra's documentation!
    Documentation/Scripts/5_ModèleLLM.rst
    Documentation/Scripts/6_Labellisation.rst
    Documentation/Scripts/7_Training.rst
+   Documentation/Scripts/8_Inference.rst
+
