@@ -110,6 +110,53 @@ puis renvoie un dictionnaire avec les informations suivantes : image, boxes, tok
 
 Vous chargez votre modèle identifié par **MODEL_REPO_ID** par exemple **Textra/LayoutLM**. après en exécuter le modèle tout simplement, plus de détails et dans le notebook en bas.
 
+.. code-block:: python
+
+    def unnormalize_box(bbox, width, height):
+     return [
+         width * (bbox[0] / 1000),
+         height * (bbox[1] / 1000),
+         width * (bbox[2] / 1000),
+         height * (bbox[3] / 1000),
+     ]
+
+
+pour labeliser l'image avec les resultats obtenus , en doit dénormaliser les BBOX
+
+- `predictions = outputs.logits.argmax(-1).squeeze().tolist()`: Cette ligne extrait les prédictions du modèle. Elle applique la fonction `argmax()` pour obtenir l'indice de la classe prédite avec la probabilité la plus élevée, puis utilise `squeeze()` pour éliminer les dimensions inutiles, et enfin, `tolist()` pour convertir les résultats en une liste Python.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
