@@ -269,7 +269,12 @@ Après avoir tester plusieurs outils d'OCR ( easyOCR , PaddleOCR , Keras_OCR , P
 aussi au niveau du temps d’exécution.
 
 .. note:: 
-   - Vous pouvez essayer ces outils en cliquant `ici <https://drive.google.com/file/d/1DY685KBsRND5H11HSWydtxmNvUsR-rxU/view?usp=sharing>`_.
+   - Vous pouvez essayer ces outils en cliquant 
+   .. raw:: html
+
+    <a href="https://colab.research.google.com/github/MasrourTawfik/Textra/blob/main/Outils_OCR.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
+
 
 
 
