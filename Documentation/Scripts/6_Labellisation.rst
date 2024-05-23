@@ -29,7 +29,7 @@ Pour notre cas, nous avons 7 classes
    - l'entrée de label-studio est json-file
    - c'est pour cela il faut convertir les images ou bien les données d'apprentissage en OCR fichier json pour avoir la possibilité de labeliser  
 
-3.Images to OCR json file : 
+3.Images to OCR json file  
 ----------------------------
 
 pour transformer les images en OCR json file, nous avons utiliser le code suivant : 
