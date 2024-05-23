@@ -156,8 +156,9 @@ l'interface affichée après lancement de label-studio est la suivante :
 .. note:: 
    - Vous trouvez ci-joint une video qui montre la procédure de labélisation et de téléchargement de fichier json : 
 
+
 .. raw:: html
-   
+
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://youtu.be/HePK6l6ArNg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/HePK6l6ArNg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
