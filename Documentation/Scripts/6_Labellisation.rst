@@ -29,7 +29,7 @@ Pour notre cas, nous avons 7 classes
    - l'entrée de label-studio est json-file
    - c'est pour cela il faut convertir les images ou bien les données d'apprentissage en OCR fichier json pour avoir la possibilité de labeliser  
 
-3.Images to OCR json file : 
+3.Images to OCR json file  
 ----------------------------
 
 pour transformer les images en OCR json file, nous avons utiliser le code suivant : 
@@ -154,5 +154,11 @@ l'interface affichée après lancement de label-studio est la suivante :
 
 
 .. note:: 
-   - Vous trouvez ci-joint une video qui montre la procédure de labélisation et de téléchargement de fichier json `ici <https://github.com/MasrourTawfik/Textra>`_
-   
+   - Vous trouvez ci-joint une video qui montre la procédure de labélisation et de téléchargement de fichier json : 
+
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/HePK6l6ArNg" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
