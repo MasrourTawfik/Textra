@@ -6,6 +6,7 @@ LLM modèles
 
 Un grand modèle de langage (LLM) est un type de programme d'intelligence artificielle (IA ) capable, entre autres tâches, de reconnaître et de générer du texte.Les LLM sont entraînés sur des ensembles de données massifs - d'où l'emploi de terme « large » (qui signifie grand) dans la dénomination anglaise « large language model ».Les LLM reposent sur l'apprentissage automatique: en particulier, un type de réseau neuronal appelé modèle de transformateur.
 Plus simplement, un LLM est un programme informatique qui a reçu suffisamment d'exemples pour être capable de reconnaître et d'interpréter le langage humain ou d'autres types de données complexes.
+
 2.À quoi servent les LLM ?
 ----------------------------
 
@@ -61,13 +62,16 @@ est reliée au début, et comment les phrases d'un paragraphe sont reliées entr
 
 5.Notre cas de figure :
 ------------------------
+
 Dans la première partie, on a utilisé un modèle de NER `Token classification ', qui fait tout simplement
 la classification des tokens en des classes prédéfinies.
 
 **Inconvénients de cette méthode :**
+
 - Faible flexibilité dans le modèle, car il sait seulement les classes qu'il a appris au cours du training, si on veut une autre information sur le document, on ne peut pas !
 
 **Avantages de cette méthode :**
+
 - Le modèle est très petit (ne dépasse pas 500M de paramètres généralement), ce qui le rende économique en termes de ressources.
 - Le modèle est fiable, car il classifie juste les classes prédéfinies.
 
@@ -75,7 +79,7 @@ Dans une deuxième approche, on va utiliser un LLM avec sa capacité de comprend
 bien précisément on va utiliser le modèle open source `lama3-8b` la dernière version de famille `llama` de `Meta`.
 
 .. note:: 
-    - On va adopter cette solution avec un modèle pré-entraîné, sans faire de Finetuning ou RAG `perspectives futures'.
+    - On va adopter cette solution avec un modèle pré-entraîné, sans faire de Finetuning ou RAG `(perspectives futures)`.
 
 
 
