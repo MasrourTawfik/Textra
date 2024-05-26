@@ -92,5 +92,3 @@ bien précisément on va utiliser le modèle open source `lama3-8b` la dernière
 
 
 
-
-

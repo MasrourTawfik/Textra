@@ -393,6 +393,7 @@ Un répertoire pour le modèle va être créé automatiquement dans votre espace
 .. attention:: 
    - Une étape importante dans ce processus est la définition des hyperparamétres de votre modèle, et ça dépend de votre data et architecture de modèle utilisé.
    - Une description complète sur ces hyperparamètres `ici <https://huggingface.co/docs/transformers/main_classes/trainer#transformers.TrainingArguments>`_ ,on vous recommande de la consulter.
+   - Si vous exécuter la cellule plus q' une fois sans changer **hf_repository_id**, vous écrasez à chaque fois le modèle déjà existent.
 
 - Remarque : pour le  **Learning rate**, modifiez la valeur de celui-ci à chaque fois et voir les résultats , on a trouvé les meilleurs valeurs  **( 1e-5 , 5e-5 , 6e-6 , 7e-6 )**, la **batch size** affectera considérablement le training c'est comme une régularisation pour éviter Overfiting.
 - Si vous avez un problème avec la  **Validation loss **, qui augmante par exemple peut être que le **lerning rate** est grand essayer de le réduire un petit peu.
