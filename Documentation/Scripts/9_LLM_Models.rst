@@ -78,7 +78,18 @@ après les avoir vus regroupés de cette manière des millions ou des milliards 
 
 5.Notre cas de figure :
 ------------------------
+Dans la première partie, on a utilisé un modèle de NER `Token classification ', qui fait tout simplement
+la classification des tokens en des classes prédéfinies.
 
+**Inconvénients de cette méthode :**
+- Faible flexibilité dans le modèle, car il sait seulement les classes qu'il a appris au cours du training, si on veut une autre information sur le document, on ne peut pas !
+
+**Avantages de cette méthode :**
+- Le modèle est très petit (ne dépasse pas 500M de paramètres généralement), ce qui le rende économique en termes de ressources.
+- Le modèle est fiable, car il classifie juste les classes prédéfinies.
+
+Dans une deuxième approche, on va utiliser un LLM avec sa capacité de comprendre le texte, pour extraire non pas seulement des classes, mais une description complète de documents.
+bien précisément on va utiliser le modèle open source `lama3-8b` la dernière version de famille `llama` de `Meta`.
 
 
 
