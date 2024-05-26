@@ -81,13 +81,30 @@ bien précisément on va utiliser le modèle open source `lama3-8b` la dernière
 .. note:: 
     - On va adopter cette solution avec un modèle pré-entraîné, sans faire de Finetuning ou RAG `(perspectives futures)`.
 
+.. figure:: /Documentation/Images/LLM_way.png
+   :width: 100%
+   :align: center
+   :alt: Alternative text for the image
+   :name: LLM method
 
+**Inconvénients de cette méthode :**
 
+- Grande flexibilité sur les types des documents ou les informations qu'on peut obtenir.
 
+**Avantages de cette méthode :**
 
+- Les modèles sont généralement très grands, ce qui le rende demande des bonnes ressources.
+- Le modèle moins fiable, ça reste un modèle de génération de texte.
 
+5.1.Run llma3 sur votre machine locale:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+On va utiliser llma3-8billion paramètres qui demande au mois 8Go sur votre RAM et un CPU de 2 cors, pour s'exécuter.
+vous commences par installer ollama
 
+.. code-block:: bash
+
+   pip install ollama==0.2.0
 
 
 
