@@ -173,6 +173,11 @@ Il suffit tout simplement d'ajuster le prompt en ajoutant le texte donné par l'
 
 - `Text` est un string contient le text donné par Paddle-OCR.
 
+5.2.HuggingFace:
+~~~~~~~~~~~~~~~~
+
+On va faire la méme chose avec HuggingFace
+
 
 
 
