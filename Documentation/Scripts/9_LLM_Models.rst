@@ -153,12 +153,12 @@ pour utiliser un LLM, c'est simple, juste exécuter les linges suivants :
 
    - Assurez que le serveur ollama est lancé, sinon vous aurez une erreur de connexion. Pour s'assurer, vous pouvez taper `ollama` après `ollama serve` sur un cmd.
    - Plus de détails `ici <https://github.com/ollama/ollama-python>`_.
+   - Si vous voulez utiliser colab ou autre environnement cloud, voici un `guide <https://github.com/BlackTechX011/Ollama-in-GitHub-Codespaces/blob/main/notebook.ipynb>`_.
 
    
+**Utilisation de llama3 pour notre tache**
 
-
-
-
+Il suffit tout simpelemnet d'ajustrer le prompt en ajoutant le text donné par l'OCR 
 
 
 
