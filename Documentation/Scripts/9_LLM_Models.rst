@@ -63,7 +63,7 @@ est reliée au début, et comment les phrases d'un paragraphe sont reliées entr
 5.Notre cas de figure :
 ------------------------
 
-Dans la première partie, on a utilisé un modèle de NER `Token classification ', qui fait tout simplement
+Dans la première partie, on a utilisé un modèle de NER `Token classification`, qui fait tout simplement
 la classification des tokens en des classes prédéfinies.
 
 **Inconvénients de cette méthode :**
@@ -87,11 +87,11 @@ bien précisément on va utiliser le modèle open source `lama3-8b` la dernière
    :alt: Alternative text for the image
    :name: LLM method
 
-**Inconvénients de cette méthode :**
+**Avantages de cette méthode :**
 
 - Grande flexibilité sur les types des documents ou les informations qu'on peut obtenir.
 
-**Avantages de cette méthode :**
+**Inconvénients de cette méthode :**
 
 - Les modèles sont généralement très grands, ce qui le rende demande des bonnes ressources.
 - Le modèle moins fiable, ça reste un modèle de génération de texte.
