@@ -96,15 +96,34 @@ bien précisément on va utiliser le modèle open source `lama3-8b` la dernière
 - Les modèles sont généralement très grands, ce qui le rende demande des bonnes ressources.
 - Le modèle moins fiable, ça reste un modèle de génération de texte.
 
-5.1.Run llma3 sur votre machine locale:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5.1.Ollama:
+~~~~~~~~~~~
 
-On va utiliser llma3-8billion paramètres qui demande au mois 8Go sur votre RAM et un CPU de 2 cors, pour s'exécuter.
-vous commences par installer ollama
+.. figure:: /Documentation/Images/ollama_logo.png
+   :width: 100%
+   :align: center
+   :alt: Alternative text for the image
+   :name: ollama_logo
 
-.. code-block:: bash
+L'interface ollama vous facilite l'utilisation des LLM OpenSource sur votre machine locale. Le guide d'installation,`ici <https://ollama.com/>`_
+On va utiliser llma3-8billion paramètres qui demande au mois 8Go sur votre RAM et un CPU de 2 cors, pour s'exécuter 
+(Elle va être très lente).
 
-   pip install ollama==0.2.0
+Vous pouvez interagir avec ollama soit a partir de Command prompt sur Windows ou à travers python, on va illustrer les deux.
+
+**Avec Command prompt**
+
+Aprés intallation de ollama, sur un cmd vous tapez ollama (pour lancer le serveur ollama), une désctription des défferentes commned apparaitre.
+
+
+
+
+
+
+
+
+
+
 
 
 
