@@ -122,10 +122,38 @@ Vous testez, par exemple
 
     ollama run llama3
 
-Une installation va commencer si vous n'avez pas encours installer le modèle. Plus de détail ici
+Une installation va commencer si vous n'avez pas encours installer le modèle. Plus de détail `ici <https://github.com/ollama/ollama?tab=readme-ov-file>`_.
 
+**Avec Python**
 
+On commnece par installer library ollama
 
+.. code-block:: bash
+
+   !pip install ollama
+
+pour utiliser un LLM, c'est simple, juste exécuter les linges suivants :
+
+.. code-block:: python
+
+   import ollama
+   response = ollama.chat(model='Model Name', messages=[
+   {
+      'role': 'user',
+      'content': 'Your Prompt',
+   },
+   ])
+   print(response['message']['content'])
+
+- `Model Name` vous tester par exemple `llama3` ou autre.
+- `Your prompt` c'est votre message.
+
+.. attention:: 
+
+   - Assurez que le serveur ollama est lancé, sinon vous aurez une erreur de connexion.
+   Pour s'assurer, vous pouvez taper `ollama` après `ollama serve` sur un cmd.
+
+   
 
 
 
