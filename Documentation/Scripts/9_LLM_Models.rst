@@ -105,7 +105,8 @@ bien précisément on va utiliser le modèle open source `lama3-8b` la dernière
    :alt: Alternative text for the image
    :name: ollama_logo
 
-L'interface ollama vous facilite l'utilisation des LLM OpenSource sur votre machine locale. Le guide d'installation,`ici <https://ollama.com/>`_
+
+L'interface ollama vous facilite l'utilisation des LLMs OpenSource sur votre machine locale. Le guide d'installation `ici <https://ollama.com/>`_.
 On va utiliser llma3-8billion paramètres qui demande au mois 8Go sur votre RAM et un CPU de 2 cors, pour s'exécuter 
 (Elle va être très lente).
 
@@ -113,9 +114,15 @@ Vous pouvez interagir avec ollama soit a partir de Command prompt sur Windows ou
 
 **Avec Command prompt**
 
-Aprés intallation de ollama, sur un cmd vous tapez ollama (pour lancer le serveur ollama), une désctription des défferentes commned apparaitre.
+Aprés installation de ollama, sur un cmd vous tapez ollama (pour lancer le serveur ollama), une description des déférentes commandes apparaître.
 
+Vous testez, par exemple
 
+.. code-block:: bash
+
+    ollama run llama3
+
+Une installation va commencer si vous n'avez pas encours installer le modèle. Plus de détail ici
 
 
 
