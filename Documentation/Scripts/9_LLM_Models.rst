@@ -152,6 +152,7 @@ pour utiliser un LLM, c'est simple, juste exécuter les linges suivants :
 
    - Assurez que le serveur ollama est lancé, sinon vous aurez une erreur de connexion.
    Pour s'assurer, vous pouvez taper `ollama` après `ollama serve` sur un cmd.
+   - Plus de détails `ici <https://github.com/ollama/ollama-python>`_.
 
    
 
