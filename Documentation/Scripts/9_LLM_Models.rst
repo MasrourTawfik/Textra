@@ -100,7 +100,7 @@ bien précisément on va utiliser le modèle open source `lama3-8b` la dernière
 ~~~~~~~~~~~
 
 .. figure:: /Documentation/Images/ollama_logo.png
-   :width: 100%
+   :width: 30%
    :align: center
    :alt: Alternative text for the image
    :name: ollama_logo
