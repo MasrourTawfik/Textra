@@ -107,6 +107,7 @@ bien précisément on va utiliser le modèle open source `lama3-8b` la dernière
 
 
 L'interface ollama vous facilite l'utilisation des LLMs OpenSource sur votre machine locale. Le guide d'installation `ici <https://ollama.com/>`_.
+
 On va utiliser llma3-8billion paramètres qui demande au mois 8Go sur votre RAM et un CPU de 2 cors, pour s'exécuter 
 (Elle va être très lente).
 
@@ -150,8 +151,7 @@ pour utiliser un LLM, c'est simple, juste exécuter les linges suivants :
 
 .. attention:: 
 
-   - Assurez que le serveur ollama est lancé, sinon vous aurez une erreur de connexion.
-   Pour s'assurer, vous pouvez taper `ollama` après `ollama serve` sur un cmd.
+   - Assurez que le serveur ollama est lancé, sinon vous aurez une erreur de connexion. Pour s'assurer, vous pouvez taper `ollama` après `ollama serve` sur un cmd.
    - Plus de détails `ici <https://github.com/ollama/ollama-python>`_.
 
    
