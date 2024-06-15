@@ -158,8 +158,20 @@ pour utiliser un LLM, c'est simple, juste exécuter les linges suivants :
    
 **Utilisation de llama3 pour notre tache**
 
-Il suffit tout simpelemnet d'ajustrer le prompt en ajoutant le text donné par l'OCR 
+Il suffit tout simplement d'ajuster le prompt en ajoutant le texte donné par l'OCR
 
+.. code-block:: python
+
+   import ollama
+   response = ollama.chat(model='llama_2', messages=[
+   {
+      'role': 'user',
+      'content': f'Extract main infos  form this invoice text :{Text}',
+   },
+   ])
+   print(response['message']['content'])
+
+- `Text` est un string contient le text donné par Paddle-OCR.
 
 
 
