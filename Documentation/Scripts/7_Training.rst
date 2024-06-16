@@ -12,7 +12,7 @@ pour la suite on va  prendre comme exemple les deux images suivantes:
    :alt: Alternative text for the image
    :name: Exemple_Images
 
-Aprés labelisation de vos images et obtenir le fichier json,de cette `forme <https://github.com/MasrourTawfik/Textra/blob/main/Codes/Exemple/Exemple_Training.json#L2>`_.
+Aprés labelisation de vos images et obtenir le fichier json,de cette `forme <https://github.com/MasrourTawfik/Textra/blob/main/Notebooks/Exemple_Training.json>`_.
 
 .. hint::
    - Le json est de forme d'une liste contenait deux dictionnaires, chacun pour une image on a pris que deux images à titre d'exemple, mais vous allez utiliser plusieurs.
@@ -222,7 +222,7 @@ On push aprés le dataSet a notre compte HuggingFace. **ID_YOUR_DATASET_NAME** e
 
 .. raw:: html
 
-   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/Create_DataSet.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+   <a href="https://colab.research.google.com/github/MasrourTawfik/Textra/blob/main/Notebooks/Create_DataSet.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 7.2 Entrainement
@@ -440,8 +440,7 @@ Sauvgarder model_card,les fichiers du modèle ansi historique de training avec *
 
 .. raw:: html
 
-   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/Train.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
+   <a href="https://colab.research.google.com/github/MasrourTawfik/Textra/blob/main/Notebooks/Train.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 

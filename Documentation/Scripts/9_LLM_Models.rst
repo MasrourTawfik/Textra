@@ -225,11 +225,9 @@ Utilisation du modèle avec un simple prompt.
    output = pipe(messages, **generation_args)
    print(output[0]['generated_text'])
 
-
 .. raw:: html
 
-   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/LLM_OCR.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
+   <a href="https://colab.research.google.com/github/MasrourTawfik/Textra/blob/main/Notebooks/LLM_OCR.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 

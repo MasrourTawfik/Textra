@@ -127,8 +127,7 @@ pour labeliser l'image avec les resultats obtenus , en doit dénormaliser les BB
 
 .. raw:: html
 
-   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/Inference.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
+   <a href="https://colab.research.google.com/github/MasrourTawfik/Textra/blob/main/Notebooks/Inference.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 
