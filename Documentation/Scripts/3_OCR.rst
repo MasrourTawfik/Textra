@@ -191,9 +191,14 @@ Il offre à la foisdes outils en ligne de commande et des APIs Python pour une i
 
 .. code-block:: bash
 
-   !pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
+    !pip install python-doctr
+    !pip install "python-doctr[tf]"
+    !pip install "python-doctr[torch]"
 
+.. code-block:: bash
 
+    !pip install tf2onnx
+    
 .. code-block:: python
 
     from doctr.io import DocumentFile
@@ -268,11 +273,10 @@ Après avoir tester plusieurs outils d'OCR ( easyOCR , PaddleOCR , Keras_OCR , P
 * Paddle_OCR est plus puissant au niveau de la précision, au niveau de la complexité de l’image et
 aussi au niveau du temps d’exécution.
 
-.. note:: 
-   - Vous pouvez essayer ces outils en cliquant 
-   .. raw:: html
 
-    <a href="https://colab.research.google.com/github/MasrourTawfik/Textra/blob/main/Outils_OCR.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+.. raw:: html
+
+   <a href="https://colab.research.google.com/github/ITSAIDI/Textra_Code/blob/main/OCR_Bench.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 
