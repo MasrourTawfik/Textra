@@ -153,8 +153,6 @@ pour utiliser un LLM, c'est simple, juste exécuter les linges suivants :
 
    - Assurez que le serveur ollama est lancé, sinon vous aurez une erreur de connexion. Pour s'assurer, vous pouvez taper `ollama` après `ollama serve` sur un cmd.
    - Plus de détails `ici <https://github.com/ollama/ollama-python>`_.
-   - Si vous voulez utiliser colab ou autre environnement cloud, voici un `guide <https://github.com/BlackTechX011/Ollama-in-GitHub-Codespaces/blob/main/notebook.ipynb>`_.
-
    
 **Utilisation de llama3 pour notre tache**
 
@@ -176,7 +174,72 @@ Il suffit tout simplement d'ajuster le prompt en ajoutant le texte donné par l'
 5.2.HuggingFace:
 ~~~~~~~~~~~~~~~~
 
-On va faire la méme chose avec HuggingFace
+On va faire la même chose avec HuggingFace, on va utiliser Phi3 3.8B. Vous pouvez utiliser un autre modèle
+mais le code peut changer un petit peu, vous vérifiez toujours dans la description du modèle sur
+HuggingFace. `Phi3 <https://huggingface.co/microsoft/Phi-3-mini-4k-instruct>`_.
+
+On commence par installation de quelques bibliothèques.
+
+.. code-block:: bash
+
+   !pip install transformers
+   !pip install accelerate
+
+.. code-block:: python
+
+   import torch
+   from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
+
+   torch.random.manual_seed(0)
+
+   model = AutoModelForCausalLM.from_pretrained(
+      "microsoft/Phi-3-mini-4k-instruct", # ID of the model from HuggingFace
+      device_map="cuda", # The modle will run on a GPU
+      torch_dtype="auto", 
+      trust_remote_code=True, 
+   )
+   tokenizer = AutoTokenizer.from_pretrained("microsoft/Phi-3-mini-4k-instruct")
+
+
+Utilisation du modèle avec un simple prompt.
+
+.. code-block:: python
+
+   messages = [
+      {"role": "user", "content": "Why the sky is blue?"}
+   ]
+
+   pipe = pipeline(
+      "text-generation",
+      model=model,
+      tokenizer=tokenizer,
+   )
+
+   generation_args = {
+      "max_new_tokens": 5000,
+      "return_full_text": False,
+      "temperature": 0.0,
+      "do_sample": False,
+   }
+
+   output = pipe(messages, **generation_args)
+   print(output[0]['generated_text'])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
