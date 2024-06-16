@@ -276,9 +276,7 @@ aussi au niveau du temps d’exécution.
 
 .. raw:: html
 
-   <a href="https://colab.research.google.com/github.com/MasrourTawfik/Textra/blob/main/Notebooks/OCR_Bench.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
-
-
+   <a href="https://colab.research.google.com/github/MasrourTawfik/Textra/blob/main/Notebooks/OCR_Bench.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 
 
