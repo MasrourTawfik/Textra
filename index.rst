@@ -22,4 +22,5 @@ Bienvenue à Textra's documentation!
    Documentation/Scripts/7_Training.rst
    Documentation/Scripts/8_Inference.rst
    Documentation/Scripts/9_LLM_Models.rst
+   Documentation/Scripts/10_perspectives.rst
 
