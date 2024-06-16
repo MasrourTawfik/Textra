@@ -1,3 +1,6 @@
+Les perspectives
+=================
+
 Ce projet ne se termine pas à ce point qu'on a atteint, d'autres objectifs futurs sont désirables :
 
 - Adapter une manière pour travailler sur les factures en différents formats comme **PDF, Excel...**
