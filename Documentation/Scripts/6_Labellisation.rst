@@ -220,24 +220,7 @@ Vous lancez maintenant Label_studio dans un port différent par exemple 8081:
    :alt: Alternative text for the image
    :name: Welcome_Label_Studio.png
 
-Vous créez un compte, et après Log in.
-
-
-
-
-
-l'interface affichée après lancement de label-studio est la suivante : 
-
-.. figure:: /Documentation/Images/Capturelabelstudio.PNG
-   :width: 100%
-   :align: center
-   :alt: Alternative text for the image
-   :name: Prétraitement
-
-
-.. note:: 
-   - Vous trouvez ci-joint une video qui montre la procédure de labélisation et de téléchargement de fichier json : 
-
+Vous créez un compte, et après Log in. La suite des étapes est  expliquée dans la vidéo, c'est dessus.
 
 .. raw:: html
 
