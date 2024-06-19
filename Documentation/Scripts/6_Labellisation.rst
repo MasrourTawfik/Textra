@@ -227,3 +227,84 @@ Vous créez un compte, et après Log in. La suite des étapes est  expliquée da
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
         <iframe src="https://www.youtube.com/embed/XFlV4ArPLpY" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
+4.Step4: Convertir à LayoutLM json file format:
+-----------------------------------------------------------
+On doit convertir le json file obtenu depuis Label_studio en une forme acceptée par le modèle LayoutLM qu'on va utiliser après.
+
+.. code-block:: python
+
+    import json
+
+    def convert_bounding_box(x, y, width, height):
+        x1 = x
+        y1 = y
+        x2 = x + width
+        y2 = y + height
+        return [x1, y1, x2, y2]
+
+.. code-block:: python
+
+    label_json_path = "PATH_JSON_FILE_DE_LABEL_STUDIO"
+
+.. code-block:: python
+
+    Count = 0
+    # Loading json data
+    with open(label_json_path) as f:
+        data = json.load(f)
+
+    output = []
+
+    for annotated_image in data:
+        # Create a new dictionary for each image
+        image_data = {}
+        annotations = []
+
+        if len(annotated_image) < 8:
+            continue
+
+        for k, v in annotated_image.items():
+            if k == 'ocr':
+                v = v.split('8080/')[-1]
+                print(f'filename: {v}')
+                image_data["file_name"] = f"{v}"
+                Count += 1
+
+            if k == 'bbox':
+                width = v[0]['original_width']
+                height = v[0]['original_height']
+                image_data["height"] = height
+                image_data["width"] = width
+
+        for bb, text, label in zip(annotated_image['bbox'], annotated_image['transcription'], annotated_image['label']):
+            ann_dict = {}
+            #print('text:', text)
+            ann_dict["box"] = convert_bounding_box(bb['x'], bb['y'], bb['width'], bb['height'])
+            ann_dict["text"] = text
+            ann_dict["label"] = label['labels'][-1]
+            annotations.append(ann_dict)
+
+        image_data["annotations"] = annotations
+        output.append(image_data)
+
+
+    print("Number of Images annoutated",Count)
+    with open("Exemple_Training.json", "w") as f:
+        json.dump(output, f, indent=4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
