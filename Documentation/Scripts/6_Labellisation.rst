@@ -4,18 +4,15 @@ Avant de commencer la labelisation, nous avons classé nos données en 2 catégo
 - les données d'apprentissage 
 - les données pour le test 
  Après il faut installer label-studio pour démarrer la labellisation 
+
 .. figure:: /Documentation/Images/labelstudio.png
    :width: 60%
    :align: center
    :alt: Alternative text for the image
    :name: Prétraitement
-1.L'installation de label-studio en utilisant pip
----------------------------------------------------
-.. code-block:: bash
 
-   !pip install label-studio
 
-2.Les classes de labellisation 
+1.Les classes de labellisation 
 ----------------------------------
 Pour notre cas, nous avons 7 classes 
 
@@ -27,7 +24,29 @@ Pour notre cas, nous avons 7 classes
 
 .. note:: 
    - l'entrée de label-studio est json-file
-   - c'est pour cela il faut convertir les images ou bien les données d'apprentissage en OCR fichier json pour avoir la possibilité de labeliser  
+   - c'est pour cela il faut convertir les images ou bien les données d'apprentissage en OCR fichier json pour avoir la possibilité de labeliser
+
+2.Step1 : Setup
+---------------------------------------------------
+
+On doit d'abord installer les bibliothèques nécessaires. Sur votre PC,  vous créez une nouvel environnement anaconda
+avec python v3.9.18 avec la commande suivante :
+- **Name** : dans le commande est le nom de votre environnement.
+
+.. code-block:: bash
+
+   conda create -n Name python=3.9.18
+
+Aprés vous activez votre environnement :
+
+.. code-block:: bash
+
+   conda activate Name
+
+
+.. code-block:: bash
+
+   !pip install label-studio
 
 3.Images to OCR json file  
 ----------------------------
