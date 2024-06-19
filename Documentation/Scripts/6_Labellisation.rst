@@ -30,7 +30,8 @@ Pour notre cas, nous avons 7 classes
 ---------------------------------------------------
 
 On doit d'abord installer les bibliothèques nécessaires. Sur votre PC,  vous créez une nouvel environnement anaconda
-avec python v3.9.18 avec la commande suivante :
+avec python **v3.9.18** avec la commande suivante :
+
 - **Name** : dans le commande est le nom de votre environnement.
 
 .. code-block:: bash
@@ -43,10 +44,25 @@ Aprés vous activez votre environnement :
 
    conda activate Name
 
+Installation de paddleOcr, label-Studio sur l'environnement creé
 
 .. code-block:: bash
 
-   !pip install label-studio
+    #CPU :
+    !pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
+    ## GPU :
+    #!pip install paddlepaddle-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+.. code-block:: bash
+
+    !pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
+
+.. code-block:: bash
+
+    #CPU :
+    !pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
+    ## GPU :
+    #!pip install paddlepaddle-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 3.Images to OCR json file  
 ----------------------------
