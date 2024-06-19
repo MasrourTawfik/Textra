@@ -168,6 +168,17 @@ Exécuter la fonction en haut
 
     extracted_tables_to_label_studio_json_file_with_paddleOCR(images_folder_path)
 
+.. note:: 
+    
+   - Si possible de rencontrer une erreur lors de création de fichier json, à cause de l'antivirus, pour régler il faut suivre les étapes suivantes :
+
+    1. Open the Windows settings.
+    2. Search for **Ransomware protection**.
+    3. Then, select **Allow an app through Controlled folder access.**
+    4. Look for the option **Recently blocked apps**, you'll find conda.exe there. (This indicates that conda didn't have access to the folders due to the antivirus.)
+    5. Add **conda.exe** to the allowed apps.
+
+
 3.Step3: Labelliser en label-Studio 
 -----------------------------------------
 
