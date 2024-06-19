@@ -294,6 +294,16 @@ On doit convertir le json file obtenu depuis Label_studio en une forme acceptée
         json.dump(output, f, indent=4)
 
 
+5.Step5: Encode labels in Json file Manuallly:
+------------------------------------------------
+Il faut encoder les labels dans le fichier **Exemple_Training.json** c.-à-d. attribuer a chaque classe un chiffre entier 0,1..
+Vous pouvez faire ça facilement sur Visual Studio Code.
+
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/fZGmq6EeRr4" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
 
 
 
