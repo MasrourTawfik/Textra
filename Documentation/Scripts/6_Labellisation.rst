@@ -85,7 +85,7 @@ pour transformer les images en OCR json file, nous avons utiliser le code suivan
         height = y2 - y1
 
         return [x, y, width, height]
-        
+
 .. code-block:: python
 
     import os
@@ -94,6 +94,10 @@ pour transformer les images en OCR json file, nous avons utiliser le code suivan
     import json
     from uuid import uuid4
     import numpy as np
+
+    from paddleocr import PaddleOCR
+    ocr = PaddleOCR(use_angle_cls=True, lang='fr',use_gpu = False) # need to run only once to download and load model into memory
+    # use_gpu : use the gpu or not
 
 .. code-block:: python
 
