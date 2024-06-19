@@ -208,6 +208,20 @@ aprés lancement si vous tapper dans un browser `http://localhost:8080/`, vous a
    :alt: Alternative text for the image
    :name: Serveur d'images
 
+Vous lancez maintenant Label_studio dans un port différent par exemple 8081:
+
+.. code-block:: bash
+
+   label-studio start --port 8081
+
+.. figure:: /Documentation/Images/Welcome_Label_Studio.png
+   :width: 100%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Welcome_Label_Studio.png
+
+Vous créez un compte, et après Log in.
+
 
 
 
