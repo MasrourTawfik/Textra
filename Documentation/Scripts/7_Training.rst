@@ -137,12 +137,12 @@ Il faut installer ces bibliothèques pour pouvoir utiliser HuggingFace
    !pip install huggingface_hub
    !pip install -q datasets seqeval
 
-Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key**. Cela se trouve dans votre compte HuggingFace. `Comment <https://github.com/MasrourTawfik/Textra/tree/main/Documentation/Videos>`_.
+Pour pouvoir hoster votre data sur HuggingFace, vous devez avoir une **token key**. Cela se trouve dans votre compte HuggingFace.
 
 .. raw:: html
 
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-        <iframe src="https://www.youtube.com/embed/AOacTU3y4ag" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+        <iframe src="https://www.youtube.com/embed/6a8CpbPS0FY" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
 
 
