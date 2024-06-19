@@ -49,20 +49,18 @@ Installation de paddleOcr, label-Studio sur l'environnement creé
 .. code-block:: bash
 
     #CPU :
-    !pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
     ## GPU :
     #!pip install paddlepaddle-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 .. code-block:: bash
 
-    !pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
+    pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
 
 .. code-block:: bash
 
-    #CPU :
-    !pip install paddlepaddle -i https://pypi.tuna.tsinghua.edu.cn/simple
-    ## GPU :
-    #!pip install paddlepaddle-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install label-studio==1.11.0
+
 
 3.Images to OCR json file  
 ----------------------------
