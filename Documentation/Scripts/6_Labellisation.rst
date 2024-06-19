@@ -85,7 +85,15 @@ pour transformer les images en OCR json file, nous avons utiliser le code suivan
         height = y2 - y1
 
         return [x, y, width, height]
+        
+.. code-block:: python
 
+    import os
+    from paddleocr import PaddleOCR
+    from PIL import Image, ImageDraw, ImageFont
+    import json
+    from uuid import uuid4
+    import numpy as np
 
 .. code-block:: python
 
@@ -156,8 +164,8 @@ Exécuter la fonction en haut
 
     extracted_tables_to_label_studio_json_file_with_paddleOCR(images_folder_path)
 
-3.Step3: Labéliser en label-Studio 
------------------------------------
+3.Step3: Labelliser en label-Studio 
+-----------------------------------------
 
 
 
