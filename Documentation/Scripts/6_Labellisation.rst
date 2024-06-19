@@ -62,35 +62,29 @@ Installation de paddleOcr, label-Studio sur l'environnement creé
     pip install label-studio==1.11.0
 
 
-3.Images to OCR json file  
+3.Step2: Images to OCR json file  
 ----------------------------
 
 pour transformer les images en OCR json file, nous avons utiliser le code suivant : 
 
 .. code-block:: python
 
- import os
- from paddleocr import PaddleOCR
- from PIL import Image, ImageDraw, ImageFont
- import json
- from uuid import uuid4
- import numpy as np
-
-
- #loading the engine
- #OCR enginer
- ocr = PaddleOCR(use_angle_cls=False, 
-                lang='fr',
-                  rec=False,
-                ) # need to run only once to download and load model into memory 
-
-
- images_folder_path  = r"C:\Users\hp\Desktop\Textra_Code\preprocess\DataTraining\Noureddine" 
+    # Specify here the path to your training images
+    images_folder_path  = "PATH_TRAINING_IMAGES"
 
 .. code-block:: python
 
- def create_image_url(filename):
-    return f'http://localhost:8080/{filename}'
+    def create_image_url(filename):
+       return f'http://localhost:8080/{filename}'
+
+    def convert_bounding_box(bounding_box):
+        x1, y1, x2, y2 = bounding_box
+        x = min(x1, x2)
+        y = min(y1, y2)
+        width = x2 - x1
+        height = y2 - y1
+
+        return [x, y, width, height]
 
 .. code-block:: python    
 
@@ -108,74 +102,83 @@ pour transformer les images en OCR json file, nous avons utiliser le code suivan
  def create_image_url(filename):
     return f'http://localhost:8080/{filename}'
 
+ def convert_bounding_box(bounding_box):
+    x1, y1, x2, y2 = bounding_box
+    x = min(x1, x2)
+    y = min(y1, y2)
+    width = x2 - x1
+    height = y2 - y1
+
+    return [x, y, width, height]
+
 .. code-block:: python
 
- def extracted_tables_to_label_studio_json_file_with_paddleOCR(images_folder_path):
-    label_studio_task_list = []
-    for images in os.listdir(images_folder_path):
-        if images.endswith('.jpg'):
-            output_json = {}
-            annotation_result = []
+    def extracted_tables_to_label_studio_json_file_with_paddleOCR(images_folder_path):
+        label_studio_task_list = []
+        for images in os.listdir(images_folder_path):
+                output_json = {}
+                annotation_result = []
 
-            print(images)
+                print(images)
 
-            output_json['data'] =  {"ocr":create_image_url(images)}
+                output_json['data'] =  {"ocr":create_image_url(images)}
 
-                    
-            img = Image.open(os.path.join(images_folder_path,images))
+                img = Image.open(os.path.join(images_folder_path,images))
 
-            img = np.asarray(img)
-            image_height, image_width = img.shape[:2]
+                img = np.asarray(img)
+                image_height, image_width = img.shape[:2]
+
+                result = ocr.ocr(img,cls=False)
+
+                #print(result)
+
+                for output in result:
+
+                    for item in output:
+                        co_ord = item[0]
+                        text = item[1][0]
+
+                        four_co_ord = [co_ord[0][0],co_ord[1][1],co_ord[2][0]-co_ord[0][0],co_ord[2][1]-co_ord[1][1]]
+
+                        #print(four_co_ord)
+                        #print(text)
+
+                        bbox = {
+                        'x': 100 * four_co_ord[0] / image_width,
+                        'y': 100 * four_co_ord[1] / image_height,
+                        'width': 100 * four_co_ord[2] / image_width,
+                        'height': 100 * four_co_ord[3] / image_height,
+                        'rotation': 0
+                                }
 
 
-            result = ocr.ocr(img,cls=False)
+                        if not text:
+                            continue
+                        region_id = str(uuid4())[:10]
+                        score = 0.5
+                        bbox_result = {
+                            'id': region_id, 'from_name': 'bbox', 'to_name': 'image', 'type': 'rectangle',
+                            'value': bbox}
+                        transcription_result = {
+                            'id': region_id, 'from_name': 'transcription', 'to_name': 'image', 'type': 'textarea',
+                            'value': dict(text=[text], **bbox), 'score': score}
+                        annotation_result.extend([bbox_result, transcription_result])
+                        #print('annotation_result :\n',annotation_result)
+                output_json['predictions'] = [ {"result": annotation_result,  "score":0.97}]
 
-            #print(result)
+                label_studio_task_list.append(output_json)
 
-            for output in result:
 
-                for item in output: 
-                    co_ord = item[0]
-                    text = item[1][0]
+        # saving label_stdui_task_list as json file to import in label_studio
+        with open("Paddle_Exemple.json", 'w') as f:
+            json.dump(label_studio_task_list, f, indent=4)
+        f.close()
 
-                    four_co_ord = [co_ord[0][0],co_ord[1][1],co_ord[2][0]-co_ord[0][0],co_ord[2][1]-co_ord[1][1]]
+Exécuter la fonction en haut
 
-                    #print(four_co_ord)
-                    #print(text)
+.. code-block:: python
 
-                    bbox = {
-                    'x': 100 * four_co_ord[0] / image_width,
-                    'y': 100 * four_co_ord[1] / image_height,
-                    'width': 100 * four_co_ord[2] / image_width,
-                    'height': 100 * four_co_ord[3] / image_height,
-                    'rotation': 0
-                            }
-                    
-
-                    if not text:
-                        continue
-                    region_id = str(uuid4())[:10]
-                    score = 0.5
-                    bbox_result = {
-                        'id': region_id, 'from_name': 'bbox', 'to_name': 'image', 'type': 'rectangle',
-                        'value': bbox}
-                    transcription_result = {
-                        'id': region_id, 'from_name': 'transcription', 'to_name': 'image', 'type': 'textarea',
-                        'value': dict(text=[text], **bbox), 'score': score}
-                    annotation_result.extend([bbox_result, transcription_result])
-                    #print('annotation_result :\n',annotation_result)
-            output_json['predictions'] = [ {"result": annotation_result,  "score":0.97}]
-
-            label_studio_task_list.append(output_json)
-        
-
-    # saving label_stdui_task_list as json file to import in label_studio
-    with open("Paddle_Noureddine.json", 'w') as f:
-        json.dump(label_studio_task_list, f, indent=4)
-    f.close()
-
- extracted_tables_to_label_studio_json_file_with_paddleOCR(images_folder_path)
-
+    extracted_tables_to_label_studio_json_file_with_paddleOCR(images_folder_path)
 
 l'interface affichée après lancement de label-studio est la suivante : 
 
