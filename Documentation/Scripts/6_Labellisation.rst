@@ -203,7 +203,7 @@ Dans un nouveau fichier .py Vous lancez un serveur local, pour servir les images
 aprés lancement si vous tapper dans un browser `http://localhost:8080/`, vous allez voir vous images comme ceci
 
 .. figure:: /Documentation/Images/Serveur.png
-   :width: 50%
+   :width: 70%
    :align: center
    :alt: Alternative text for the image
    :name: Serveur d'images
