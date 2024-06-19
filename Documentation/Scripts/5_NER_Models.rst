@@ -90,13 +90,13 @@ Nous avons fait une comparaison entre différents grands modèles de langage, no
 
 Nous avons réalisé une analyse comparative approfondie de plusieurs modèles de langage de grande envergure (LLM) pour l'extraction de texte à partir de documents. Notre évaluation s'est principalement concentrée sur deux critères essentiels : le temps d'inférence requis par chaque modèle et le poids, ou la taille, de ces modèles. En examinant attentivement ces aspects, nous avons pu classer ces modèles en fonction de leur performance et de leur efficacité dans le contexte de l'extraction de texte. Cette classification nous a fourni des insights précieux sur les forces et les faiblesses de chaque modèle, nous permettant ainsi de prendre des décisions éclairées quant à leur utilisation dans divers scénarios d'application.
 
-- 
-    - **Voici une video qui vous aidera à trouver et essayer les modèles**:  |linkedin_mouad|
-.. |linkedin_mouad| image:: ../Images/mp4.png
-    :width: 16
-    :height: 16
-    :target: https://github.com/MasrourTawfik/Textra/tree/main/Documentation/Videos
+Voici une video qui vous aidera à trouver et essayer les NER modèles
 
+.. raw:: html
+
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe src="https://www.youtube.com/embed/M1cMBA6R95Y" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+    </div>
 
 
 
