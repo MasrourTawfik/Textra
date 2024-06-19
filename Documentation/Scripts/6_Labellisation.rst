@@ -55,7 +55,7 @@ Installation de paddleOcr, label-Studio sur l'environnement creé
 
 .. code-block:: bash
 
-    pip install "paddleocr>=2.0.1" # Recommend to use version 2.0.1+
+    pip install "paddleocr>=2.0.1"
 
 .. code-block:: bash
 
