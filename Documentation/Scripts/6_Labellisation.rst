@@ -208,7 +208,7 @@ aprés lancement si vous tapper dans un browser `http://localhost:8080/`, vous a
    :alt: Alternative text for the image
    :name: Serveur d'images
 
-Vous lancez maintenant Label_studio dans un port différent par exemple 8081:
+Vous lancez maintenant Label_studio dans la linge de commande anaconda avec un port différent par exemple 8081:
 
 .. code-block:: bash
 
