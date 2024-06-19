@@ -86,30 +86,6 @@ pour transformer les images en OCR json file, nous avons utiliser le code suivan
 
         return [x, y, width, height]
 
-.. code-block:: python    
-
- def convert_bounding_box(bounding_box):
-    x1, y1, x2, y2 = bounding_box
-    x = min(x1, x2)
-    y = min(y1, y2)
-    width = x2 - x1
-    height = y2 - y1
-
-    return [x, y, width, height]
-
-.. code-block:: python
-
- def create_image_url(filename):
-    return f'http://localhost:8080/{filename}'
-
- def convert_bounding_box(bounding_box):
-    x1, y1, x2, y2 = bounding_box
-    x = min(x1, x2)
-    y = min(y1, y2)
-    width = x2 - x1
-    height = y2 - y1
-
-    return [x, y, width, height]
 
 .. code-block:: python
 
