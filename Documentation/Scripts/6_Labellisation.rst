@@ -169,7 +169,7 @@ Exécuter la fonction en haut
     extracted_tables_to_label_studio_json_file_with_paddleOCR(images_folder_path)
 
 .. note:: 
-    
+
    - Si possible de rencontrer une erreur lors de création de fichier json, à cause de l'antivirus, pour régler il faut suivre les étapes suivantes :
 
     1. Open the Windows settings.
@@ -181,7 +181,32 @@ Exécuter la fonction en haut
 
 3.Step3: Labelliser en label-Studio 
 -----------------------------------------
+Dans un nouveau fichier .py Vous lancez un serveur local, pour servir les images de training à Label_studio :
 
+.. code-block:: python
+
+    #!/usr/bin/env python3
+    from http.server import HTTPServer, SimpleHTTPRequestHandler, test
+    import os
+
+    directory = "PATH_TRAINING_IMAGES"
+
+    class CORSRequestHandler(SimpleHTTPRequestHandler):
+        def end_headers(self):
+            self.send_header('Access-Control-Allow-Origin', '*')
+            SimpleHTTPRequestHandler.end_headers(self)
+
+    if __name__ == '__main__':
+        os.chdir(directory)
+        test(CORSRequestHandler, HTTPServer, port=8080)
+
+aprés lancement si vous tapper dans un browser `http://localhost:8080/`, vous allez voir vous images comme ceci
+
+.. figure:: /Documentation/Images/Serveur.png
+   :width: 50%
+   :align: center
+   :alt: Alternative text for the image
+   :name: Serveur d'images
 
 
 
