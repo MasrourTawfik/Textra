@@ -63,7 +63,7 @@ Installation de paddleOcr, label-Studio sur l'environnement creé
 
 
 3.Step2: Images to OCR json file  
-----------------------------
+--------------------------------
 
 pour transformer les images en OCR json file, nous avons utiliser le code suivant : 
 
@@ -155,6 +155,14 @@ Exécuter la fonction en haut
 .. code-block:: python
 
     extracted_tables_to_label_studio_json_file_with_paddleOCR(images_folder_path)
+
+3.Step3: Labéliser en label-Studio 
+-----------------------------------
+
+
+
+
+
 
 l'interface affichée après lancement de label-studio est la suivante : 
 
