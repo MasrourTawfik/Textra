@@ -2,7 +2,7 @@ NER modèles
 =============
 
 1.Qu'est-ce que la reconnaissance d'entité ?
-------------------------------------------------------
+---------------------------------------------
 
 La reconnaissance d'entité **(Name entity recognition)** fait partie du traitement du langage naturel. L'objectif premier de NER est de traiter données structurées et non structurées et classer ces entités dans des catégories prédéfinies. Certaines catégories courantes incluent le nom, le lieu, l'entreprise, l'heure, les valeurs monétaires, les événements, etc.
 
@@ -41,15 +41,15 @@ Certains des exemples courants d'un catégorisation d'entité sont:
  - iPhone SE : est étiqueté COMM (Produit commercial) et surligné en bleu.
  - 4.7-inch  : est étiqueté QUANTITÉ et surligné en vert.
 
-Ambiguïté dans la reconnaissance d'entité nommée : 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ambiguïté dans la reconnaissance d'entité nommée 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La catégorie à laquelle appartient un terme est intuitivement assez claire pour les êtres humains. Cependant, ce n'est pas le cas des ordinateurs,ils rencontrent des problèmes de classification. Par example:
 Manchester City (Organisation) a remporté le trophée de la Premier League alors que dans la phrase suivante, l'organisation est utilisée différemment. Manchester City (Localisation) était une centrale électrique textile et industrielle.
 Votre modèle NER a besoin données d'entraînement mener avec précision extraction d'entité et classement. Si vous entraînez votre modèle sur l'anglais shakespearien, il va sans dire qu'il ne pourra pas déchiffrer Instagram.
 
-3.Différentes approches NER :
-------------------------------
+3.Différentes approches NER
+----------------------------
 
 L'objectif premier d'un Modèle NER consiste à étiqueter des entités dans des documents texte et à les catégoriser. Les trois approches suivantes sont généralement utilisées à cette fin. Cependant, vous pouvez également choisir de combiner une ou plusieurs méthodes.
 Les différentes approches pour créer des systèmes NER sont :
